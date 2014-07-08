@@ -1,0 +1,33 @@
+<ion-nav-view class="slide-left-right">
+    <ion-view title="My Page">
+        <ion-content>
+            <img src="img/quickcall_logo_blue.png" alt="" class="logo">
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" ng-model="user.username">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="user.password">
+                </label>
+            </div>
+            <div class="padding">
+                <button class="button button-block button-positive" ng-click="signIn(user)">
+                    Sign-In
+                </button>
+                <p class="text-center">
+                    <a href="#/forgot-password">Forgot password</a>
+                </p>
+            </div>
+
+
+            <button class="button button-stable">sign up</button>
+
+            <div class="bar bar-footer">
+                <div class="title">sign up</div>
+            </div>
+
+        </ion-content>
+    </ion-view>
+</ion-nav-view>

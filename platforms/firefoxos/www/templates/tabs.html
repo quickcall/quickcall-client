@@ -1,27 +1,12 @@
-<!-- 
-  Create tabs with an icon and label, using the tabs-positive style. 
-  Each tab's child <ion-nav-view> directive will have its own 
-  navigation history that also transitions its views in and out.
--->
 <ion-tabs class="tabs-icon-top">
+    <ion-tab title="Dial" icon="ion-ios7-telephone-outline" ui-sref="tab.dial">
+        <ion-nav-view name="dial"></ion-nav-view>
+    </ion-tab>
+    <ion-tab title="Contacts" icon="ion-android-contacts" ui-sref="tab.contacts">
+        <ion-nav-view name="contacts"></ion-nav-view>
+    </ion-tab>
 
-
-  <!-- Pets Tab -->
-  <ion-tab title="Dial" icon="ion-ios7-telephone-outline" href="#/tab/dash">
-    <ion-nav-view name="tab-dash"></ion-nav-view>
-  </ion-tab>
-
-
-  <!-- Adopt Tab -->
-  <ion-tab title="Contacts" icon="ion-android-contacts" href="#/tab/friends">
-    <ion-nav-view name="tab-friends"></ion-nav-view>
-  </ion-tab>
-
-
-  <!-- About Tab -->
-  <ion-tab title="Settings" icon="ion-gear-a" href="#/tab/account">
-    <ion-nav-view name="tab-account"></ion-nav-view>
-  </ion-tab>
-
-
+    <ion-tab title="Setting" icon="ion-gear-a" ui-sref="tab.settings">
+        <ion-nav-view name="setting"></ion-nav-view>
+    </ion-tab>
 </ion-tabs>

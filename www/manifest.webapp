@@ -2,8 +2,8 @@
     "launch_path":"/index.html",
     "installs_allowed_from":["*"],
     "version":"0.0.1",
-    "name":"simpleDialer",
-    "pkgName":"io.cordova.simpledialer",
+    "name":"quickcall",
+    "pkgName":"io.cordova.quickcall",
     "icons": {
         "128": "/img/logo.png"
     },

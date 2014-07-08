@@ -46,7 +46,13 @@ angular.module('starter.services', [])
             id: 3,
             imgPath: 'dhLee.jpeg',
             name: 'DH from Korea'
-        }];
+        },
+        {
+            id: 4,
+            imgPath: 'quickcall_logo_blue.png',
+            name: 'quick call'
+        }
+        ];
         return {
             all: function() {
                 return friends;

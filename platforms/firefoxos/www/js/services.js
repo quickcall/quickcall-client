@@ -28,6 +28,8 @@ angular.module('starter.services', [])
         // return {
         //     getAllContacts: getAllContacts
         // }
+
+        // some dummy contacts data
         var friends = [{
             id: 0,
             imgPath: 'alexPhillip.jpeg',
@@ -44,8 +46,13 @@ angular.module('starter.services', [])
             id: 3,
             imgPath: 'dhLee.jpeg',
             name: 'DH from Korea'
-        }];
-
+        },
+        {
+            id: 4,
+            imgPath: 'quickcall_logo_blue.png',
+            name: 'quick call'
+        }
+        ];
         return {
             all: function() {
                 return friends;
@@ -54,6 +61,21 @@ angular.module('starter.services', [])
                 // Simple index lookup
                 return friends[friendId];
             }
-        }
-
+        };
+    })
+    .factory('Setting', function($rootScope) {
+        $rootScope.recordEnabled = false;
+        $rootScope.smsEnabled = false;
+        var enableRecord = function(update) {
+            console.log('now globally enabled -rec');
+            $rootScope.recordEnabled = update || false;
+        };
+        var enableSms = function(update) {
+            console.log('now globally enabled - sms');
+            $rootScope.smsEnabled = update || false;
+        };
+        return {
+            enableRecord: enableRecord,
+            enableSms: enableSms
+        };
     });
