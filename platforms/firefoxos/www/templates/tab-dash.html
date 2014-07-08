@@ -1,5 +1,16 @@
 <ion-view title="Dashboard">
   <ion-content class="has-header padding">
-    <h1>volley valley vulley</h1>
+    <h1>call</h1>
+    <form ng-submit="makeCall()">
+      <label for="outbound-call">src. number</label>
+      <input type="tel" placeholder="type your phone number" ng-model="numbers.src">
+      <label for="outbound-call">dst. number</label>
+      <input type="tel" placeholder="type your phone number" ng-model="numbers.dst">
+      <!-- <input type="submit" /> -->
+      <button class="button button-full button-positive">
+        Full Width Block Button
+      </button>
+
+    </form>
   </ion-content>
 </ion-view>

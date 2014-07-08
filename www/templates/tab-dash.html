@@ -1,12 +1,60 @@
+
+
 <ion-view title="Dashboard">
+  <ion-content class="has-header padding">
+  <div class="container">
+  <!--header>
+    <span class="icon fontawesome-phone"></span>
+    <h2>Calling Alan...</h2>
+  </header-->
+  <form ng-submit="makeCall()">
+      <label for="outbound-call">dst. number</label>
+      <input type="tel" placeholder="type your phone number" ng-model="numbers.dst">        
+    </form>
+  <!--section id="number">
+    <p>{{numbers.dst}}</p>
+  </section-->
+  <section id="keypad">
+    <div class="key">1</div>
+    <div class="key">2</div>
+    <div class="key">3</div>
+    <div class="key">4</div>
+    <div class="key">5</div>
+    <div class="key">6</div>
+    <div class="key">7</div>
+    <div class="key">8</div>
+    <div class="key">9</div>
+    <div class="key">*</div>
+    <div class="key">0</div>
+    <div class="key">#</div>
+    <div class="key"><span class="fontawesome-plus-sign"></span></div>
+    <div class="key"><span class="fontawesome-phone"></span></div>
+    <div class="key"><span class="fontawesome-remove-sign"></span></div>
+  </section>
+  <button class="button button-full button-balanced">
+        call
+      </button>
+  <!--section id="endcall">
+    <p>end call</p>
+  </section-->
+</div>
+    
+  </ion-content>
+</ion-view>
+
+<!-- <ion-view title="Dashboard">
   <ion-content class="has-header padding">
     <h1>call</h1>
     <form ng-submit="makeCall()">
       <label for="outbound-call">src. number</label>
-      <input type="srcNum" placeholder="type your phone number" ng-model="numbers.src">
+      <input type="tel" placeholder="type your phone number" ng-model="numbers.src">
       <label for="outbound-call">dst. number</label>
-      <input type="dstNum" placeholder="type your phone number" ng-model="numbers.dst">
-      <input type="submit" />
+      <input type="tel" placeholder="type your phone number" ng-model="numbers.dst"> -->
+      <!-- <input type="submit" /> -->
+     <!--  <button class="button button-full button-balanced">
+        call
+      </button>
+
     </form>
   </ion-content>
-</ion-view>
+</ion-view> -->
