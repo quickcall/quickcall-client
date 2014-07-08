@@ -70,9 +70,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('tab.settings', {
       url: '/settings',
       views: {
-        'settings': {
-          templateUrl: 'templates/settings.html',
-          controller: 'SettingsCtrl'
+        'setting': {
+          templateUrl: 'templates/setting.html',
+          controller: 'SettingCtrl'
         }
       }
     })

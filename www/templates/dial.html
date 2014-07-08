@@ -5,9 +5,9 @@
                 <input type="tel" placeholder="prepend a country code without a plus sign: e.g. 14155345337" value="numbers.dst" ng-model="numbers.dst" />
             </label>
             <!--button ng-click="makeCall()" class="button button-full button-positive">call</button-->
-            <!--button ng-click="makeCall('feelingLucky')" class="button button-full button-positive">
+            <button ng-show="feelingLucky" ng-click="makeCall('feelingLucky')" class="button button-full button-positive">
                 I am feeling lucky!
-            </button-->
+            </button
         </form>
         <ul class="keypad">
             <li on-touch="addInput(1)">1</li>
