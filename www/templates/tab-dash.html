@@ -1,44 +1,29 @@
-
-
-<ion-view title="Dashboard">
+<ion-view title="Dial">
   <ion-content class="has-header padding">
-  <div class="container">
-  <!--header>
-    <span class="icon fontawesome-phone"></span>
-    <h2>Calling Alan...</h2>
-  </header-->
-  <form ng-submit="makeCall()">
-      <label for="outbound-call">dst. number</label>
-      <input type="tel" placeholder="type your phone number" ng-model="numbers.dst">        
+    <form class="list">
+      <label class="item item-input">
+        <input type="tel" placeholder="type a phone number to dial with a country code." value="numbers.dst" ng-model="numbers.dst" />
+      </label>
     </form>
-  <!--section id="number">
-    <p>{{numbers.dst}}</p>
-  </section-->
-  <section id="keypad">
-    <div class="key">1</div>
-    <div class="key">2</div>
-    <div class="key">3</div>
-    <div class="key">4</div>
-    <div class="key">5</div>
-    <div class="key">6</div>
-    <div class="key">7</div>
-    <div class="key">8</div>
-    <div class="key">9</div>
-    <div class="key">*</div>
-    <div class="key">0</div>
-    <div class="key">#</div>
-    <div class="key"><span class="fontawesome-plus-sign"></span></div>
-    <div class="key"><span class="fontawesome-phone"></span></div>
-    <div class="key"><span class="fontawesome-remove-sign"></span></div>
-  </section>
-  <button class="button button-full button-balanced">
-        call
-      </button>
-  <!--section id="endcall">
-    <p>end call</p>
-  </section-->
-</div>
-    
+    <ul class="keypad">
+      <li on-touch="addInput(1)">1</li>
+      <li on-touch="addInput(2)">2</li>
+      <li on-touch="addInput(3)">3</li>
+      <li on-touch="addInput(4)">4</li>
+      <li on-touch="addInput(5)">5</li>
+      <li on-touch="addInput(6)">6</li>
+      <li on-touch="addInput(7)">7</li>
+      <li on-touch="addInput(8)">8</li>
+      <li on-touch="addInput(9)">9</li>
+      <li on-touch="addInput(0)">0</li>
+      <li on-touch="removeInput()" class="remove-input">
+        <i class="ion-ios7-close-outline"></i>
+      </li>
+      <li on-touch="makeCall()" class="make-call">
+        <i class="ion-android-call"></i>
+      </li>
+    </ul>
+
   </ion-content>
 </ion-view>
 
@@ -50,8 +35,8 @@
       <input type="tel" placeholder="type your phone number" ng-model="numbers.src">
       <label for="outbound-call">dst. number</label>
       <input type="tel" placeholder="type your phone number" ng-model="numbers.dst"> -->
-      <!-- <input type="submit" /> -->
-     <!--  <button class="button button-full button-balanced">
+<!-- <input type="submit" /> -->
+<!--  <button class="button button-full button-balanced">
         call
       </button>
 

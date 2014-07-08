@@ -1,10 +1,15 @@
-{ 
-    "launch_path":"/index.html",
-    "installs_allowed_from":["*"],
-    "version":"0.0.1",
-    "name":"simpleDialer",
-    "pkgName":"io.cordova.simpledialer",
-    "icons": {
-        "128": "/img/logo.png"
+{
+    "launch_path": "/index.html",
+    "installs_allowed_from": [
+        "*"
+    ],
+    "version": "0.0.1",
+    "name": "HelloCordova",
+    "pkgName": "com.ionicframework.starter",
+    "icons": {},
+    "description": "An Ionic Framework and Cordova project.",
+    "developer": {
+        "name": "Ionic Framework Team",
+        "url": "http://ionicframework.com/"
     }
 }
