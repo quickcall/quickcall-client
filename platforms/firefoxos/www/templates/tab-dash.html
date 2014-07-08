@@ -4,6 +4,9 @@
       <label class="item item-input">
         <input type="tel" placeholder="type a phone number to dial with a country code." value="numbers.dst" ng-model="numbers.dst" />
       </label>
+        <button ng-click="makeCall()" class="button button-full button-positive">
+        call
+      </button>
     </form>
     <ul class="keypad">
       <li on-touch="addInput(1)">1</li>
@@ -26,6 +29,7 @@
 
   </ion-content>
 </ion-view>
+
 
 <!-- <ion-view title="Dashboard">
   <ion-content class="has-header padding">

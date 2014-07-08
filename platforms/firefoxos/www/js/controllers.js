@@ -29,26 +29,27 @@ angular.module('starter.controllers', [])
     })
 
 .controller('FriendsCtrl', function($scope, Friends) {
-
-    $scope.friends = function() {
-        var filter = {
-            // sortBy: givenName,
-            // sortOrder: ascending
-        }
-        var result = Friends.getAllContacts(filter);
-        result.onsuccess = function() {
-            console.log(this.result.length + ' contacts found.');
-        }
-        result.onerror = function() {
-            console.log('Something goes wrong!');
-        }
-    };
-    //initialize
-    $scope.friends();
+    // fix later (mozilla's native device contacts API)
+    // $scope.friends = function() {
+    //     var filter = {
+    //         // sortBy: givenName,
+    //         // sortOrder: ascending
+    //     }
+    //     var result = Friends.getAllContacts(filter);
+    //     result.onsuccess = function() {
+    //         console.log(this.result.length + ' contacts found.');
+    //     }
+    //     result.onerror = function() {
+    //         console.log('Something goes wrong!');
+    //     }
+    // };
+    // //initialize
+    // $scope.friends();
+   $scope.friends = Friends.all();
 })
 
-// .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-//     $scope.friend = Friends.get($stateParams.friendId);
-// })
+.controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
+    $scope.friend = Friends.get($stateParams.friendId);
+})
 
 .controller('AccountCtrl', function($scope) {});

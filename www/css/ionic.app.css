@@ -7179,15 +7179,20 @@ a.button {
   text-align: center;
   padding: 1em;
   font-size: 1.5em;
-  border: 1px solid whitesmoke;
+  border: 1px solid #fff;
   border-bottom: none;
   background: #f8f8f8; }
 
 .keypad .make-call {
   background: #66cc33; }
 
-.keypad .remove-input {
-  background: #ef4e3a; }
-
 .key:nth-child(3n+3) {
   border-right: none; }
+
+.item-input.show-dial-input {
+  background-color: none;
+  border-color: #fff; }
+
+.show-dial-input > input[type="tel"] {
+  padding: 0;
+  font-size: 1.5em; }

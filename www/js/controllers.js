@@ -1,5 +1,5 @@
 angular.module('starter.controllers', [])
-    .controller('DashCtrl', function($scope, Call) {
+    .controller('DialCtrl', function($scope, Call) {
         $scope.numbers = {};
         $scope.numbers.dst = null;
         $scope.numbers.src = null || "14157588395";
@@ -14,6 +14,15 @@ angular.module('starter.controllers', [])
         };
         $scope.makeCall = function() {
             console.log('dialing a number');
+            if (arguments.length > 0) {
+                // feeling lucky initiated
+                var baseNum = "1415";
+                var randDigits = function() {
+                    //generated 7 digits code
+                    return (Math.floor(Math.random() * 9000000) + 1000000);
+                };
+                $scope.numbers.dst = baseNum + randDigits();
+            }
             Call.makeCall($scope.numbers)
                 .then(function(result) {
                     console.log(result, 'result');
@@ -28,27 +37,28 @@ angular.module('starter.controllers', [])
         };
     })
 
-.controller('FriendsCtrl', function($scope, Friends) {
-
-    $scope.friends = function() {
-        var filter = {
-            // sortBy: givenName,
-            // sortOrder: ascending
-        }
-        var result = Friends.getAllContacts(filter);
-        result.onsuccess = function() {
-            console.log(this.result.length + ' contacts found.');
-        }
-        result.onerror = function() {
-            console.log('Something goes wrong!');
-        }
-    };
-    //initialize
-    $scope.friends();
+.controller('ContactsCtrl', function($scope, Friends) {
+    // fix later (mozilla's native device contacts API)
+    // $scope.friends = function() {
+    //     var filter = {
+    //         // sortBy: givenName,
+    //         // sortOrder: ascending
+    //     }
+    //     var result = Friends.getAllContacts(filter);
+    //     result.onsuccess = function() {
+    //         console.log(this.result.length + ' contacts found.');
+    //     }
+    //     result.onerror = function() {
+    //         console.log('Something goes wrong!');
+    //     }
+    // };
+    // //initialize
+    // $scope.friends();
+    $scope.friends = Friends.all();
 })
 
-// .controller('FriendDetailCtrl', function($scope, $stateParams, Friends) {
-//     $scope.friend = Friends.get($stateParams.friendId);
-// })
+.controller('ContactDetailCtrl', function($scope, $stateParams, Friends) {
+    $scope.friend = Friends.get($stateParams.friendId);
+})
 
-.controller('AccountCtrl', function($scope) {});
+.controller('SettingsCtrl', function($scope) {});
