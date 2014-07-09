@@ -5,7 +5,7 @@
     "name":"quickcall",
     "pkgName":"io.cordova.quickcall",
     "icons": {
-        "128": "/img/logo.png"
+        "128": "/img/quickcall_logo_128.png"
     },
     "type": "privileged",
     "permissions": {
