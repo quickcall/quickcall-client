@@ -3,7 +3,8 @@ angular.module('starter.controllers', ['ionic'])
         $scope.numbers = {};
         $scope.numbers.dst = null;
         $scope.numbers.src = null || "14157588395";
-        $scope.feelingLucky = false;
+        // only for the demo
+        $scope.feelingLucky = true;
         $scope.addInput = function(val) {
             console.log('adding input');
             $scope.numbers.dst = !$scope.numbers.dst ? val.toString() : $scope.numbers.dst + val.toString();
@@ -22,14 +23,15 @@ angular.module('starter.controllers', ['ionic'])
             $ionicLoading.hide();
         };
         $scope.makeCall = function() {
-            console.log('dialing a number');
             if (arguments.length > 0) {
                 // feeling lucky initiated
+                console.log('feeling lucky getting invoked');
                 var baseNum = "1415";
                 var randDigits = function() {
                     //generated 7 digits code
                     return (Math.floor(Math.random() * 9000000) + 1000000);
                 };
+                console.log(baseNum + randDigits());
                 $scope.numbers.dst = baseNum + randDigits();
             }
             $scope.show()

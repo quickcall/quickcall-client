@@ -1,29 +1,21 @@
 <ion-nav-view class="slide-left-right">
     <ion-view title="My Page">
         <ion-content>
-            <div class="row">
-                <div class="col col-10 col-offset-33">
-                    <img src="img/quickcall_logo_blue.png" alt="" class="logo">
-                </div>
+            <img src="img/quickcall_logo_blue.png" alt="" class="logo" />
+            <div class="list">
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="text" ng-model="user.username">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" ng-model="user.password">
+                </label>
             </div>
-            <div class="row">
-                <div class="col col-33 col-offset-33">
-                    <div class="list">
-                        <label class="item item-input">
-                            <span class="input-label">Username</span>
-                            <input type="text" ng-model="user.username">
-                        </label>
-                        <label class="item item-input">
-                            <span class="input-label">Password</span>
-                            <input type="password" ng-model="user.password">
-                        </label>
-                    </div>
-                    <button ui-sref="tab.dial" class="button button-block button-positive">
-                        Sign in
-                    </button>
-                    <p>Just click the button. You're the only user anyway.</p>
-                </div>
-            </div>
+            <button ui-sref="tab.dial" class="button button-block button-positive">
+                Sign in
+            </button>
+            <p>Just click the button. You're the only user anyway.</p>
         </ion-content>
     </ion-view>
 </ion-nav-view>

@@ -1,24 +1,20 @@
-{
-    "launch_path": "/index.html",
-    "installs_allowed_from": [
-        "*"
-    ],
-    "version": "0.0.1",
-    "name": "HelloCordova",
-    "pkgName": "com.ionicframework.starter",
-    "icons": {},
+{ 
+    "launch_path":"/index.html",
+    "installs_allowed_from":["*"],
+    "version":"0.0.1",
+    "name":"quickcall",
+    "pkgName":"io.cordova.quickcall",
+    "icons": {
+        "128": "/img/quickcall_logo_128.png"
+    },
+    "type": "privileged",
     "permissions": {
         "contacts": {
-            "description": "Required for autocompletion in the share screen",
-            "access": "readcreate"
+          "description": "Required for autocompletion in the share screen",
+          "access": "readcreate"
         },
         "alarms": {
-            "description": "Required to schedule notifications"
+          "description": "Required to schedule notifications"
         }
-    },
-    "description": "An Ionic Framework and Cordova project.",
-    "developer": {
-        "name": "Ionic Framework Team",
-        "url": "http://ionicframework.com/"
-    }
+  }
 }

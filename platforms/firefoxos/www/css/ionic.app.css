@@ -7177,8 +7177,8 @@ a.button {
   float: left;
   width: 33.33%;
   text-align: center;
+  font-size: 1.5em;
   padding: 1em;
-  font-size: 1.3em;
   border: 1px solid #E0F8E0;
   border-bottom: none;
   background: #f8f8f8; }
@@ -7195,4 +7195,4 @@ a.button {
 
 .show-dial-input > input[type="tel"] {
   padding: 0;
-  font-size: 1.5em; }
+  font-size: 1em; }
