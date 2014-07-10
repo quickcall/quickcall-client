@@ -1,4 +1,4 @@
-  angular.module('app', [
+angular.module('app', [
   'ionic',
   'app.main',
 ])
@@ -22,5 +22,5 @@
       abstract: true,
       templateUrl: 'app/app.html'
     });
-    $urlRouterProvider.otherwise('app/main');
+    $urlRouterProvider.otherwise('app/main/dialer');
 });

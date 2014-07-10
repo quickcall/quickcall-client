@@ -5,7 +5,7 @@ angular.module('app.main.contacts', [
     .state('app.main.contacts', {
       url: '/contacts',
       views: {
-        'app.main.contacts': {
+        'contacts': {
           templateUrl : "app/main/contacts/contacts.html",
           controller : "ContactsCtrl"                    
         }

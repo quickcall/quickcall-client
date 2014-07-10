@@ -7,6 +7,7 @@ angular.module('app.main', [
   $stateProvider
     .state('app.main', {
       url: '/main',
+      abstract: true,
       templateUrl: "app/main/main.html"
     });
 });

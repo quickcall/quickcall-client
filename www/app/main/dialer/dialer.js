@@ -5,7 +5,7 @@ angular.module('app.main.dialer', [
     .state('app.main.dialer', {
       url: '/dialer',
       views: {
-        'app.main.dialer': {
+        'dialer': {
           templateUrl: 'app/main/dialer/dialer.html',
           controller: 'DialerCtrl'          
         }
