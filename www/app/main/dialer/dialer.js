@@ -13,6 +13,9 @@ angular.module('app.main.dialer', [
     });
 })
 .controller('DialerCtrl', function($scope){
+  $scope.addInput = function() {
+    console.log('yo');
+  };
 })
 
 
