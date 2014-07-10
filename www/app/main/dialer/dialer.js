@@ -12,4 +12,5 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope){});
+.controller('DialerCtrl', function($scope){
+});
