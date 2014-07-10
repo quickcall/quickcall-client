@@ -20,7 +20,7 @@ angular.module('app', [
     .state('app', {
       url: '/app',
       abstract: true,
-      templateUrl: 'app/app.html'
+      templateUrl: 'index.html'
     });
     $urlRouterProvider.otherwise('app/main/dialer');
 });

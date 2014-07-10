@@ -5,7 +5,7 @@ angular.module('app.main.settings', [
     .state('app.main.settings', {
       url: '/settings',
       views: {
-        'app.main.settings': {
+        'settings': {
           templateUrl: 'app/main/settings/settings.html',
           controller: 'SettingsCtrl'
         }
