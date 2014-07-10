@@ -16,8 +16,9 @@ angular.module('app.main.dialer', [
 })
 
 
-.directive('dialer', funtion(){
+.directive('dialer', function(){
   return {
-
+    restrict: 'E',
+    templateUrl: 'app/main/dialer/dialer-directive.html'
   };
 });

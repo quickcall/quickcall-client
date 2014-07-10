@@ -1,28 +1,6 @@
 <ion-view title="Who do you want to call today?">
+<ion-content class="has-header padding">
   <p>Dialer</p>
-  <ion-content class="has-header padding">
-    <form class="list">
-      <label class="item item-input show-dial-input">
-      <input type="tel" placeholder="prepend a country code e.g. 14155345337" value="numbers.dst" ng-model="numbers.dst" />
-      </label>
-    </form>
-    <ul class="keypad">
-      <li on-touch="addInput(1)">1</li>
-      <li on-touch="addInput(2)">2</li>
-      <li on-touch="addInput(3)">3</li>
-      <li on-touch="addInput(4)">4</li>
-      <li on-touch="addInput(5)">5</li>
-      <li on-touch="addInput(6)">6</li>
-      <li on-touch="addInput(7)">7</li>
-      <li on-touch="addInput(8)">8</li>
-      <li on-touch="addInput(9)">9</li>
-      <li on-touch="removeInput()">
-      <i class="ion-ios7-close-outline"></i>
-      </li>
-      <li on-touch="addInput(0)">0</li>
-      <li on-touch="makeCall()" class="make-call">
-        <i class="ion-android-call"></i>
-      </li>
-    </ul>
-  </ion-content>
+  <dialer></dialer>
+</ion-content>
 </ion-view>
