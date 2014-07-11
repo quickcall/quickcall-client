@@ -12,27 +12,31 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope){
+.controller('DialerCtrl', function($scope, DialerFactory){
   $scope.numbers = '';
-  // $scope.numbers.src = '';
   $scope.addInput = function(num) {
     $scope.numbers += num;
-    console.log(num);
+  };
+  $scope.makeCall = function() {
+    DialerFactory.call($scope.numbers);
   };
 })
 
 .factory('DialerFactory', function($http) {
-  var call = $http({
-    method: 'POST',
-    url: 'http://simple-dialer.herokuapp.com/call',
-    data: JSON.stringify()
-  }).then(function(err, data) {
-    return data.results;
-  });
+  var call = function(number) {
+    return $http({
+      method: 'POST',
+      url: 'http://simple-dialer.herokuapp.com/call',
+      data: JSON.stringify(number)
+    }).then(function(err, data) {
+      return data.results;
+    });
+  };
 
   return {
     call: call
   };
+
 })
 
 .directive('dialer', function(){
