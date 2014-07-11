@@ -14,6 +14,7 @@ angular.module('app.main.contacts', [
 })
 .controller('ContactsCtrl', function($scope, $ionicModal){
   console.log('Contacts CTRl linked!');
+  $scope.index;
   $scope.friends = [
     {
       name: "Alexander Phillip",
@@ -34,8 +35,30 @@ angular.module('app.main.contacts', [
       phoneNumber: "123-123-1234"
     }
   ];
-  $scope.showModal = function(){
-    console.log(this.modal);
-    console.log(this);
+    // Create and load the Modal
+  $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  $scope.openModal = function(target) {
+    $scope.index = target;
+    $scope.modal.show();
   };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  // Execute action on hide modal
+  $scope.$on('modal.hidden', function() {
+    // Execute action
+  });
+  // Execute action on remove modal
+  $scope.$on('modal.removed', function() {
+    // Execute action
+  });
 });
