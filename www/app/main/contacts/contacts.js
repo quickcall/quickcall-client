@@ -29,10 +29,34 @@ angular.module('app.main.contacts', [
       phoneNumber: "USA-USA-USASA"
     },
     {
-      name: "DH From Korea",
+      name: "DH Lee",
       imgPath: "dhLee.jpeg",
-      description: "QuickCall founder, DH From Korea, DH From Korea, DH From Korea",
-      phoneNumber: "123-123-1234"
+      description: "HR14 Fullstack Software Engineer, QuickCall Founder",
+      phoneNumber: "14155345337"
+    },
+    {
+      name: "Kia Fathi",
+      imgPath: "kiaFathi.jpg",
+      description: "HR14 Fullstack Software Engineer",
+      phoneNumber: "16508888614"
+    },
+    {
+      name: "Jakob Harclerode",
+      imgPath: "yahkob.jpg",
+      description: "HR14 Fullstack Software Engineer, Heavy Metal",
+      phoneNumber: "19286996726"
+    },
+    {
+      name: "Mason Hargrove",
+      imgPath: "mase87.jpg",
+      description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
+      phoneNumber: "12294128411"
+    },
+    {
+      name: "SpaceCat",
+      imgPath: "spaceCat.jpg",
+      description: "RARGH MEOW RARG! PEW PEW LAZORS",
+      phoneNumber: "YOU CAN NEVER GET THIS"
     }
   ];
 
