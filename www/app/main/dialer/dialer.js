@@ -12,12 +12,16 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope){
-  $scope.addInput = function() {
-    console.log('yo');
+.controller('DialerCtrl', function($scope, DialerFactory){
+  $scope.phoneNumber = '';
+
+  $scope.addInput = function(num) {
+    $scope.phoneNumber += num;
+  };
+  $scope.makeCall = function() {
+    DialerFactory.call($scope.phoneNumber);
   };
 })
-
 
 .directive('dialer', function(){
   return {

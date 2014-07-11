@@ -4,12 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
     <title>make a quick call over IP</title>
-    <link href="./lib/ionic/css/ionic.css" rel="stylesheet">
-    <link href="./css/ionic.app.css" rel="stylesheet">
-    <script src="./lib/ionic/js/ionic.bundle.js"></script>
+    <link href="lib/ionic/css/ionic.css" rel="stylesheet">
+    <link href="css/ionic.app.css" rel="stylesheet">
+    <script src="lib/ionic/js/ionic.bundle.js"></script>
+    <script src="lib/angular-ui-utils/mask.js"></script>
 
-    <!-- cordova script (this will be a 404 during development) -->
-    <script src="cordova.js"></script>
 
     <!-- your app's js -->
     <script src="app/main/dialer/dialer.js"></script>
@@ -19,6 +18,8 @@
     <script src='app/services/services.js'></script>
     <script src="app/app.js"></script>
 
+    <!-- cordova script (this will be a 404 during development) -->
+    <script src="cordova.js"></script>
   </head>
   <body ng-app="app" animation="slide-left-right-ios7">
     <ion-nav-bar class="bar-positive nav-title-slide-ios7">
