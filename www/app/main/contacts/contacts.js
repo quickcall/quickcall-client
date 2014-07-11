@@ -7,7 +7,7 @@ angular.module('app.main.contacts', [
       views: {
         'contacts': {
           templateUrl : "app/main/contacts/contacts.html",
-          controller : "ContactsCtrl"                    
+          controller : "ContactsCtrl"
         }
       }
     });
@@ -41,7 +41,7 @@ angular.module('app.main.contacts', [
   $scope.makeCall = function(target){
     //index is the active user
     target = target || $scope.friends[$scope.index];
-    return DialerFactory.callNumber(target.phoneNumber);
+    return DialerFactory.call(target.phoneNumber);
   };
 
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
