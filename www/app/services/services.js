@@ -19,8 +19,6 @@ angular.module('app.services', [
       method: 'POST',
       url: 'http://simple-dialer.herokuapp.com/call',
       data: JSON.stringify(serverData)
-    }).then(function(err, data) {
-      return data.results;
     });
   };
 
