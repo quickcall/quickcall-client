@@ -12,7 +12,7 @@ angular.module('app.main.contacts', [
       }
     });
 })
-.controller('ContactsCtrl', function($scope, $ionicModal){
+.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory){
   console.log('Contacts CTRl linked!');
   $scope.index = 0;
   $scope.friends = [
@@ -41,7 +41,7 @@ angular.module('app.main.contacts', [
   $scope.makeCall = function(target){
     //index is the active user
     target = target || $scope.friends[$scope.index];
-    console.log(target.phoneNumber);
+    return DialerFactory.callNumber(target.phoneNumber);
   };
 
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {

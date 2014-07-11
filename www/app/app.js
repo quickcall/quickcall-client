@@ -1,6 +1,7 @@
 angular.module('app', [
   'ionic',
   'app.main',
+  'app.services'
 ])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
