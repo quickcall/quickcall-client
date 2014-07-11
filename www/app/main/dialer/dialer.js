@@ -12,11 +12,13 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory){
+.controller('DialerCtrl', function($scope, $ionicModal, $ionicSwipeCardDelegate, DialerFactory, ContactsFactory){
+
   $scope.phoneNumber = '';
 
   $scope.addInput = function(num) {
     $scope.phoneNumber += num;
+    console.log(ContactsFactory.friends);
   };
   $scope.makeCall = function() {
     DialerFactory.call($scope.phoneNumber);

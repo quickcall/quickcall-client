@@ -1,7 +1,8 @@
 angular.module('app', [
   'ionic',
   'app.main',
-  'app.services'
+  'app.services',
+  'ionic.contrib.ui.cards'
 ])
 .run(function($ionicPlatform) {
   $ionicPlatform.ready(function() {
