@@ -4,6 +4,7 @@
             <ion-item ng-repeat="friend in friends" class="item item-avatar">
                 <img ng-click='openModal($index)' class="thumbnail" ng-src="img/{{friend.imgPath}}"/>
                 <h2>{{friend.name}}</h2>
+                <h2 ng-click='makeCall({{friend}})'>{{friend.phoneNumber}}</h2>
             </ion-item>
         </ion-list>
     </ion-content>

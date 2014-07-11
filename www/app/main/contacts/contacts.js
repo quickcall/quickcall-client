@@ -40,8 +40,8 @@ angular.module('app.main.contacts', [
   //will switch over to dialer view and invoke call
   $scope.makeCall = function(target){
     //index is the active user
-    target = target || $scope.index;
-    console.log($scope.friends[target].phoneNumber);
+    target = target || $scope.friends[$scope.index];
+    console.log(target.phoneNumber);
   };
 
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
