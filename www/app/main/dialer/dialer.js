@@ -13,12 +13,13 @@ angular.module('app.main.dialer', [
     });
 })
 .controller('DialerCtrl', function($scope, DialerFactory){
-  $scope.numbers = '';
+  $scope.phoneNumber = '';
+
   $scope.addInput = function(num) {
-    $scope.numbers += num;
+    $scope.phoneNumber += num;
   };
   $scope.makeCall = function() {
-    DialerFactory.call($scope.numbers);
+    DialerFactory.call($scope.phoneNumber);
   };
 })
 
