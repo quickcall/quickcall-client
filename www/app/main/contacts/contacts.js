@@ -42,6 +42,7 @@ angular.module('app.main.contacts', [
     //index is the active user
     target = target || $scope.friends[$scope.index];
     return DialerFactory.call(target.phoneNumber);
+
   };
 
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
@@ -69,4 +70,14 @@ angular.module('app.main.contacts', [
   $scope.$on('modal.removed', function() {
     // Execute action
   });
+})
+
+.directive('contact', function() {
+  return {
+
+  };
 });
+
+
+
+
