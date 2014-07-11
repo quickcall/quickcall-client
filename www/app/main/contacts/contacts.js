@@ -14,7 +14,7 @@ angular.module('app.main.contacts', [
 })
 .controller('ContactsCtrl', function($scope, $ionicModal){
   console.log('Contacts CTRl linked!');
-  $scope.index;
+  $scope.index = 0;
   $scope.friends = [
     {
       name: "Alexander Phillip",
