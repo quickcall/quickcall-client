@@ -20,6 +20,7 @@ angular.module('app.main.dialer', [
   };
   $scope.makeCall = function() {
     DialerFactory.call($scope.phoneNumber);
+    $scope.phoneNumber = '';
   };
 })
 
