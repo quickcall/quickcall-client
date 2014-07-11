@@ -74,7 +74,8 @@ angular.module('app.main.contacts', [
 
 .directive('contact', function() {
   return {
-
+    restrict: 'E',
+    templateUrl: 'app/main/contacts/contacts-directive.html'
   };
 });
 
