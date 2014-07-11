@@ -14,7 +14,7 @@ angular.module('app.main.contacts', [
 })
 .controller('ContactsCtrl', function($scope, $ionicModal){
   console.log('Contacts CTRl linked!');
-  $scope.index;
+  $scope.index = 0;
   $scope.friends = [
     {
       name: "Alexander Phillip",
@@ -35,7 +35,15 @@ angular.module('app.main.contacts', [
       phoneNumber: "123-123-1234"
     }
   ];
-    // Create and load the Modal
+
+  //to call number when they are called
+  //will switch over to dialer view and invoke call
+  $scope.makeCall = function(target){
+    //index is the active user
+    target = target || $scope.friends[$scope.index];
+    console.log(target.phoneNumber);
+  };
+
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
     scope: $scope,
     animation: 'slide-in-up'
