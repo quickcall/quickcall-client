@@ -1,16 +1,18 @@
 angular.module('app.services', [
 ])
 .factory('DialerFactory', function ($http, $ionicPopup) {
-  var call = function(number) {
+  var call = function(destinationNumber) {
+
+    var sourceNumber = '16508888614';
 
     var serverData = {
-      dst: number,
-      src: '16508888614'
+      dst: destinationNumber,
+      src: sourceNumber
     };
 
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
-      template: 'Number: ' + number
+      template: 'Number: ' + destinationNumber
     });
 
     return $http({
