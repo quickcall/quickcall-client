@@ -13,11 +13,27 @@ angular.module('app.main.dialer', [
     });
 })
 .controller('DialerCtrl', function($scope){
-  $scope.addInput = function() {
-    console.log('yo');
+  $scope.numbers = '';
+  // $scope.numbers.src = '';
+  $scope.addInput = function(num) {
+    $scope.numbers += num;
+    console.log(num);
   };
 })
 
+.factory('DialerFactory', function($http) {
+  var call = $http({
+    method: 'POST',
+    url: 'http://simple-dialer.herokuapp.com/call',
+    data: JSON.stringify()
+  }).then(function(err, data) {
+    return data.results;
+  });
+
+  return {
+    call: call
+  };
+})
 
 .directive('dialer', function(){
   return {

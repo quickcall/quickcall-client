@@ -1,21 +1,10 @@
 <form class="list">
   <label class="item-input show-dial-input">
-  <input type="tel" placeholder="prepend a country code e.g. 14155345337" value="numbers.dst" ng-model="numbers.dst" />
+  <input type="tel" placeholder="prepend a country code e.g. 14155345337" value="{{numbers}}"  />
   </label>
 </form>
 
-<ul class="row keypad">
-  <li class="col">1</li>
-  <li class="col">2</li>
-  <li class="col">3</li>
-</ul>
-
-
-
-
-
-
-<!-- <ul class="keypad">
+<ul class="keypad">
   <li on-touch="addInput(1)">1</li>
   <li on-touch="addInput(2)">2</li>
   <li on-touch="addInput(3)">3</li>
@@ -32,5 +21,5 @@
   <li on-touch="makeCall()" class="make-call">
     <i class="ion-android-call"></i>
   </li>
-</ul> -->
+</ul>
 
