@@ -22,6 +22,9 @@ angular.module('app.main.dialer', [
     DialerFactory.call($scope.phoneNumber);
     $scope.phoneNumber = '';
   };
+  $scope.removeInput = function(){
+    $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
+  };
 })
 
 .directive('dialer', function(){

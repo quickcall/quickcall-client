@@ -3,7 +3,7 @@ angular.module('app.services', [
 .factory('DialerFactory', function ($http, $ionicPopup) {
   var call = function(destinationNumber) {
 
-    var sourceNumber = '';
+    var sourceNumber = '16508888614';
 
     var serverData = {
       dst: destinationNumber,
