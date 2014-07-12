@@ -1,0 +1,25 @@
+<form class="list">
+  <label class="item-input show-dial-input">
+  <input type="tel" placeholder="Enter a Number" value="{{phoneNumber}}" />
+  </label>
+</form>
+
+<ul class="keypad">
+  <li on-tap="addInput(1)">1</li>
+  <li on-tap="addInput(2)">2</li>
+  <li on-tap="addInput(3)">3</li>
+  <li on-tap="addInput(4)">4</li>
+  <li on-tap="addInput(5)">5</li>
+  <li on-tap="addInput(6)">6</li>
+  <li on-tap="addInput(7)">7</li>
+  <li on-tap="addInput(8)">8</li>
+  <li on-tap="addInput(9)">9</li>
+  <li on-tap="removeInput()">
+  <i class="ion-ios7-close-outline"></i>
+  </li>
+  <li on-tap="addInput(0)">0</li>
+  <li on-tap="makeCall()" class="make-call">
+    <i class="ion-android-call"></i>
+  </li>
+</ul>
+

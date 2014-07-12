@@ -1,0 +1,9 @@
+{
+  "globals":{
+   "angular": true
+  },
+  "eqeqeq": true,
+  "browser": true,
+  "camelcase": true,
+  "indent": "2"
+}
