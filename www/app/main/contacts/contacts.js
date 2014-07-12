@@ -13,7 +13,6 @@ angular.module('app.main.contacts', [
     });
 })
 .controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory){
-  console.log('Contacts CTRl linked!');
   $scope.index = 0;
   $scope.friends = [
     {
@@ -76,6 +75,7 @@ angular.module('app.main.contacts', [
     $scope.modal = modal;
   });
   $scope.openModal = function(target) {
+    console.log(target);
     $scope.index = target;
     $scope.modal.show();
   };
