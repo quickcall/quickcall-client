@@ -13,6 +13,7 @@ angular.module('app.main.dialer', [
     });
 })
 .controller('DialerCtrl', function($scope, DialerFactory){
+  $scope.show = true;
   $scope.phoneNumber = '';
 
   $scope.addInput = function(num) {

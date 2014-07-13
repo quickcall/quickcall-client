@@ -2,3 +2,7 @@
 div .dial {
   margin-top: 75%;
 }
+
+.contacts-scroller {
+  z-index: -100;
+}
