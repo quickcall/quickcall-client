@@ -78,6 +78,36 @@ angular.module('app.main.contacts', [
       description: "AWESOME!",
       phoneNumber: "415-514-1234"
     },
+    {
+      name: "Alexander Phillip",
+      imgPath: 'alexPhillip.jpeg',
+      description: "AWESOME!",
+      phoneNumber: "415-514-1234"
+    },
+    {
+      name: "Alexander Phillip",
+      imgPath: 'alexPhillip.jpeg',
+      description: "AWESOME!",
+      phoneNumber: "415-514-1234"
+    },
+    {
+      name: "Alexander Phillip",
+      imgPath: 'alexPhillip.jpeg',
+      description: "AWESOME!",
+      phoneNumber: "415-514-1234"
+    },
+    {
+      name: "Alexander Phillip",
+      imgPath: 'alexPhillip.jpeg',
+      description: "AWESOME!",
+      phoneNumber: "415-514-1234"
+    },
+    {
+      name: "Alexander Phillip",
+      imgPath: 'alexPhillip.jpeg',
+      description: "AWESOME!",
+      phoneNumber: "415-514-1234"
+    },
   ];
 
   //to call number when they are called

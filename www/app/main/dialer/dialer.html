@@ -1,6 +1,7 @@
 <ion-view title="Who do you want to call today?">
 <div class="contacts-scroller" ng-controller="ContactsCtrl" ng-if='show'>
   <ion-content>
+  <ion-scroll has-bouncing="true">
     <ion-list ng-repeat="friend in friends">
       <ion-item>
         {{ friend.name }}
@@ -9,10 +10,10 @@
       </ion-item>
     </ion-list>
   </ion-content>
+  </ion-scroll>
 </div>
 <ion-content>
   <div class="dial">
     <dialer></dialer>
 </ion-content>
-</div>
 </ion-view>
