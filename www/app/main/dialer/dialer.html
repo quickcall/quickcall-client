@@ -1,19 +1,17 @@
 <ion-view title="Who do you want to call today?">
-<div class="contacts-scroller" ng-controller="ContactsCtrl" ng-if='show'>
-  <ion-content>
-  <ion-scroll has-bouncing="true">
-    <ion-list ng-repeat="friend in friends">
+<!-- <div class="contacts-scroller" ng-controller="ContactsCtrl" > -->
+  <ion-scroll ng-controller="ContactsCtrl">
+    <div ng-repeat="friend in friends">
       <ion-item>
         {{ friend.name }}
         {{ friend.phoneNumber }}
-      <ion-option-button class="button-assertive">Share</ion-option-button>
       </ion-item>
-    </ion-list>
-  </ion-content>
+    </div>
   </ion-scroll>
-</div>
+<!-- </div> -->
 <ion-content>
   <div class="dial">
     <dialer></dialer>
+  </div>
 </ion-content>
 </ion-view>

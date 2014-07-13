@@ -56,58 +56,7 @@ angular.module('app.main.contacts', [
       imgPath: "spaceCat.jpg",
       description: "RARGH MEOW RARG! PEW PEW LAZORS",
       phoneNumber: "YOU CAN NEVER GET THIS"
-    },
-    {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },{
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },{
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },{
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
-    {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
-    {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
-    {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
-    {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
-    {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
+    }
   ];
 
   //to call number when they are called

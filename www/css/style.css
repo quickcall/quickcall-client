@@ -1,6 +1,7 @@
 /* Empty. Add your own CSS if you like */
 div .dial {
   margin-top: 89%;
+  z-index: 100;
 }
 
 .contacts-scroller {
