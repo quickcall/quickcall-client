@@ -2,3 +2,7 @@
 .card {
   text-align: center;
 }
+
+paper-ripple {
+  color: #4285f4;
+}
