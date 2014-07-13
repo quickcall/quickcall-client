@@ -1,9 +1,9 @@
 /* Empty. Add your own CSS if you like */
-div .dial {
-  margin-top: 89%;
-  z-index: 100;
+/*div .dial {
+z-index: 10;
+position: absolute;
+width: 100%;
+overflow: hidden;
+min-height: 100%;
 }
-
-.contacts-scroller {
-  z-index: -100;
-}
+*/

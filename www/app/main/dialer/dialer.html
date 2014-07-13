@@ -1,17 +1,20 @@
-<ion-view title="Who do you want to call today?">
-<!-- <div class="contacts-scroller" ng-controller="ContactsCtrl" > -->
-  <ion-scroll ng-controller="ContactsCtrl">
-    <ion-list ng-repeat="friend in friends">
-      <ion-item>
-        {{ friend.name }}
-        {{ friend.phoneNumber }}
-      </ion-item>
-    </ion-list>
-  </ion-scroll>
-<!-- </div> -->
+<!-- <ion-view title="Who do you want to call today?">
 <ion-content>
-  <div class="dial">
-    <dialer></dialer>
+  <div class="card" ng-repeat="friend in friends">
+    <div>
+      {{ friend.name }}
+      {{ friend.phoneNumber }}
+    </div>
   </div>
+  <div>
+    <dialer></dialer>
+  <div>
 </ion-content>
-</ion-view>
+</ion-view> -->
+<div style="z-index: 10">
+  <dialer></dialer>
+</div>
+<div>
+  <dialer></dialer>
+</div>
+
