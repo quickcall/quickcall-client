@@ -3,7 +3,7 @@
   <input type="tel" placeholder="Enter a Number" value="{{phoneNumber}}" />
   </label>
 </form>
-<ul class="keypad">
+<ul class="keypad" on-tap="showDialer()">
   <li on-tap="addInput(1)">1</li>
   <li on-tap="addInput(2)">2</li>
   <li on-tap="addInput(3)">3</li>
