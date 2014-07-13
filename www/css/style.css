@@ -1,9 +1,4 @@
 /* Empty. Add your own CSS if you like */
-/*div .dial {
-z-index: 10;
-position: absolute;
-width: 100%;
-overflow: hidden;
-min-height: 100%;
+.dialer {
+  margin-top: 96%;
 }
-*/
