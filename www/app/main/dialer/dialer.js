@@ -101,6 +101,8 @@ angular.module('app.main.dialer', [
 .directive('dialer', function(){
   return {
     restrict: 'E',
-    templateUrl: 'app/main/dialer/dialer-directive.html'
+    templateUrl: 'app/main/dialer/dialer-directive.html',
+    replace: true,
+    scope: true
   };
 });
