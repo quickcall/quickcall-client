@@ -1,12 +1,12 @@
 <ion-view title="Who do you want to call today?">
 <!-- <div class="contacts-scroller" ng-controller="ContactsCtrl" > -->
   <ion-scroll ng-controller="ContactsCtrl">
-    <div ng-repeat="friend in friends">
+    <ion-list ng-repeat="friend in friends">
       <ion-item>
         {{ friend.name }}
         {{ friend.phoneNumber }}
       </ion-item>
-    </div>
+    </ion-list>
   </ion-scroll>
 <!-- </div> -->
 <ion-content>
