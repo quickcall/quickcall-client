@@ -14,12 +14,18 @@ angular.module('app.main.settings', [
 })
 .controller('SettingsCtrl', function($scope, $ionicModal, DialerFactory){
   $scope.currentUser = DialerFactory.currentUser;
+  $scope.check = false;
 
-  $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
+
+
+  $ionicModal.fromTemplateUrl('/app/main/settings/loginModal.html', {
     scope: $scope,
     animation: 'slide-in-up'
   }).then(function(modal) {
     $scope.modal = modal;
+    if(!$scope.currentUser.username){
+      $scope.openModal();
+    }
   });
   $scope.openModal = function(target) {
     $scope.index = target;
