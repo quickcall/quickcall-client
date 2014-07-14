@@ -14,13 +14,18 @@ angular.module('app.main.dialer', [
     });
 })
 .controller('DialerCtrl', function($scope, DialerFactory, $ionicModal, $cordovaContacts){
-  $scope.contacts;
+  $scope.contacts = [];
   $scope.getContacts = function() {
     $cordovaContacts.find({})
       .then(function(result) {
-        console.log(result);
+        for (var i = 0; i < result.length; i++) {
+          if(result[i].phoneNumbers) {
+            $scope.contacts.push(result[i]);
+          }
+        };
     });
-  }
+    console.log($scope.contacts);
+  };
   $scope.show = false;
 
   $scope.showDialer = function() {
