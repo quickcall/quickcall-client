@@ -1,0 +1,33 @@
+
+.keypad {
+  width: 100%;
+}
+.keypad > li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 1em;
+  border: 1px solid #E0F8E0;
+  border-bottom: none;
+  background: #f8f8f8;
+}
+.keypad .make-call {
+  background: #66cc33;
+}
+// .keypad .remove-input {
+//   background: #ef4e3a;
+// }
+
+.key:nth-child(3n+3) {
+  border-right: none;
+}
+
+.item-input.show-dial-input {
+  background-color: none;
+  border-color: #fff;
+}
+.show-dial-input > input[type="tel"] {
+  padding:0;
+  font-size:1em;
+}

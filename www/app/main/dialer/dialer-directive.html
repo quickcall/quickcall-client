@@ -5,20 +5,20 @@
     </label>
   </form>
   <ul class="keypad">
-    <li on-tap="addInput(1)">1</li>
-    <li on-tap="addInput(2)">2</li>
-    <li on-tap="addInput(3)">3</li>
-    <li on-tap="addInput(4)">4</li>
-    <li on-tap="addInput(5)">5</li>
-    <li on-tap="addInput(6)">6</li>
-    <li on-tap="addInput(7)">7</li>
-    <li on-tap="addInput(8)">8</li>
-    <li on-tap="addInput(9)">9</li>
-    <li on-tap="removeInput()">
+    <li ng-click="addInput(1)">1</li>
+    <li ng-click="addInput(2)">2</li>
+    <li ng-click="addInput(3)">3</li>
+    <li ng-click="addInput(4)">4</li>
+    <li ng-click="addInput(5)">5</li>
+    <li ng-click="addInput(6)">6</li>
+    <li ng-click="addInput(7)">7</li>
+    <li ng-click="addInput(8)">8</li>
+    <li ng-click="addInput(9)">9</li>
+    <li ng-click="removeInput()">
     <i class="ion-ios7-close-outline"></i>
     </li>
-    <li on-tap="addInput(0)">0</li>
-    <li on-tap="makeCall()" class="make-call">
+    <li ng-click="addInput(0)">0</li>
+    <li ng-click="makeCall()" class="make-call">
       <i class="ion-android-call"></i>
     </li>
   </ul>

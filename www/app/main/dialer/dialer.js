@@ -38,6 +38,7 @@ angular.module('app.main.dialer', [
 
   $scope.addInput = function(num) {
     $scope.phoneNumber += num;
+    console.log($scope.phoneNumber);
   };
   $scope.makeCall = function() {
     DialerFactory.call($scope.phoneNumber);
