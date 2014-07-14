@@ -12,10 +12,33 @@ angular.module('app.main.settings', [
       }
     });
 })
-.controller('SettingsCtrl', function($scope, DialerFactory){
+.controller('SettingsCtrl', function($scope, $ionicModal, DialerFactory){
   $scope.currentUser = DialerFactory.currentUser;
-  if(!$scope.currentUser.username || !$scope.currentUser.number){
-    $scope.currentUser.username = prompt('WTF is u name!????');
-    $scope.currentUser.number = prompt("WUT UR NUMBER!?");
-  }
+
+  $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  $scope.openModal = function(target) {
+    $scope.index = target;
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  // Execute action on hide modal
+  $scope.$on('modal.hidden', function() {
+    // Execute action
+  });
+  // Execute action on remove modal
+  $scope.$on('modal.removed', function() {
+    // Execute action
+  });
+
 });
