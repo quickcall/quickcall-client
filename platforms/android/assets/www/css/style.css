@@ -1,9 +1,13 @@
 /* Empty. Add your own CSS if you like */
-.card {
+.dialer-card {
   text-align: center;
   padding-top: 36%;
 }
 
 paper-ripple {
   color: #4285f4;
+}
+
+form placeholder: {
+  text-align: center;
 }
