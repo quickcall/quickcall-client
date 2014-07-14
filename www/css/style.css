@@ -1,9 +1,18 @@
 /* Empty. Add your own CSS if you like */
 .dialer-card {
-  padding-top: 36%;
-  position: fixed;
+  /*padding-top: 36%;*/
+  /*position: fixed;*/
+}
+.recent-contacts {
+  max-height: 226px;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 paper-ripple {
   color: #4285f4;
+}
+
+.has-header {
+  top: 39px;
 }
