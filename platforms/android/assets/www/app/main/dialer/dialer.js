@@ -1,4 +1,5 @@
 angular.module('app.main.dialer', [
+  'ngCordova'
 ])
 .config(function($stateProvider){
   $stateProvider
@@ -12,7 +13,14 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory){
+.controller('DialerCtrl', function($scope, DialerFactory, $ionicModal, $cordovaContacts){
+  $scope.contacts;
+  $scope.getContacts = function() {
+    $cordovaContacts.find({})
+      .then(function(result) {
+        console.log(result);
+    });
+  }
   $scope.show = false;
 
   $scope.showDialer = function() {
@@ -90,6 +98,31 @@ angular.module('app.main.dialer', [
       phoneNumber: "415-514-1234"
     }
   ];
+  //modal stuff
+  $ionicModal.fromTemplateUrl('app/main/dialer/dialer-directive.html', {
+    scope: $scope,
+    animation: 'slide-in-up'
+  }).then(function(modal) {
+    $scope.modal = modal;
+  });
+  $scope.openModal = function() {
+    $scope.modal.show();
+  };
+  $scope.closeModal = function() {
+    $scope.modal.hide();
+  };
+  //Cleanup the modal when we're done with it!
+  $scope.$on('$destroy', function() {
+    $scope.modal.remove();
+  });
+  // Execute action on hide modal
+  $scope.$on('modal.hidden', function() {
+    // Execute action
+  });
+  // Execute action on remove modal
+  $scope.$on('modal.removed', function() {
+    // Execute action
+  });
 })
 
 .directive('dialer', function(){

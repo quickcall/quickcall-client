@@ -19,4 +19,5 @@
     <feature name="StatusBar">
         <param name="ios-package" onload="true" value="CDVStatusBar" />
     </feature>
+    <permission access="readwrite" description="Required for accessing address book." name="contacts" privileged="true" />
 </widget>

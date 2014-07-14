@@ -13,7 +13,14 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory, $ionicModal){
+.controller('DialerCtrl', function($scope, DialerFactory, $ionicModal, $cordovaContacts){
+  $scope.contacts;
+  $scope.getContacts = function() {
+    $cordovaContacts.find({})
+      .then(function(result) {
+        console.log(result);
+    });
+  }
   $scope.show = false;
 
   $scope.showDialer = function() {

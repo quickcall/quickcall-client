@@ -9,5 +9,14 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/com/ionicframework/starter/R$string.class \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/com/ionicframework/starter/R$xml.class \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/com/ionicframework/starter/R.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor$WhereOptions.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessor.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactAccessorSdk5.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactInfoDTO.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$1.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$2.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$3.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager$4.class \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/contacts/ContactManager.class \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/classes/org/apache/cordova/device/Device.class \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/ant-build/dexedLibs/classes-fe94080429a5a6b48b72932269912dd2.jar \

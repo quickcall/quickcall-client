@@ -3,9 +3,8 @@
       <div class="card" ng-repeat="friend in friends" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped">
         <div class="face front">
           <div class="item item-divider">{{ friend.name }}</div>
-          <div class="item item-text-wrap" on-tap="openModal()">
+          <div class="item item-text-wrap" on-tap="getContacts()">
             <paper-ripple fit></paper-ripple>
-            <a>{{ friend.phoneNumber }}</a>
           </div>
         </div>
       </div>

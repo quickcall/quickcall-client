@@ -1,23 +1,12 @@
-<!-- <ion-view title="Who do you want to call today?">
-  <div class="card" ng-repeat="friend in friends">
-    <div>
-      {{ friend.name }}
-      {{ friend.phoneNumber }}
-    </div>
-  </div>
-<ion-content>
-  <dialer></dialer>
-</ion-content>
-</ion-view> -->
 <ion-view title="My Contacts">
   <ion-content overflow-scroll="true">
-    <div class="card" ng-repeat="friend in friends">
-
-      <div class="item item-divider">{{ friend.name }}</div>
-      <div class="item item-text-wrap">
-      {{ friend.description }}
+      <div class="card" ng-repeat="friend in friends" ng-class="{'flipped':isFlipped}" ng-click="isFlipped=!isFlipped">
+        <div class="face front">
+          <div class="item item-divider">{{ friend.name }}</div>
+          <div class="item item-text-wrap" on-tap="getContacts()">
+            <paper-ripple fit></paper-ripple>
+          </div>
+        </div>
       </div>
-      <div class="item item-divider"> <paper-ripple fit></paper-ripple><a>{{ friend.phoneNumber }}</a></div>
-    </div>
   </ion-content>
 </ion-view>
