@@ -12,4 +12,10 @@ angular.module('app.main.settings', [
       }
     });
 })
-.controller('SettingsCtrl', function($scope){});
+.controller('SettingsCtrl', function($scope, DialerFactory){
+  $scope.currentUser = DialerFactory.currentUser;
+  if(!$scope.currentUser.username || !$scope.currentUser.number){
+    $scope.currentUser.username = prompt('WTF is u name!????');
+    $scope.currentUser.number = prompt("WUT UR NUMBER!?");
+  }
+});
