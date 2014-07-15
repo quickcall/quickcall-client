@@ -1,33 +1,32 @@
 angular.module('app.services', [
+  'ngCordova'
 ])
 .factory('DialerFactory', function ($http, $ionicPopup) {
   var recentNumbers = [];
+  var currentUser = {};
 
   var call = function(destinationNumber) {
-    
     recentNumbers.push(destinationNumber);
-    
+
     if(recentNumbers.length > 3){
       recentNumbers.shift();
     }
 
-    var sourceNumber = '';
-
+    console.log(recentNumbers);
 
     var serverData = {
       dst: destinationNumber,
-      src: sourceNumber
+      src: currentUser.number
     };
 
     var formatNumber = function(number){
       var arr = number.split('');
       arr.splice(0,1);
-      return '(' + 
-        arr.splice(0,3).join('') + ") " + 
-        arr.splice(0,3).join('') + "-" + 
+      return '(' +
+        arr.splice(0,3).join('') + ") " +
+        arr.splice(0,3).join('') + "-" +
         arr.splice(0,4).join('');
     };
-
 
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
@@ -43,10 +42,37 @@ angular.module('app.services', [
 
   return {
     call: call,
-    recentNumbers : recentNumbers
+    recentNumbers : recentNumbers,
+    currentUser: currentUser
   };
-}).factory('ContactsFactory', function(){
-  var contacts = [
+})
+.factory('ContactsFactory', function($cordovaContacts){
+  var cache;
+
+  var phoneContacts = function(){
+    var options = {};
+    if(cache) {
+      return cache;
+    } else {
+      return $cordovaContacts.find(options)
+        .then(function(results) {
+          return cache = _(results).filter(function(result) {
+            return result.displayName;
+          })
+          .reduce(function(result, contact) {
+            var user = {
+              name: contact.displayName,
+              phoneNumbers: contact.phoneNumbers,
+              photos: contact.photos
+            };
+            result.push(user);
+            return result;
+          }, []);
+      });
+    }
+  };
+
+  var dummyContacts = [
     {
       name: "Alexander Phillip",
       imgPath: 'alexPhillip.jpeg',
@@ -91,6 +117,7 @@ angular.module('app.services', [
     }
   ];
   return {
-    contacts: contacts
+    contacts: phoneContacts,
+    dummyContacts: dummyContacts
   };
 });

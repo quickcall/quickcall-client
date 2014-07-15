@@ -55,6 +55,7 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer/dialer-directive.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer/dialer.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer/dialer.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings/loginModal.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings/settings.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings/settings.js \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/services/services.js \
@@ -87,6 +88,7 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/core-meta \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/font-roboto \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ionic \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ngCordova \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/paper-ripple \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/platform \
@@ -236,6 +238,15 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-icons.scss \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ionic/scss/ionicons/_ionicons-variables.scss \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ionic/scss/ionicons/ionicons.scss \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/bower.json \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/LICENSE.txt \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist/lodash.compat.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist/lodash.compat.min.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist/lodash.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist/lodash.min.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist/lodash.underscore.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/lodash/dist/lodash.underscore.min.js \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ngCordova/bower.json \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ngCordova/config \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/ngCordova/demo \

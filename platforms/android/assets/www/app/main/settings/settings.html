@@ -1,22 +1,24 @@
 <ion-view title="Settings">
     <p>Settings</p>
     <ion-content class='has-header padding'>
+    <div></div>
     <ul class="list">
     <div class="item item-divider">Account</div>
-    <a class="item item-icon-left" href="#">
+    <a class="item item-icon-left">
         <i class="icon ion-ios7-person"></i>
-        Your Caller ID
+        User:
         <span class="item-note">
-            1(415)612-1287
+            {{currentUser.username || ''}}: ({{currentUser.number || ''}})
         </span>
     </a>
-    <a class="item item-icon-left" href="#">
+    <!-- Credit is currently disabled, as we haven't discussed payment options -->
+    <!-- <a class="item item-icon-left" href="#">
         <i class="icon ion-card"></i>
         Buy Credit
         <span class="item-note">
            $1 = aprox. 60-80 minutes of call.
         </span>
-    </a>
+    </a> -->
     </div>
       <li class="item item-toggle">
          Sexy Mode

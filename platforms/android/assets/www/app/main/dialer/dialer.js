@@ -16,6 +16,7 @@ angular.module('app.main.dialer', [
 .controller('DialerCtrl', function($scope, DialerFactory){
 
   $scope.recentNumbers = DialerFactory.recentNumbers;
+  console.log($scope.recentNumbers);
   $scope.show = false;
 
   $scope.phoneNumber = '';
@@ -31,8 +32,10 @@ angular.module('app.main.dialer', [
   $scope.removeInput = function(){
     $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
-})
 
+  $scope.username = DialerFactory.currentUser.username || 'Kia';
+  console.log(DialerFactory.currentUser);
+})
 .directive('dialer', function(){
   return {
     restrict: 'E',

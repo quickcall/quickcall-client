@@ -1,0 +1,23 @@
+<div class="modal">
+  <ion-header-bar>
+    <h1 class="title">Login</h1>
+  </ion-header-bar>
+  <ion-content>
+    <div class="list">
+      <form novalidate class='simple-form'>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Name</span>
+        <input type="text" placeholder="Name" ng-model='currentUser.username' required/>
+      </label>
+      <label class="item item-input item-stacked-label">
+        <span class="input-label">Phone Number</span>
+        <input type="text" placeholder="Phone Number" ng-model='currentUser.number' required/>
+      </label>
+      </form>
+      <button ng-disabled='form.$invalid || !currentUser.username || !currentUser.number' 
+      ui-sref='app.main.dialer' class="button button-block button-positive">
+        Login
+      </button>
+    </div>
+  </ion-content>
+</div>

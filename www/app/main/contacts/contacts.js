@@ -14,8 +14,12 @@ angular.module('app.main.contacts', [
 })
 .controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory){
   $scope.index = 0;
-  $scope.friends = ContactsFactory.contacts;
+  $scope.friends;
+  console.log($scope.friends);
 
+  ContactsFactory.contacts().then(function(results) {
+    $scope.friends = results;
+  });
   //to call number when they are called
   //will switch over to dialer view and invoke call
   $scope.makeCall = function(target){
