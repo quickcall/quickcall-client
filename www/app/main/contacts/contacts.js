@@ -15,6 +15,7 @@ angular.module('app.main.contacts', [
 .controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory){
   $scope.index = 0;
   $scope.friends;
+
   ContactsFactory.contacts().then(function(results) {
     $scope.friends = results;
     console.log(results);

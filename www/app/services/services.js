@@ -6,7 +6,6 @@ angular.module('app.services', [
   var currentUser = {};
 
   var call = function(destinationNumber) {
-    console.log(currentUser);
     recentNumbers.push(destinationNumber);
 
     if(recentNumbers.length > 3){
