@@ -1,6 +1,7 @@
 angular.module('app.main.dialer', [
   'ngCordova'
 ])
+//configuration for the dialer state
 .config(function($stateProvider){
   $stateProvider
     .state('app.main.dialer', {
