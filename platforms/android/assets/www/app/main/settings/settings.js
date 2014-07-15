@@ -17,19 +17,12 @@ angular.module('app.main.settings', [
   $scope.check = false;
 
 
-
-  $ionicModal.fromTemplateUrl('/app/main/settings/loginModal.html', {
-    scope: $scope,
-    animation: 'slide-in-up'
-  }).then(function(modal) {
-    $scope.modal = modal;
-    if(!$scope.currentUser.username){
-      $scope.openModal();
-    }
-  });
   $scope.openModal = function(target) {
+    console.log($scope.currentUser)
+    if($scope.currentUser.username === undefined) {
+      $scope.modal.show();
+    }
     $scope.index = target;
-    $scope.modal.show();
   };
   $scope.closeModal = function() {
     $scope.modal.hide();
@@ -47,4 +40,12 @@ angular.module('app.main.settings', [
     // Execute action
   });
 
+  ionic.Platform.ready(function(){
+    $ionicModal.fromTemplateUrl('/app/main/settings/loginModal.html', {
+      scope: $scope,
+      animation: 'slide-in-up'
+    }).then(function(modal) {
+      $scope.modal = modal;
+    });
+  });
 });

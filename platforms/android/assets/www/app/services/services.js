@@ -6,7 +6,6 @@ angular.module('app.services', [
   var currentUser = {};
 
   var call = function(destinationNumber) {
-    console.log(currentUser);
     recentNumbers.push(destinationNumber);
 
     if(recentNumbers.length > 3){
@@ -52,7 +51,7 @@ angular.module('app.services', [
 
   var phoneContacts = function(){
     var options = {};
-    if(typeof cache === 'object') {
+    if(cache) {
       return cache;
     } else {
       return $cordovaContacts.find(options)

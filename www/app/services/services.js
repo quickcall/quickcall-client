@@ -51,7 +51,7 @@ angular.module('app.services', [
 
   var phoneContacts = function(){
     var options = {};
-    if(typeof cache === 'object') {
+    if(cache) {
       return cache;
     } else {
       return $cordovaContacts.find(options)

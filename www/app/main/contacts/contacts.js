@@ -15,10 +15,10 @@ angular.module('app.main.contacts', [
 .controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory){
   $scope.index = 0;
   $scope.friends;
+  console.log($scope.friends);
 
   ContactsFactory.contacts().then(function(results) {
     $scope.friends = results;
-    console.log(results);
   });
   //to call number when they are called
   //will switch over to dialer view and invoke call
