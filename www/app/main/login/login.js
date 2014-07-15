@@ -12,6 +12,7 @@ angular.module('app.main.login', [
       }
     });
 })
-.controller('LoginCtrl', function($scope){
+.controller('LoginCtrl', function($scope, DialerFactory){
+  $scope.currentUser = DialerFactory.currentUser;
 
 });

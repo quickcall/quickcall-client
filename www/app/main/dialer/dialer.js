@@ -13,11 +13,16 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory){
-
+.controller('DialerCtrl', function($scope, DialerFactory, $state){
   $scope.recentNumbers = DialerFactory.recentNumbers;
+  $scope.username = DialerFactory.currentUser.username;
+  console.log(DialerFactory.currentUser);
   console.log($scope.recentNumbers);
   $scope.show = false;
+  
+  if(!$scope.username){
+    $state.go('app.main.login');
+  }
 
   $scope.phoneNumber = '';
 
@@ -33,8 +38,7 @@ angular.module('app.main.dialer', [
     $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
 
-  $scope.username = DialerFactory.currentUser.username || 'Kia';
-  console.log(DialerFactory.currentUser);
+  
 })
 .directive('dialer', function(){
   return {

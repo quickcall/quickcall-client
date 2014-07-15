@@ -23,7 +23,7 @@ angular.module('app', [
       abstract: true,
       templateUrl: 'index.html'
     });
-    $urlRouterProvider.otherwise('app/main/settings');
+    $urlRouterProvider.otherwise('app/main/login');
 }).filter('tel', function () {
     return function (tel) {
         if (!tel) { return ''; }

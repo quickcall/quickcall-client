@@ -12,10 +12,14 @@ angular.module('app.main.contacts', [
       }
     });
 })
-.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory){
+.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory, $state){
   $scope.index = 0;
   $scope.friends = ContactsFactory.dummyContacts;
   console.log($scope.friends);
+  $scope.currentUser = DialerFactory.currentUser.username;
+  if(!$scope.currentUser){
+    $state.go('app.main.login');
+  }
 
   // ContactsFactory.contacts().then(function(results) {
   //   $scope.friends = results;
