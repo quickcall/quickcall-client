@@ -1,26 +1,32 @@
 angular.module('app.services', [
   'ngCordova'
 ])
+//DialerFactory: Used to track the current user, recent numbers, and to make calls
 .factory('DialerFactory', function ($http, $ionicPopup) {
+  
+  //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
+
+  //currentUser object, has a username and number property
   var currentUser = {};
   currentUser.username;
   currentUser.number;
 
+  //call function, sends post request to server
   var call = function(destinationNumber) {
+    //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
     recentNumbers.push(destinationNumber);
-
     if(recentNumbers.length > 3){
       recentNumbers.shift();
     }
 
-    console.log(recentNumbers);
-
+    //The server expects an object with a dst, the number user is calling, and src, user's number
     var serverData = {
       dst: destinationNumber,
       src: currentUser.number
     };
 
+    //This is a sloppy way to make the number in the alert pop-up look nice, courtesy of Kia :-)
     var formatNumber = function(number){
       var arr = number.split('');
       arr.splice(0,1);
@@ -30,11 +36,13 @@ angular.module('app.services', [
         arr.splice(0,4).join('');
     };
 
+    //This popup show's up in the screen when a call is initiated
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
       template: formatNumber(destinationNumber)
     });
 
+    //The actual server post request
     return $http({
       method: 'POST',
       url: 'http://simple-dialer.herokuapp.com/call',
@@ -42,20 +50,26 @@ angular.module('app.services', [
     });
   };
 
+  //The DialerFactory returns, usable in other controllers when DialerFactory is injected
   return {
     call: call,
     recentNumbers : recentNumbers,
     currentUser: currentUser
   };
 })
+
+//The ContactsFactory, used to get, store, and share between views
 .factory('ContactsFactory', function($cordovaContacts){
+  //cache, so you don't have to pull the phones contacts multiple times if they are already there
   var cache;
 
+  //used on phone to get phone's native contacts. Cordova expects them to have the below properties
   var phoneContacts = function(){
     var options = {};
     if(cache) {
       return cache;
     } else {
+      //$cordovaContacts returns promise
       return $cordovaContacts.find(options)
         .then(function(results) {
           return cache = _(results).filter(function(result) {
@@ -74,6 +88,8 @@ angular.module('app.services', [
     }
   };
 
+  /*dummyContacts used for local testing, cordova doesn't work unless on actual phone 
+  so you can use this instead for testing purposes*/
   var dummyContacts = [
     {
       name: "DH Lee",
@@ -82,6 +98,7 @@ angular.module('app.services', [
       phoneNumbers: [{value: "14155345337"}]
     },
     {
+      //just an incredibly sexy dude (^_^)
       name: "Kia Fathi",
       photos: [{value: "img/kiaFathi.jpg"}],
       description: "HR14 Fullstack Software Engineer",
@@ -100,6 +117,7 @@ angular.module('app.services', [
       phoneNumbers: [{value:"12294128411"}]
     }
   ];
+  //returns of the ContactsFactory, usable wherever ContactsFactory is injected
   return {
     contacts: phoneContacts,
     dummyContacts: dummyContacts
