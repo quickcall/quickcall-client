@@ -23,7 +23,7 @@ angular.module('app', [
       abstract: true,
       templateUrl: 'index.html'
     });
-    $urlRouterProvider.otherwise('app/main/dialer');
+    $urlRouterProvider.otherwise('app/main/settings');
 }).filter('tel', function () {
     return function (tel) {
         if (!tel) { return ''; }

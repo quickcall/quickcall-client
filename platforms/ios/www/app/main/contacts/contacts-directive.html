@@ -1,5 +1,5 @@
-<img ng-click='openModal($index)' src='img/{{friend.imgPath}}'/>
+<img ng-click='openModal($index)' src='{{friend.photos[0].value}}'/>
 <h2>{{friend.name}}</h2>
-<i ng-click='makeCall({{friend}})' class='icon ion-ios7-telephone'></i>
+<i ng-click='makeCall({{friend.phoneNumbers[0].value}})' class='icon ion-ios7-telephone'></i>
 
 
