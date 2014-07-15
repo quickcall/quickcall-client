@@ -1,6 +1,6 @@
 <ion-view title="Contacts">
   <ion-content class="has-header" overflow-scroll='true'>
-    <div ng-repeat="friend in friends">
+    <div ng-repeat="friend in friends" ng-click='openModal($index)'>
       <contact  class="item item-avatar item-icon-right"></contact>
     </div>
   </ion-content>

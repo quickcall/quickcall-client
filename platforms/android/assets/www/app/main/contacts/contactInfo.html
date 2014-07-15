@@ -5,26 +5,26 @@
   </ion-header-bar>
   <ion-content>
     <div class="item item-thumbnail-left" ng-click='closeModal()'>
-      <img ng-src="img/{{friends[index].imgPath}}">
+      <img ng-src="img/{{friends[index].photos[0]}}">
     </div>
     <div class="list card" ng-click='closeModal();'>
 
       <a href="" class="item item-icon-left">
         <i class="icon ion-person"></i>
-        {{friends[index].name}}
+        {{friends.name}}
       </a>
 
       <a href="" class="item item-icon-left" ng-click='makeCall()'>
         <i class="icon ion-ios7-telephone"></i>
-        {{friends[index].phoneNumber|tel}}
+        {{friends.phoneNumbers[0].value | tel}}
       </a>
 
-      <div class='item item-body'>
+     <!--  <div class='item item-body'>
         <div class='item-icon-left'>
         <i class="icon ion-ios7-paper"></i>
         <p>{{friends[index].description}}</p>
         </div>
-      </div>
+      </div> -->
 
     </div>
   </ion-content>
