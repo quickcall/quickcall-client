@@ -24,6 +24,7 @@ angular.module('app.main.contacts', [
   //will switch over to dialer view and invoke call
   $scope.makeCall = function(target){
     //index is the active user
+    console.log(target);
     target = target || $scope.friends[$scope.index];
     return DialerFactory.call(target.phoneNumbers[0].value);
   };
@@ -36,6 +37,7 @@ angular.module('app.main.contacts', [
   });
   $scope.openModal = function(target) {
     $scope.index = target;
+    console.log($scope.index);
     $scope.modal.show();
   };
   $scope.closeModal = function() {

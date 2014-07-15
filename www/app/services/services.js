@@ -4,6 +4,8 @@ angular.module('app.services', [
 .factory('DialerFactory', function ($http, $ionicPopup) {
   var recentNumbers = [];
   var currentUser = {};
+  currentUser.username;
+  currentUser.number;
 
   var call = function(destinationNumber) {
     recentNumbers.push(destinationNumber);
@@ -83,19 +85,19 @@ angular.module('app.services', [
       name: "Kia Fathi",
       photos: [{value: "img/kiaFathi.jpg"}],
       description: "HR14 Fullstack Software Engineer",
-      phoneNumber: [{value:"16508888614"}]
+      phoneNumbers: [{value:"16508888614"}]
     },
     {
       name: "Jakob Harclerode",
       photos: [{value: "img/yahkob.jpg"}],
       description: "HR14 Fullstack Software Engineer, Heavy Metal",
-      phoneNumber: [{value:"19286996726"}]
+      phoneNumbers: [{value:"19286996726"}]
     },
     {
       name: "Mason Hargrove",
       photos: [{value: "img/mase87.jpg"}],
       description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
-      phoneNumber: [{value:"12294128411"}]
+      phoneNumbers: [{value:"12294128411"}]
     }
   ];
   return {

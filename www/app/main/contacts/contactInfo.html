@@ -14,7 +14,7 @@
         {{friends[index].name}}
       </a>
 
-      <a href="" class="item item-icon-left" ng-click='makeCall()'>
+      <a href="" class="item item-icon-left" ng-click='makeCall($index)'>
         <i class="icon ion-ios7-telephone"></i>
         {{ friends[index].phoneNumbers[0].value }}
       </a>
