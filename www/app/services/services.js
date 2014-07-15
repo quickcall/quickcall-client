@@ -3,21 +3,21 @@ angular.module('app.services', [
 .factory('DialerFactory', function ($http, $ionicPopup) {
   var recentNumbers = [];
   var currentUser = {};
-  var sourceNumber = currentUser.phoneNumber || '';
 
   var call = function(destinationNumber) {
-    
+    console.log(currentUser);
     recentNumbers.push(destinationNumber);
     
     if(recentNumbers.length > 3){
       recentNumbers.shift();
     }
 
+    console.log(recentNumbers);
 
 
     var serverData = {
       dst: destinationNumber,
-      src: sourceNumber
+      src: currentUser.number
     };
 
     var formatNumber = function(number){
@@ -41,7 +41,6 @@ angular.module('app.services', [
       data: JSON.stringify(serverData)
     });
   };
-
   return {
     call: call,
     recentNumbers : recentNumbers,
