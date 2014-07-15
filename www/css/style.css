@@ -14,9 +14,6 @@
 .card {
   box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
 }
-.title {
-  box-shadow: 0 0px 10px 0 grey;
-}
 
 paper-ripple {
   color: #4285f4;
