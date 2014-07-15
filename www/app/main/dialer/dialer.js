@@ -19,26 +19,25 @@ angular.module('app.main.dialer', [
   $scope.recentNumbers = DialerFactory.recentNumbers;
 
   $scope.username = DialerFactory.currentUser.username;
-  //???
-  $scope.show = false;
-  //If there is no user save redirect to the login page
+  
+  //If there is no user saved redirect to the login page
   if(!$scope.username){
     $state.go('app.main.login');
   }
   //Number that is displayed on dialer input
   $scope.phoneNumber = '';
-  //Adds number on button click to the phoneNumber string to be sent to server
+  //Adds number to the phoneNumber string
   $scope.addInput = function(num) {
     $scope.phoneNumber += num;
+  };
+  //Removes the last number in the string
+  $scope.removeInput = function(){
+    $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
   //Sends Http request to server with phoneNumber then resets the number back to ''
   $scope.makeCall = function() {
     DialerFactory.call($scope.phoneNumber);
     $scope.phoneNumber = '';
-  };
-  //Removes the last number in the string on click
-  $scope.removeInput = function(){
-    $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
 
 

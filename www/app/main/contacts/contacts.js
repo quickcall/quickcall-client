@@ -49,6 +49,7 @@ angular.module('app.main.contacts', [
   manipulate it. The only functions used are openModal and closeModal, close is invoked fromt the 
   modal itself*/
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
+    //passes the modal the same $scope as our current scope, lets you use index inside modal.
     scope: $scope,
     animation: 'slide-in-up'
   }).then(function(modal) {
@@ -63,7 +64,7 @@ angular.module('app.main.contacts', [
   $scope.closeModal = function() {
     $scope.modal.hide();
   };
-  //Cleanup the modal when we're done with it! Not actually in use right now.
+  //Cleanup the modal when we're done with it! Not actually in use right now :-).
   $scope.$on('$destroy', function() {
     $scope.modal.remove();
   });
