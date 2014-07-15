@@ -2,6 +2,8 @@ angular.module('app.services', [
 ])
 .factory('DialerFactory', function ($http, $ionicPopup) {
   var recentNumbers = [];
+  var currentUser = {};
+  var sourceNumber = currentUser.phoneNumber || '';
 
   var call = function(destinationNumber) {
     
@@ -11,7 +13,6 @@ angular.module('app.services', [
       recentNumbers.shift();
     }
 
-    var sourceNumber = '';
 
 
     var serverData = {
@@ -43,7 +44,8 @@ angular.module('app.services', [
 
   return {
     call: call,
-    recentNumbers : recentNumbers
+    recentNumbers : recentNumbers,
+    currentUser: currentUser
   };
 }).factory('ContactsFactory', function(){
   var contacts = [

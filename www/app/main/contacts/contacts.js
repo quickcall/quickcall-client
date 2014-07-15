@@ -31,7 +31,6 @@ angular.module('app.main.contacts', [
     $scope.modal = modal;
   });
   $scope.openModal = function(target) {
-    console.log(target);
     $scope.index = target;
     $scope.modal.show();
   };
