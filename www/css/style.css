@@ -1,12 +1,21 @@
 /* Empty. Add your own CSS if you like */
+
 .dialer-card {
   /*padding-top: 36%;*/
   /*position: fixed;*/
+
 }
 .recent-contacts {
   max-height: 226px;
   padding-top: 0px;
   padding-bottom: 0px;
+}
+
+.card {
+  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
+}
+.title {
+  box-shadow: 0 0px 10px 0 grey;
 }
 
 paper-ripple {
@@ -15,4 +24,8 @@ paper-ripple {
 
 .has-header {
   top: 39px;
+}
+
+.show-dial-input {
+  font-size: 1.5em;
 }
