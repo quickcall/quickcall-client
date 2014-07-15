@@ -1,7 +1,8 @@
 angular.module('app.main', [
   'app.main.settings',
   'app.main.dialer',
-  'app.main.contacts'
+  'app.main.contacts',
+  'app.main.login'
 ])
 .config(function($stateProvider){
   $stateProvider

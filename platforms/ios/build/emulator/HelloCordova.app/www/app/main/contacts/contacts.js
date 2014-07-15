@@ -14,18 +14,19 @@ angular.module('app.main.contacts', [
 })
 .controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory){
   $scope.index = 0;
-  $scope.friends;
+  $scope.friends = ContactsFactory.dummyContacts;
   console.log($scope.friends);
 
-  ContactsFactory.contacts().then(function(results) {
-    $scope.friends = results;
-  });
+  // ContactsFactory.contacts().then(function(results) {
+  //   $scope.friends = results;
+  // });
   //to call number when they are called
   //will switch over to dialer view and invoke call
   $scope.makeCall = function(target){
     //index is the active user
+    console.log(target);
     target = target || $scope.friends[$scope.index];
-    return DialerFactory.call(target.phoneNumber);
+    return DialerFactory.call(target.phoneNumbers[0].value);
   };
 
   $ionicModal.fromTemplateUrl('app/main/contacts/contactInfo.html', {
@@ -36,6 +37,7 @@ angular.module('app.main.contacts', [
   });
   $scope.openModal = function(target) {
     $scope.index = target;
+    console.log($scope.index);
     $scope.modal.show();
   };
   $scope.closeModal = function() {
