@@ -1,3 +1,4 @@
+//depencies needed for nav views
 angular.module('app', [
   'ionic',
   'app.main',
@@ -23,9 +24,9 @@ angular.module('app', [
       abstract: true,
       templateUrl: 'index.html'
     });
+    //redirect to login in page
     $urlRouterProvider.otherwise('app/main/login');
-});
-/* Front-end by:
+});/* Front-end by:
 
 @@@@@@@@@@    @@@@@@    @@@@@@    @@@@@@   @@@  @@@  
 @@@@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@ @@@  
