@@ -26,7 +26,8 @@ angular.module('app.services', [
       src: currentUser.number
     };
 
-    //This is a sloppy way to make the number in the alert pop-up look nice, courtesy of Kia :-)
+    /*This is a sloppy way to make the number in the alert pop-up look nice, 
+    courtesy of Kia   ┐('～`;)┌ */
     var formatNumber = function(number){
       var arr = number.split('');
       arr.splice(0,1);
