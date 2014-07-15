@@ -29,8 +29,8 @@ cCpHeader Classes/CDVUserAgentUtil.h /Users/kiafathi/Documents/Code/ShortProject
 cCpHeader Classes/CDVTimer.h /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVTimer.h
 cProcessPCH /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bulzgdefkdcifbfwkleycknirxay/CordovaLib_Prefix.pch.pch CordovaLib_Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSDictionary+Extensions.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/NSDictionary+Extensions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVInvokedUrlCommand.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/CDVInvokedUrlCommand.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSData+Base64.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/NSData+Base64.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPluginResult.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/CDVPluginResult.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVPlugin.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/CDVPlugin.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 cCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/NSMutableArray+QueueAdditions.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/NSMutableArray+QueueAdditions.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
@@ -481,7 +481,7 @@ t1405447061
 s1142
 
 N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/libCordova.a
-t1405447061
+t1405447308
 s870480
 
 N/var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/CordovaLib_Prefix-bulzgdefkdcifbfwkleycknirxay/CordovaLib_Prefix.pch.pch
@@ -490,7 +490,7 @@ s3242228
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf69b6d08a475b941^6cce9908a475b941^---0#1#1#--18"Check dependencies36"F017288A-69DE-4691-87A8-A5150CEA93FC-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies96d1fc02ad75b941^8d0d7103ad75b941^---0#1#1#--18"Check dependencies36"32B0EEEE-928F-483C-909D-8CF67DB9F911-
 
 CCompileC build/CordovaLib.build/Debug-iphonesimulator/CordovaLib.build/Objects-normal/i386/CDVCommandDelegateImpl.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/CordovaLib/Classes/CDVCommandDelegateImpl.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
 s427140107.723572
