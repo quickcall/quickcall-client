@@ -52,11 +52,13 @@ angular.module('app.services', [
 
   var phoneContacts = function(){
     var options = {};
-    return $cordovaContacts.find(options)
-      .then(function(results) {
-        // if(cache.length) {
+    if(typeof cache === 'object') {
+      return cache;
+    } else {
+      return $cordovaContacts.find(options)
+        .then(function(results) {
           return cache = _(results).filter(function(result) {
-          return result.displayName;
+            return result.displayName;
           })
           .reduce(function(result, contact) {
             var user = {
@@ -67,10 +69,8 @@ angular.module('app.services', [
             result.push(user);
             return result;
           }, []);
-        // } else {
-        //   return cache;
-        // }
-    });
+      });
+    }
   };
 
   var dummyContacts = [
