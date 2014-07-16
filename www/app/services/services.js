@@ -18,9 +18,9 @@
   //call function, sends post request to server
   var call = function(destinationNumber) {
     //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
-    recentNumbers.push(destinationNumber);
+    recentNumbers.unshift(destinationNumber);
     if(recentNumbers.length > 3){
-      recentNumbers.shift();
+      recentNumbers.pop();
     }
 
     //The server expects an object with a dst, the number user is calling, and src, user's number
