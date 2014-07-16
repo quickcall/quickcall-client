@@ -26,9 +26,9 @@ angular.module('app.main.contacts', [
 
   /*This is a redirect to app.main.login if there is no one logged in, don't want users to hop
   between views if they did not log in*/
-  if(!$scope.currentUser){
-    $state.go('app.main.login');
-  }
+  // if(!$scope.currentUser){
+  //   $state.go('app.main.login');
+  // }
 
   /*The below block of code is used on mobile devices to pull the native contacts instead of the
   dummy data.*/
