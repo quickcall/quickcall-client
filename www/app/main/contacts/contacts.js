@@ -19,8 +19,7 @@ angular.module('app.main.contacts', [
   $scope.index = 0;
 
   //links the scopes friends with the ContactsFactory for testing dummy data, disable for mobile
-  $scope.friends;
-  // = ContactsFactory.dummyContacts;
+  $scope.friends = ContactsFactory.dummyContacts;
 
   //Sets the scopes currentUser to the username established at login
   $scope.currentUser = DialerFactory.currentUser.username;
@@ -33,9 +32,9 @@ angular.module('app.main.contacts', [
 
   /*The below block of code is used on mobile devices to pull the native contacts instead of the
   dummy data.*/
-  ContactsFactory.contacts().then(function(results) {
-    $scope.friends = results;
-  });
+  // ContactsFactory.contacts().then(function(results) {
+  //   $scope.friends = results;
+  // });
   //to call number when they are called
   //will switch over to dialer view and invoke call
 
@@ -43,16 +42,7 @@ angular.module('app.main.contacts', [
   $scope.makeCall = function(target){
     //$scope.index is the active user, updated when you open a modal.
     target = target || $scope.friends[$scope.index];
-    // return DialerFactory.call(target.phoneNumbers[0].value);
-    $http({
-      method: "GET",
-      url: "https://MAZDFKYJA1OTU2M2NKMG:YzA0ZWJkOGJlYzQyNGMyMWEyMmRmODdkYTcyM2Rl@api.plivo.com/v1/",
-      headers: {
-        "X-Mashape-Key": "ezm6j6ZDTTmshfYpcmqam21hJaXGp1taozKjsnkZZpn9dmHahi"
-      }
-    }).then(function(response) {
-        console.log(response.data);
-      });
+    return DialerFactory.call(target.phoneNumbers[0].value);
   };
 
   /*This establishes the modal, contactInfo, and provides some basic modal functions to
