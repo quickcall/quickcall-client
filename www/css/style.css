@@ -78,3 +78,7 @@ input{
 .list-inset{
   background-color:#ECF0F1;
 }
+
+div.popup-body{
+  text-align:center;
+}
