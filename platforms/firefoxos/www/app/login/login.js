@@ -1,20 +1,15 @@
-angular.module('app.main.login', [
+angular.module('app.login', [
 ])
 //currently Login is set up as a substate of app.main, will eventually make it its own state.
 .config(function($stateProvider){
   $stateProvider
-    .state('app.main.login', {
+    .state('app.login', {
       url: '/login',
-      views: {
-        //name of the subview
-        'login': {
-          templateUrl: 'app/main/login/login.html',
-          controller: 'LoginCtrl'
-        }
-      }
+      templateUrl: 'app/login/login.html',
+      controller: 'LoginCtrl'
     });
 })
-.controller('LoginCtrl', function($scope, DialerFactory){
+.controller('LoginCtrl', function($scope, DialerFactory, $state){
   //Login establishes the currentUser property of DialerFactory, that is injected into other views
   $scope.currentUser = DialerFactory.currentUser;
 });
