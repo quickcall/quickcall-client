@@ -1,24 +1,36 @@
-angular.module('app.services', [
+(function(){
+  var cache;
+
+  angular.module('app.services', [
   'ngCordova'
 ])
+//DialerFactory: Used to track the current user, recent numbers, and to make calls
 .factory('DialerFactory', function ($http, $ionicPopup) {
+
+  //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
+
+  //currentUser object, has a username and number property
   var currentUser = {};
+  currentUser.username;
+  currentUser.number;
 
+  //call function, sends post request to server
   var call = function(destinationNumber) {
+    //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
     recentNumbers.push(destinationNumber);
-
     if(recentNumbers.length > 3){
       recentNumbers.shift();
     }
 
-    console.log(recentNumbers);
-
+    //The server expects an object with a dst, the number user is calling, and src, user's number
     var serverData = {
       dst: destinationNumber,
       src: currentUser.number
     };
 
+    /*This is a sloppy way to make the number in the alert pop-up look nice,
+    courtesy of Kia   ┐('～`;)┌ */
     var formatNumber = function(number){
       var arr = number.split('');
       arr.splice(0,1);
@@ -28,11 +40,13 @@ angular.module('app.services', [
         arr.splice(0,4).join('');
     };
 
+    //This popup show's up in the screen when a call is initiated
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
       template: formatNumber(destinationNumber)
     });
 
+    //The actual server post request
     return $http({
       method: 'POST',
       url: 'http://simple-dialer.herokuapp.com/call',
@@ -40,23 +54,29 @@ angular.module('app.services', [
     });
   };
 
+  //The DialerFactory returns, usable in other controllers when DialerFactory is injected
   return {
     call: call,
     recentNumbers : recentNumbers,
     currentUser: currentUser
   };
 })
-.factory('ContactsFactory', function($cordovaContacts){
-  var cache;
 
+//The ContactsFactory, used to get, store, and share between views
+.factory('ContactsFactory', function($cordovaContacts, $q){
+  //cache, so you don't have to pull the phones contacts multiple times if they are already there
+
+  //used on phone to get phone's native contacts. Cordova expects them to have the below properties
   var phoneContacts = function(){
+    var defer = $q.defer();
     var options = {};
     if(cache) {
-      return cache;
+      defer.resolve(cache);
     } else {
-      return $cordovaContacts.find(options)
+      //$cordovaContacts returns promise
+      $cordovaContacts.find(options)
         .then(function(results) {
-          return cache = _(results).filter(function(result) {
+          cache = _(results).filter(function(result) {
             return result.displayName;
           })
           .reduce(function(result, contact) {
@@ -68,56 +88,45 @@ angular.module('app.services', [
             result.push(user);
             return result;
           }, []);
+          defer.resolve(cache);
       });
     }
+    return defer.promise;
   };
 
+  /*dummyContacts used for local testing, cordova doesn't work unless on actual phone
+  so you can use this instead for testing purposes*/
   var dummyContacts = [
     {
-      name: "Alexander Phillip",
-      imgPath: 'alexPhillip.jpeg',
-      description: "AWESOME!",
-      phoneNumber: "415-514-1234"
-    },
-    {
-      name: "Barack The Rock Obama",
-      imgPath: 'obama.jpeg',
-      description: "Yo America, the beautiful",
-      phoneNumber: "USA-USA-USASA"
-    },
-    {
       name: "DH Lee",
-      imgPath: "dhLee.jpeg",
+      photos: [{value: "img/dhLee.jpeg"}],
       description: "HR14 Fullstack Software Engineer, QuickCall Founder",
-      phoneNumber: "14155345337"
+      phoneNumbers: [{value: "14155345337"}]
     },
     {
+      //just an incredibly sexy dude (^_^)
       name: "Kia Fathi",
-      imgPath: "kiaFathi.jpg",
+      photos: [{value: "img/kiaFathi.jpg"}],
       description: "HR14 Fullstack Software Engineer",
-      phoneNumber: "16508888614"
+      phoneNumbers: [{value:"16508888614"}]
     },
     {
       name: "Jakob Harclerode",
-      imgPath: "yahkob.jpg",
+      photos: [{value: "img/yahkob.jpg"}],
       description: "HR14 Fullstack Software Engineer, Heavy Metal",
-      phoneNumber: "19286996726"
+      phoneNumbers: [{value:"19286996726"}]
     },
     {
       name: "Mason Hargrove",
-      imgPath: "mase87.jpg",
+      photos: [{value: "img/mase87.jpg"}],
       description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
-      phoneNumber: "12294128411"
-    },
-    {
-      name: "SpaceCat",
-      imgPath: "spaceCat.jpg",
-      description: "RARGH MEOW RARG! PEW PEW LAZORS",
-      phoneNumber: "YOU CAN NEVER GET THIS"
+      phoneNumbers: [{value:"12294128411"}]
     }
   ];
+  //returns of the ContactsFactory, usable wherever ContactsFactory is injected
   return {
     contacts: phoneContacts,
     dummyContacts: dummyContacts
   };
 });
+}());

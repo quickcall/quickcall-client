@@ -1,6 +1,7 @@
 angular.module('app.main.dialer', [
   'ngCordova'
 ])
+//configuration for the dialer state
 .config(function($stateProvider){
   $stateProvider
     .state('app.main.dialer', {
@@ -13,29 +14,35 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory){
-
+.controller('DialerCtrl', function($scope, DialerFactory, $state){
+  //Stores the three most recently called numbers to display on Dialer View
   $scope.recentNumbers = DialerFactory.recentNumbers;
-  console.log($scope.recentNumbers);
-  $scope.show = false;
 
+  $scope.username = DialerFactory.currentUser.username;
+  
+  //If there is no user saved redirect to the login page
+  if(!$scope.username){
+    $state.go('app.main.login');
+  }
+  //Number that is displayed on dialer input
   $scope.phoneNumber = '';
-
+  //Adds number to the phoneNumber string
   $scope.addInput = function(num) {
     $scope.phoneNumber += num;
-    console.log($scope.phoneNumber);
   };
+  //Removes the last number in the string
+  $scope.removeInput = function(){
+    $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
+  };
+  //Sends Http request to server with phoneNumber then resets the number back to ''
   $scope.makeCall = function() {
     DialerFactory.call($scope.phoneNumber);
     $scope.phoneNumber = '';
   };
-  $scope.removeInput = function(){
-    $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
-  };
 
-  $scope.username = DialerFactory.currentUser.username || 'Kia';
-  console.log(DialerFactory.currentUser);
+
 })
+//Dialer directive, dialer-directive.html is the template
 .directive('dialer', function(){
   return {
     restrict: 'E',

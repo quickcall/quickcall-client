@@ -2,18 +2,11 @@
 
 .dialer-card {
   /*padding-top: 36%;*/
-  /*position: fixed;*/
+  position: fixed;
+  margin-top: 12px;
 
 }
-.recent-contacts {
-  max-height: 226px;
-  padding-top: 0px;
-  padding-bottom: 0px;
-}
 
-.card {
-  box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
-}
 
 paper-ripple {
   color: #4285f4;
@@ -24,5 +17,10 @@ paper-ripple {
 }
 
 .show-dial-input {
-  font-size: 1.5em;
+  font-size: 1em;
+  height: 1.5em;
+}
+
+.secretSauce {
+  display: none
 }
