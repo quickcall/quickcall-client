@@ -11,8 +11,7 @@ angular.module('app.login', [
 })
 .controller('LoginCtrl', function($scope, DialerFactory, $state){
 	$scope.submit = function(id, token, number){
-		// e.preventDefault();
-		console.log(id, token, number);
+	  console.log(id, token, number);
 	};
 
   //Login establishes the currentUser property of DialerFactory, that is injected into other views
