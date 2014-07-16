@@ -35,5 +35,12 @@ h1.title{
   color: #E74C3C;
   border-color: #E74C3C;
   padding:0;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.bar .title{
+  margin-left:0px;
+  margin-right:0px;
 }
 
