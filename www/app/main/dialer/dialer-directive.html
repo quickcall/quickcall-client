@@ -1,7 +1,7 @@
 <div>
   <form class="list" >
     <label class="item-input show-dial-input">
-    <input type="tel" class='numberInput' value="{{phoneNumber}}"/>
+    <input type="tel"class='numberInput' value="{{phoneNumber}}"/>
     </label>
   </form>
   <ul class="keypad">
@@ -14,12 +14,12 @@
     <li ng-click="addInput(7)">7</li>
     <li ng-click="addInput(8)">8</li>
     <li ng-click="addInput(9)">9</li>
-    <li ng-click="removeInput()">
+    <li class='deleter' ng-click="removeInput()">
     <i class="ion-ios7-close-outline"></i>
     </li>
     <li ng-click="addInput(0)">0</li>
     <li ng-click="makeCall()" class="make-call">
-      <i class="ion-android-call"></i>
+      <strong><i class="ion-android-call"></i></strong>
     </li>
   </ul>
 </div>

@@ -17,8 +17,8 @@ paper-ripple {
 }
 
 .show-dial-input {
-  font-size: 1em;
-  height: 1.5em;
+  font-size: 2em;
+  height: 1em;
 }
 
 .secretSauce {
@@ -44,3 +44,37 @@ h1.title{
   margin-right:0px;
 }
 
+.bar.bar-positive .title {
+  color:#E74C3C;
+}
+
+.button.button-positive {
+  background-color: #2980B9;
+  border-color:#2C3E50;
+}
+
+ion-content{
+  background-color: #ECF0F1;
+}
+
+.deleter{
+  color: #E74C3C;
+  text-decoration: bold;
+}
+
+div.pane{
+  background-color:#ECF0F1;
+}
+
+div#inner-editor{
+  background-color:#ECF0F1;
+}
+
+input{
+  text-align: center;
+  background-color:#ECF0F1;
+}
+
+.list-inset{
+  background-color:#ECF0F1;
+}
