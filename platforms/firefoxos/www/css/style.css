@@ -1,1 +1,26 @@
 /* Empty. Add your own CSS if you like */
+
+.dialer-card {
+  /*padding-top: 36%;*/
+  position: fixed;
+  margin-top: 12px;
+
+}
+
+
+paper-ripple {
+  color: #4285f4;
+}
+
+.has-header {
+  top: 39px;
+}
+
+.show-dial-input {
+  font-size: 1em;
+  height: 1.5em;
+}
+
+.secretSauce {
+  display: none
+}

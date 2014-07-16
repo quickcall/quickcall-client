@@ -1,9 +1,12 @@
-angular.module('app.services', [
+(function(){
+  var cache;
+
+  angular.module('app.services', [
   'ngCordova'
 ])
 //DialerFactory: Used to track the current user, recent numbers, and to make calls
 .factory('DialerFactory', function ($http, $ionicPopup) {
-  
+
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
 
@@ -26,7 +29,7 @@ angular.module('app.services', [
       src: currentUser.number
     };
 
-    /*This is a sloppy way to make the number in the alert pop-up look nice, 
+    /*This is a sloppy way to make the number in the alert pop-up look nice,
     courtesy of Kia   ┐('～`;)┌ */
     var formatNumber = function(number){
       var arr = number.split('');
@@ -60,20 +63,20 @@ angular.module('app.services', [
 })
 
 //The ContactsFactory, used to get, store, and share between views
-.factory('ContactsFactory', function($cordovaContacts){
+.factory('ContactsFactory', function($cordovaContacts, $q){
   //cache, so you don't have to pull the phones contacts multiple times if they are already there
-  var cache;
 
   //used on phone to get phone's native contacts. Cordova expects them to have the below properties
   var phoneContacts = function(){
+    var defer = $q.defer();
     var options = {};
     if(cache) {
-      return cache;
+      defer.resolve(cache);
     } else {
       //$cordovaContacts returns promise
-      return $cordovaContacts.find(options)
+      $cordovaContacts.find(options)
         .then(function(results) {
-          return cache = _(results).filter(function(result) {
+          cache = _(results).filter(function(result) {
             return result.displayName;
           })
           .reduce(function(result, contact) {
@@ -85,11 +88,13 @@ angular.module('app.services', [
             result.push(user);
             return result;
           }, []);
+          defer.resolve(cache);
       });
     }
+    return defer.promise;
   };
 
-  /*dummyContacts used for local testing, cordova doesn't work unless on actual phone 
+  /*dummyContacts used for local testing, cordova doesn't work unless on actual phone
   so you can use this instead for testing purposes*/
   var dummyContacts = [
     {
@@ -124,3 +129,4 @@ angular.module('app.services', [
     dummyContacts: dummyContacts
   };
 });
+}());

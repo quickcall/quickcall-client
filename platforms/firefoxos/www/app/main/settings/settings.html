@@ -1,0 +1,69 @@
+<ion-view title="QuickCall">
+    <p>Settings</p>
+    <ion-content class='has-header padding'>
+    <div></div>
+    <ul class="list">
+    <div class="item item-divider">Account</div>
+    <a class="item item-icon-left">
+        <i class="icon ion-ios7-person"></i>
+        User:
+        <span class="item-note">
+            {{currentUser.username || ''}}: ({{currentUser.number || ''}})
+        </span>
+    </a>
+    <!-- Credit is currently disabled, as we haven't discussed payment options -->
+    <!-- <a class="item item-icon-left" href="#">
+        <i class="icon ion-card"></i>
+        Buy Credit
+        <span class="item-note">
+           $1 = aprox. 60-80 minutes of call.
+        </span>
+    </a> -->
+    </div>
+      <li class="item item-toggle">
+         Sexy Mode
+         <label class="toggle toggle-positive">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </li>
+      <li class="item item-toggle">
+         Dance Party Time?
+         <label class="toggle toggle-positive">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </li>
+      <li class="item item-toggle">
+         Stacks on Stacks on Stacks
+         <label class="toggle toggle-positive">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </li>
+      <li class="item item-toggle">
+         Happy fun times party day
+         <label class="toggle toggle-positive">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </li>
+      <li class="item item-toggle">
+         Make it Rain
+         <label class="toggle toggle-positive">
+           <input type="checkbox">
+           <div class="track">
+             <div class="handle"></div>
+           </div>
+         </label>
+      </li>
+    </ion-content>
+</ion-view>
