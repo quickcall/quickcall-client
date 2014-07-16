@@ -30,7 +30,7 @@
     };
 
     /*This is a sloppy way to make the number in the alert pop-up look nice,
-    courtesy of Kia   ┐('～`;)┌ */
+    courtesy of Kia   ┐('～`;)┌  Not currently in use*/
     var formatNumber = function(number){
       var arr = number.split('');
       arr.splice(0,1);
@@ -43,7 +43,7 @@
     //This popup show's up in the screen when a call is initiated
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
-      template: formatNumber(destinationNumber)
+      template: destinationNumber
     });
 
     //The actual server post request

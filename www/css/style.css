@@ -4,9 +4,7 @@
   /*padding-top: 36%;*/
   position: fixed;
   margin-top: 12px;
-
 }
-
 
 paper-ripple {
   color: #4285f4;
@@ -77,4 +75,8 @@ input{
 
 .list-inset{
   background-color:#ECF0F1;
+}
+
+div.popup-body{
+  text-align:center;
 }
