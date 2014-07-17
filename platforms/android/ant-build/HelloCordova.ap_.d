@@ -41,11 +41,13 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/README.md \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/app.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/app.js \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/login \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/services \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/login/login.html \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/login/login.js \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/contacts \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer \
-/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/login \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/main.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/main.js \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings \
@@ -55,8 +57,6 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer/dialer-directive.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer/dialer.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/dialer/dialer.js \
-/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/login/login.html \
-/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/login/login.js \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings/loginModal.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings/settings.html \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/app/main/settings/settings.js \
@@ -73,7 +73,6 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo.ai \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo.png \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo_128.png \
-/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo_blue.png \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo_short.png \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/spaceCat.jpg \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/yahkob.jpg \

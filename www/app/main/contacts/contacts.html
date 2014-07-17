@@ -1,10 +1,12 @@
 <ion-view title="QuickCall">
   <ion-content class="has-header" overflow-scroll='true'>
-    <div ng-repeat="friend in friends" ng-click='openModal($index)'>
-      <div  class="item item-avatar item-icon-right">
-        <img ng-click='openModal($index)' src='{{friend.photos[0].value}}'/>
-        <h2>{{friend.name}}</h2>
-        <i ng-click='makeCall({{friend}})' class='icon ion-ios7-telephone'></i>
+    <div class="list">
+      <div ng-repeat="friend in friends" ng-click='openModal($index)'>
+        <a class="item item-icon-left item-icon-right">
+          <i ng-click='openModal($index)' class="icon ion-ios7-person"></i>
+            {{friend.name}}
+          <i ng-click='makeCall({{friend}})' class="icon ion-ios7-telephone"></i>
+        </a>
       </div>
     </div>
   </ion-content>

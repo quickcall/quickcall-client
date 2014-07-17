@@ -4,9 +4,7 @@
   /*padding-top: 36%;*/
   position: fixed;
   margin-top: 12px;
-
 }
-
 
 paper-ripple {
   color: #4285f4;
@@ -17,10 +15,86 @@ paper-ripple {
 }
 
 .show-dial-input {
-  font-size: 1em;
-  height: 1.5em;
+  font-size: 2em;
+  height: 1em;
 }
 
 .secretSauce {
   display: none
+}
+
+.qcHeader {
+  background-color: #2C3E50;
+  color: #E74C3C;
+}
+
+h1.title{
+  background-color: #2C3E50;
+  color: #E74C3C;
+  border-color: #E74C3C;
+  padding:0;
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.bar .title{
+  margin-left:0px;
+  margin-right:0px;
+}
+
+.bar.bar-positive .title {
+  color:#E74C3C;
+}
+
+.button.button-positive {
+  background-color: #2980B9;
+  border-color:#2C3E50;
+}
+
+ion-content{
+  background-color: #ECF0F1;
+}
+
+.deleter{
+  color: #E74C3C;
+  text-decoration: bold;
+}
+
+div.pane{
+  background-color:#ECF0F1;
+}
+
+div#inner-editor{
+  background-color:#ECF0F1;
+}
+
+input{
+  text-align: center;
+  background-color:#ECF0F1;
+}
+
+.list-inset{
+  background-color:#ECF0F1;
+}
+
+div.popup-body{
+  text-align:center;
+}
+
+.headerName {
+  text-align: center;
+}
+
+.mobileNum {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.mobileNumText {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.bar-subheader {
+  background-color:#ECF0F1;
 }

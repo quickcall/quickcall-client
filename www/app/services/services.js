@@ -86,7 +86,7 @@
             var user = {
               name: contact.displayName,
               phoneNumbers: contact.phoneNumbers,
-              photos: contact.photos
+              photos: [{value: 'ion-ios7-person'}]
             };
             result.push(user);
             return result;
