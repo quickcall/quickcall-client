@@ -9,7 +9,18 @@ angular.module('app.login', [
       controller: 'LoginCtrl'
     });
 })
-.controller('LoginCtrl', function($scope, DialerFactory, $state){
+
+.controller('LoginCtrl', function($scope, DialerFactory, $state, $window, $http){
+  var user = $scope.currentUser;
+  $scope.submit = function(){
+    $window.localStorage.setItem('com.quickCall.auth',
+    JSON.stringify({
+      id:user.ID,
+      token:user.token,
+      number:user.number
+    }
+    ));
+  };  
   //Login establishes the currentUser property of DialerFactory, that is injected into other views
   $scope.currentUser = DialerFactory.currentUser;
 });
