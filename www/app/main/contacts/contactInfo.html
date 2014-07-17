@@ -2,20 +2,19 @@
 <div class="modal">
   <ion-header-bar>
     <h1 class="title">Contact Info</h1>
+    <div class="bar bar-subheader" ng-click='closeModal()'>
+      <!-- <i class="icon ion-ios7-person contactInfoHeader"></i> -->
+      <h3 class="headerName">{{friends[index].name}}</h3>
+    </div>
   </ion-header-bar>
   <ion-content>
-    <div class="item item-thumbnail-left" ng-click='closeModal()'>
-      <img src="{{ friends[index].photos[0].value }}">
-    </div>
-    <div class="list card" ng-click='closeModal();'>
 
-      <a href="" class="item item-icon-left">
-        <i class="icon ion-person"></i>
-        {{friends[index].name}}
-      </a>
+    <div class="list card has-header">
+      <div class="item item-divider item-icon-left mobileNumText">
+        Mobile Number
+      </div>
 
-      <a href="" class="item item-icon-left" ng-click='makeCall()'>
-        <i class="icon ion-ios7-telephone"></i>
+      <a class="item item-icon-left mobileNum" ng-click='makeCall()'>
         {{ friends[index].phoneNumbers[0].value }}
       </a>
 

@@ -80,3 +80,21 @@ input{
 div.popup-body{
   text-align:center;
 }
+
+.headerName {
+  text-align: center;
+}
+
+.mobileNum {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.mobileNumText {
+  text-align: center;
+  padding-left: 15px;
+}
+
+.bar-subheader {
+  background-color:#ECF0F1;
+}
