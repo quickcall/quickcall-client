@@ -2,9 +2,19 @@
 angular.module('app', [
   'ionic',
   'app.main',
-  'app.services'
+  'app.services',
+  'app.login'
 ])
-.run(function($ionicPlatform) {
+.run(function($ionicPlatform, $rootScope, $window, $urlRouter, $state) {
+  // $rootScope.$on('$locationChangeSuccess', function(event) {
+  //   event.preventDefault();
+  //   if($window.localStorage.getItem('com.quickCall.auth')) {
+  //     $urlRouter.sync();
+  //   } else {
+  //     $state.go('app.login');
+  //   }
+  // });
+
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
     // for form inputs)
@@ -22,34 +32,34 @@ angular.module('app', [
     .state('app', {
       url: '/app',
       abstract: true,
-      templateUrl: 'index.html'
+      templateUrl: 'app/app.html'
     });
     //redirect to login in page
-    $urlRouterProvider.otherwise('app/main/login');
+    $urlRouterProvider.otherwise('app/main/dialer');
 });/* Front-end by:
 
-@@@@@@@@@@    @@@@@@    @@@@@@    @@@@@@   @@@  @@@  
-@@@@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@ @@@  
-@@! @@! @@!  @@!  @@@  !@@       @@!  @@@  @@!@!@@@  
-!@! !@! !@!  !@!  @!@  !@!       !@!  @!@  !@!!@!@!  
-@!! !!@ @!@  @!@!@!@!  !!@@!!    @!@  !@!  @!@ !!@!  
-!@!   ! !@!  !!!@!!!!   !!@!!!   !@!  !!!  !@!  !!!  
-!!:     !!:  !!:  !!!       !:!  !!:  !!!  !!:  !!!  
-:!:     :!:  :!:  !:!      !:!   :!:  !:!  :!:  !:!  
-:::     ::   ::   :::  :::: ::   ::::: ::   ::   ::  
- :      :     :   : :  :: : :     : :  :   ::    :  
+@@@@@@@@@@    @@@@@@    @@@@@@    @@@@@@   @@@  @@@
+@@@@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@ @@@
+@@! @@! @@!  @@!  @@@  !@@       @@!  @@@  @@!@!@@@
+!@! !@! !@!  !@!  @!@  !@!       !@!  @!@  !@!!@!@!
+@!! !!@ @!@  @!@!@!@!  !!@@!!    @!@  !@!  @!@ !!@!
+!@!   ! !@!  !!!@!!!!   !!@!!!   !@!  !!!  !@!  !!!
+!!:     !!:  !!:  !!!       !:!  !!:  !!!  !!:  !!!
+:!:     :!:  :!:  !:!      !:!   :!:  !:!  :!:  !:!
+:::     ::   ::   :::  :::: ::   ::::: ::   ::   ::
+ :      :     :   : :  :: : :     : :  :   ::    :
 
  and
 
-@@@  @@@     @@@      @@@@@@   
-@@@  @@@     @@@     @@@@@@@@  
-@@!  !@@     @@!     @@!  @@@  
-!@!  @!!     !@!     !@!  @!@  
-@!@@!@!      !!@     @!@!@!@!  
-!!@!!!       !!!     !!!@!!!!  
-!!: :!!      !!:     !!:  !!!  
-:!:  !:!     :!:     :!:  !:!  
- ::  :::      ::     ::   :::  
- :   :::     :        :   : :  
-                                                       
+@@@  @@@     @@@      @@@@@@
+@@@  @@@     @@@     @@@@@@@@
+@@!  !@@     @@!     @@!  @@@
+!@!  @!!     !@!     !@!  @!@
+@!@@!@!      !!@     @!@!@!@!
+!!@!!!       !!!     !!!@!!!!
+!!: :!!      !!:     !!:  !!!
+:!:  !:!     :!:     :!:  !:!
+ ::  :::      ::     ::   :::
+ :   :::     :        :   : :
+
 */
