@@ -34,6 +34,7 @@ angular.module('app.login', [
             city: data.city || "Unknown"
           })
         );
+        $state.go('app.main.dialer')
       }
     })
     .error(function(data, status, headers, config) {
