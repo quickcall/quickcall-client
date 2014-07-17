@@ -5,7 +5,7 @@
   'ngCordova'
 ])
 //DialerFactory: Used to track the current user, recent numbers, and to make calls
-.factory('DialerFactory', function ($http, $ionicPopup) {
+.factory('DialerFactory', function ($http, $ionicPopup, $window) {
 
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
@@ -18,19 +18,22 @@
   //call function, sends post request to server
   var call = function(destinationNumber) {
     //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
-    recentNumbers.push(destinationNumber);
+    recentNumbers.unshift(destinationNumber);
     if(recentNumbers.length > 3){
-      recentNumbers.shift();
+      recentNumbers.pop();
     }
-
-    //The server expects an object with a dst, the number user is calling, and src, user's number
+    //Get user object out of local storage
+    var userData = JSON.parse($window.localStorage['com.quickCall.auth'])
+    //The server expects an object with a dst, the number user is calling, and src, user's numbe
     var serverData = {
       dst: destinationNumber,
-      src: currentUser.number
+      src: userData.number,
+      authId:userData.id,
+      authToken:userData.token
     };
 
     /*This is a sloppy way to make the number in the alert pop-up look nice,
-    courtesy of Kia   ┐('～`;)┌ */
+    courtesy of Kia   ┐('～`;)┌  Not currently in use*/
     var formatNumber = function(number){
       var arr = number.split('');
       arr.splice(0,1);
@@ -43,7 +46,7 @@
     //This popup show's up in the screen when a call is initiated
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
-      template: formatNumber(destinationNumber)
+      template: destinationNumber
     });
 
     //The actual server post request
@@ -83,7 +86,7 @@
             var user = {
               name: contact.displayName,
               phoneNumbers: contact.phoneNumbers,
-              photos: contact.photos
+              photos: [{value: 'ion-ios7-person'}]
             };
             result.push(user);
             return result;

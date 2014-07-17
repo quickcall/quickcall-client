@@ -19,11 +19,11 @@ angular.module('app.main.dialer', [
   $scope.recentNumbers = DialerFactory.recentNumbers;
 
   $scope.username = DialerFactory.currentUser.username;
-  
+
   //If there is no user saved redirect to the login page
-  if(!$scope.username){
-    $state.go('app.main.login');
-  }
+  // if(!$scope.username){
+  //   $state.go('app.main.login');
+  // }
   //Number that is displayed on dialer input
   $scope.phoneNumber = '';
   //Adds number to the phoneNumber string
