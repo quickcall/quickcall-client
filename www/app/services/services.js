@@ -22,11 +22,14 @@
     if(recentNumbers.length > 3){
       recentNumbers.pop();
     }
-
-    //The server expects an object with a dst, the number user is calling, and src, user's number
+    //Get user object out of local storage
+    var userData = JSON.parse(window.localStorage['com.quickCall.auth'])
+    //The server expects an object with a dst, the number user is calling, and src, user's numbe
     var serverData = {
       dst: destinationNumber,
-      src: currentUser.number
+      src: userData.number,
+      authId:userData.id,
+      authToken:userData.token
     };
 
     /*This is a sloppy way to make the number in the alert pop-up look nice,

@@ -22,14 +22,17 @@ angular.module('app.login', [
       }
     })
     .success(function(data, status, headers, config) {
-      var tokens = parseInt(data.cash_credits)
+      var tokens = parseInt(data.cash_credits);
       if(data.auth_id === user.ID && tokens > 1){
         $window.localStorage.setItem('com.quickCall.auth',
-        JSON.stringify({
-          id:user.ID,
-          token:user.token,
-          number:user.number
-        })
+          JSON.stringify({
+            id:data.auth_id,
+            token:user.token,
+            number:user.number,
+            name: data.name,
+            cash_credits: data.cash_credits,
+            city: data.city || "Unknown"
+          })
         );
       }
     })
