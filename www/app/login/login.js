@@ -10,7 +10,7 @@ angular.module('app.login', [
     });
 })
 
-.controller('LoginCtrl', function($scope, DialerFactory, $state, $window, $http){
+.controller('LoginCtrl', function($scope, DialerFactory, $state, $window, $http, $ionicPopup){
   var user = $scope.currentUser;
   $scope.submit = function(){
     $http({
@@ -39,6 +39,10 @@ angular.module('app.login', [
     })
     .error(function(data, status, headers, config) {
       console.error(data);
+       $ionicPopup.alert({
+         title: 'Invalid Plivo credentials',
+         content: 'Sorry it seems that either your Plivo credentials are invalid or were entered incorrectly please try again.'
+       })
     });
    
   };  
