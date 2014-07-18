@@ -16,6 +16,26 @@ paper-ripple {
 .pane, .view {
   background-color: #f5f5f5;
 }
+
+.col {
+  text-align: center;
+  height: 55px;
+  font-size: xx-large;
+  color: #00e5ff;
+}
+
+.star, .pound {
+  color: #e0e0e0;
+}
+
+.bar-header {
+  box-shadow: 0px 4px 25px lightgrey;
+}
+
+.list {
+  border-bottom: 1px solid #e0e0e0;
+}
+
 /*.has-header {
   top: 39px;
 }
