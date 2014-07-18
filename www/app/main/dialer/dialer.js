@@ -18,7 +18,7 @@ angular.module('app.main.dialer', [
   //Stores the three most recently called numbers to display on Dialer View
   $scope.recentNumbers = DialerFactory.recentNumbers;
 
-  $scope.username = DialerFactory.currentUser.username;
+  // $scope.username = DialerFactory.currentUser.username;
 
   //If there is no user saved redirect to the login page
   // if(!$scope.username){

@@ -7,17 +7,17 @@
       <form ng-submit="submit()" novalidate class='simple-form' ng-controller='LoginCtrl'>
         <label class="item item-input item-floating-label">
           <span class="input-label">Auth ID</span>
-          <input type="text" placeholder="Auth ID" ng-model='currentUser.ID' required/>
+          <input type="text" placeholder="Auth ID" ng-model='userInput.ID' required/>
         </label>
         <label class="item item-input item-floating-label">
           <span class="input-label">Auth Token</span>
-          <input type="text"  placeholder="Auth Token" ng-model='currentUser.token' required/>
+          <input type="text"  placeholder="Auth Token" ng-model='userInput.token' required/>
         </label>
         <label class="item item-input item-floating-label">
           <span class="input-label">Phone Number</span>
-          <input type="text"  placeholder="Phone Number" ng-model='currentUser.number' required/>
+          <input type="text"  placeholder="Phone Number" ng-model='userInput.number' required/>
         </label>
-        <button ng-disabled='form.$invalid || !currentUser.ID || !currentUser.number || !currentUser.token'
+        <button ng-disabled='form.$invalid || !userInput.ID || !userInput.number || !userInput.token'
          class="button button-block button-positive">
           Create Account
         </button>

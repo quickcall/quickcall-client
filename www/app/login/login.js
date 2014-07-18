@@ -11,8 +11,10 @@ angular.module('app.login', [
 })
 
 .controller('LoginCtrl', function($scope, DialerFactory, $state, $window, $http, $ionicPopup){
-  var user = $scope.currentUser;
+  $scope.userInput = DialerFactory.userInput;
+  var user = $scope.userInput
   $scope.submit = function(){
+    var phoneNumber = user.number.split("-").join(""); 
     $http({
       method: 'GET', 
       url: 'http://quickcall-server.herokuapp.com/account',
@@ -21,31 +23,29 @@ angular.module('app.login', [
         authToken:user.token
       }
     })
-    .success(function(data, status, headers, config) {
-      var tokens = parseInt(data.cash_credits);
-      if(data.auth_id === user.ID && tokens > 1){
+    .then(function(data) {
+      var dataObj = data.data;
+      var tokens = parseInt(dataObj.cash_credits);
+      if(data.data.auth_id === user.ID && tokens > 1 && phoneNumber >= 11){
         $window.localStorage.setItem('com.quickCall.auth',
           JSON.stringify({
             id:data.auth_id,
             token:user.token,
             number:user.number,
-            name: data.name,
-            cash_credits: data.cash_credits,
-            city: data.city || "Unknown"
+            name: dataObj.name,
+            cash_credits: dataObj.cash_credits,
+            city: dataObj.city || "Unknown"
           })
-        );
-        $state.go('app.main.dialer')
+        )
       }
+      $state.go('app.main.dialer')
     })
-    .error(function(data, status, headers, config) {
-      console.error(data);
-       $ionicPopup.alert({
-         title: 'Invalid Plivo credentials',
-         content: 'Sorry it seems that either your Plivo credentials are invalid or were entered incorrectly please try again.'
-       })
-    });
-   
+    .catch(function(err){
+      console.error(err)
+      $ionicPopup.alert({
+        title: 'Invalid Plivo credentials',
+        content: 'Sorry it seems that either your Plivo credentials or phonenumber were entered incorrectly. Your phonenumber must but put in 11 digit format(1-555-555-5555)'
+      })
+    })
   };  
-  //Login establishes the currentUser property of DialerFactory, that is injected into other views
-  $scope.currentUser = DialerFactory.currentUser;
 });

@@ -11,7 +11,8 @@
   var recentNumbers = [];
 
   //currentUser object, has a username and number property
-  var currentUser = JSON.parse($window.localStorage.getItem('com.quickCall.auth'));
+  var userInput = {};
+  var currentUser = {}
   
 
   //call function, sends post request to server
@@ -60,7 +61,8 @@
   return {
     call: call,
     recentNumbers : recentNumbers,
-    currentUser: currentUser
+    currentUser: currentUser,
+    userInput: userInput
   };
 })
 
