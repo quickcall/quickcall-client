@@ -1,8 +1,8 @@
 #QuickCall
 
-Making international calls while traveling abroad is painful. Roaming is expensive, SIM card sucks, Skype is cumbersome.
+QuickCall is the first mobile app on the Firefox Marketplace that allows internet based voice-calling (VoIP) for the Firefox Operating System.
 
-QuickCall lets you make international calls really quick. All you need to do is install this app on your Firefox OS mobile and get wifi access.
+For more about our project goals see our [PRESS-RELEASE.md](PRESS-RELEASE.md).
 
 ## Table of Contents
 
