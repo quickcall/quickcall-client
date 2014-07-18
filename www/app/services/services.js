@@ -52,7 +52,7 @@
     //This popup show's up in the screen when a call is initiated
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
-      template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you";
+      template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
     });
 
     //The actual server post request
