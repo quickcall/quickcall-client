@@ -19,7 +19,6 @@ angular.module('app.main.settings', [
 
   $scope.swipeRight = function() {
     $state.go('app.main.dialer');
-    // $window.history.back();
   };
 
 });

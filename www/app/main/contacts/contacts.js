@@ -22,7 +22,7 @@ angular.module('app.main.contacts', [
   $scope.friends = ContactsFactory.dummyContacts;
 
   //Sets the scopes currentUser to the username established at login
-  $scope.currentUser = DialerFactory.currentUser.username;
+  // $scope.currentUser = DialerFactory.currentUser.username;
 
   $scope.swipeLeft = function() {
     $state.go('app.main.dialer');
