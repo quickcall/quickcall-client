@@ -1,6 +1,6 @@
 #QuickCall
 
-QuickCall is the first mobile app on the Firefox Marketplace that allows internet based voice-calling (VoIP) for the Firefox Operating System.
+QuickCall is the first mobile app on the Firefox Marketplace that allows internet based voice-calling (VoIP) on the Firefox Operating System.
 
 For more about our project goals see our [PRESS-RELEASE.md](PRESS-RELEASE.md).
 
@@ -28,7 +28,7 @@ For more about our project goals see our [PRESS-RELEASE.md](PRESS-RELEASE.md).
 From within the root directory:
 
 ```sh
-sudo npm install -g bower
+npm install -g bower
 npm install
 bower install
 ```
