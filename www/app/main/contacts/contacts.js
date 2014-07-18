@@ -19,7 +19,8 @@ angular.module('app.main.contacts', [
   $scope.index = 0;
 
   //links the scopes friends with the ContactsFactory for testing dummy data, disable for mobile
-  $scope.friends = ContactsFactory.dummyContacts;
+  $scope.friends; 
+  // = ContactsFactory.dummyContacts;
 
   //Sets the scopes currentUser to the username established at login
   // $scope.currentUser = DialerFactory.currentUser.username;
@@ -32,11 +33,11 @@ angular.module('app.main.contacts', [
 
   /*The below block of code is used on mobile devices to pull the native contacts instead of the
   dummy data.*/
-  // ContactsFactory.contacts().then(function(results) {
-  //   $scope.friends = results;
-  // });
-  //to call number when they are called
-  //will switch over to dialer view and invoke call
+  ContactsFactory.contacts().then(function(results) {
+    $scope.friends = results;
+  });
+  // to call number when they are called
+  // will switch over to dialer view and invoke call
 
   //function to make a call, uses the DialerFactory's call method.
   $scope.makeCall = function(target){
