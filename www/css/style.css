@@ -5,7 +5,7 @@
   height: 60%;
   position: fixed;
   bottom: 0;
-  box-shadow: 0 -5px 5px 0 lightgrey;
+  box-shadow: 0 -5px 5px 0 #e0e0e0;
   background-color: #ffffff;
 }
 
@@ -28,14 +28,35 @@ paper-ripple {
   color: #e0e0e0;
 }
 
+.star {
+  padding-top: 15px;
+}
+
 .bar-header {
-  box-shadow: 0px 4px 25px lightgrey;
+  background-color: #80cbc4;
+  box-shadow: 0px 5px 7px #e0e0e0;
 }
 
 .list {
   border-bottom: 1px solid #e0e0e0;
 }
 
+.placeholder-icon:last-child {
+  padding-left: 6px;
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+input {
+  text-align: center;
+}
+
+input[type="tel"] {
+}
+
+.bar .title {
+  color: white;
+}
 /*.has-header {
   top: 39px;
 }
