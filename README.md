@@ -4,59 +4,44 @@ Making international calls while traveling abroad is painful. Roaming is expensi
 
 QuickCall lets you make international calls really quick. All you need to do is install this app on your Firefox OS mobile and get wifi access.
 
-## getting started
-* ionic:http://ionicframework.com/getting-started/
-* phonegap/cordova: http://phonegap.com/blog/2014/04/22/firefox-os-phones-for-phonegap-developers/
-* firefox: https://hacks.mozilla.org/2014/03/app-basics-for-firefoxos/
+## Table of Contents
 
-## Techstack
-* target platform: firefox OS
-* front-end: ionic, phonegap, angular
-* back-end: node.js/express, mongoose(TBD),passport (TBD)
-* voice/SMS: Plivo API[www.plivo.com]
+1. [Usage](#Usage)
+1. [Requirements](#requirements)
+1. [Development](#development)
+    1. [Installing Dependencies](#installing-dependencies)
+    1. [Tasks](#tasks)
+1. [Contributing](#contributing)
+1. [License](#license)
 
-## backlogs
+## Usage
 
-Refactoring 
-- clean up back end
-- clean up front end
+> Some usage instructions
 
-DB
-- know auth id && auth token && phone number && user id && email && recent history 
-- local storage as a fallback (recent history)
-- settings 
+## Requirements
 
-Authentication
-- OAuth (google?)
-- username
-- password hash
-- security delegation (credits)
+- Node 0.10.x
+- Redis 2.6.x
+- Postgresql 9.1.x
+- etc
+- etc
 
-Server
-- can receive outbound call POST requests from client (with JSON req.body)
-- can send POST request to ask Plivo to trigger a call
-- can handle POST request from Plivo and provide an XML doc (tell plivo what to do next)
-- can send request with correct auth_id and token so that users’ credit get charged
-- can pass the call status to the client (call triggered, calling, call failed, call connected, call ended)
-- can deflect requests that are not coming from users of the app (check auth)
+## Development
 
-Front-end
-- can log in
-- can sign up
-- can change settings (add auth id and auth token)
-- changes in settings can persist
-- can call a number (POST request to server)
-- can see numbers I called recently 
-- can get the device phone number of a user
-- can see contacts I have on my phone
-- can add a new contact of the number I called recently
-- can show sensible feedback to users depending on the call status (e.g. loading: call triggered, calling, call failed, call connected, call ended)
+### Installing Dependencies
 
-UI
-- native feeling
+From within the root directory:
 
+```sh
+sudo npm install -g bower
+npm install
+bower install
+```
 
-Feature
-- redirect user to sign up on plivo
-- rediect 
+### Tasks
 
+See the projects backlog in asana [here](https://LINKTOYOURASANA.com)
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for contribution guidelines.
