@@ -34,7 +34,7 @@ bower install
 ```
 ## Style Guide
 
-1. BE STYLISH
+See [STYLE-GUIDE.md](STYLE-GUIDE.md) for style guidelines.
 
 ## Contributing
 
