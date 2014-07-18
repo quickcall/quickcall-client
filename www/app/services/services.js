@@ -24,7 +24,7 @@
       recentNumbers.pop();
     }
     //Get user object out of local storage
-    var userData = JSON.parse($window.localStorage['com.quickCall.auth'])
+    var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
     //The server expects an object with a dst, the number user is calling, and src, user's numbe
     var serverData = {
       dst: destinationNumber,
@@ -58,7 +58,7 @@
     //The actual server post request
     return $http({
       method: 'POST',
-      url: 'http://simple-dialer.herokuapp.com/call',
+      url: 'http://quickcall-server.herokuapp.com/call',
       data: JSON.stringify(serverData)
     });
   };
