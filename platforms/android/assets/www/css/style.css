@@ -9,10 +9,6 @@
   background-color: #ffffff;
 }
 
-paper-ripple {
-  color: #4285f4;
-}
-
 .pane, .view {
   background-color: #f5f5f5;
 }
@@ -62,14 +58,14 @@ input[type="tel"] {
 }
 
 .call {
-background-color: #18ffff;
-width: 65px;
-height: 65px;
-border-radius: 40px;
-position: fixed;
-left: 41%;
-bottom: 3%;
-box-shadow: -2px 3px 5px 0px #bdbdbd;
+  background-color: #18ffff;
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  position: fixed;
+  left: 41%;
+  bottom: 3%;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
 
 .phoneIcon {

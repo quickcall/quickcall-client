@@ -24,11 +24,9 @@ angular.module('app.main.contacts', [
   //Sets the scopes currentUser to the username established at login
   $scope.currentUser = DialerFactory.currentUser.username;
 
-  /*This is a redirect to app.main.login if there is no one logged in, don't want users to hop
-  between views if they did not log in*/
-  // if(!$scope.currentUser){
-  //   $state.go('app.main.login');
-  // }
+  $scope.swipeLeft = function() {
+    $state.go('app.main.dialer');
+  };
 
   /*The below block of code is used on mobile devices to pull the native contacts instead of the
   dummy data.*/

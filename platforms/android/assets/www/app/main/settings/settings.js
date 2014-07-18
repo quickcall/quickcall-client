@@ -19,8 +19,17 @@ angular.module('app.main.settings', [
   $scope.currentUser = DialerFactory.currentUser;
   console.log($scope.currentUser);
 
-  //redirect if there is no user, need user for app to work
-  // if(!$scope.username){
-  //   $state.go('app.main.login');
-  // }
+})
+.directive('swipeRight', function($state, $gestureProvider) {
+  return {
+    restrict: 'A',
+    templateUrl: 'app/main/settings/settings.html',
+    scope: true,
+    link: function(scope, elem, attr) {
+      $gestureProvider.on('dragright', function(e) {
+        e.preventDefault();
+        $state.go('app/main/dialer');
+      }, elem);
+    }
+  };
 });

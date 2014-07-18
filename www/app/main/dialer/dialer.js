@@ -20,6 +20,12 @@ angular.module('app.main.dialer', [
 
   $scope.username; //= DialerFactory.currentUser.username;
 
+  $scope.swipeRight = function() {
+    $state.go('app.main.contacts');
+  };
+  $scope.swipeLeft = function() {
+    $state.go('app.main.settings');
+  };
   //Number that is displayed on dialer input
   $scope.phoneNumber = '';
 
@@ -30,7 +36,6 @@ angular.module('app.main.dialer', [
 
   //Removes the last number in the string
   $scope.removeInput = function(e){
-    console.log(e);
     $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
   //Sends Http request to server with phoneNumber then resets the number back to ''
@@ -48,15 +53,9 @@ angular.module('app.main.dialer', [
     templateUrl: 'app/main/dialer/dialer-directive.html',
     replace: true,
     scope: true,
-    link: function(scope, elem, attr, controller) {
-      $ionicGesture.on('dragleft', function(e) {
-        e.preventDefault();
-        $state.go('app.main.settings');
-      }, elem);
-      $ionicGesture.on('dragright', function(e) {
-        e.preventDefault();
-        $state.go('app.main.contacts');
-      }, elem);
+    link: function(scope, elem, attr) {
+      elem.on('dragright', scope.swipeRight);
+      elem.on('dragleft', scope.swipeLeft);
     }
   };
 });

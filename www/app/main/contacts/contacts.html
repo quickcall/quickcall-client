@@ -1,5 +1,5 @@
 <ion-view title="QuickCall">
-  <ion-content class="has-header" overflow-scroll='true'>
+  <ion-content class="has-header" overflow-scroll='true' on-swipe-left="swipeLeft()">
     <div class="list">
       <div ng-repeat="friend in friends" ng-click='openModal($index)'>
         <a class="item item-icon-left item-icon-right">

@@ -13,10 +13,26 @@ angular.module('app.main.settings', [
     });
 })
 //Currently there are no real settings, we should add those (^◡^ )
-.controller('SettingsCtrl', function($scope, $ionicModal, DialerFactory, $state){
-
+.controller('SettingsCtrl', function($scope, $ionicModal, DialerFactory, $state, $ionicGesture){
   //get currentUser to display in settings page
   $scope.currentUser = DialerFactory.currentUser;
-  console.log($scope.currentUser);
+
+  $scope.swipeRight = function() {
+    $state.go('app.main.dialer');
+    // $window.history.back();
+  };
 
 });
+// .directive('swipeRight', function($state, $gestureProvider, $window) {
+//   return {
+//     restrict: 'A',
+//     templateUrl: 'app/main/settings/settings.html',
+//     scope: {},
+//     link: function(scope, elem, attr) {
+//       scope.elem = elem;
+//       elem.on('swipe', function() {
+//         $window.history.back();
+//       });
+//     }
+//   };
+// });
