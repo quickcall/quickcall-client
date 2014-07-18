@@ -1,22 +1,21 @@
 {
-  "launch_path": "/index.html",
-  "installs_allowed_from": [
-    "*"
-  ],
-  "version": "0.0.1",
-  "name": "quickcall",
-  "pkgName": "io.cordova.quickcall",
-  "icons": {
-    "128": "/img/quickcall_logo_128.png"
-  },
-  "type": "privileged",
-  "permissions": {
-    "contacts": {
-      "description": "Required for autocompletion in the share screen",
-      "access": "readcreate"
+    "launch_path":"/index.html",
+    "version":"1.0.1",
+    "name":"quickcall",
+    "developer": {
+      "name": "Hack Reactor",
+      "url": "https://github.com/quickcall"
     },
-    "alarms": {
-      "description": "Required to schedule notifications"
-    }
+    "default_locale": "en",
+    "icons": {
+        "128": "/img/quickcall_logo_128.png"
+    },
+    "description": "Quickcall lets you make international voice calls at local rates using the web technology.",
+    "type": "privileged",
+    "permissions": {
+        "contacts": {
+          "description": "Required for autocompletion in the share screen",
+          "access": "readonly"
+        }
   }
 }

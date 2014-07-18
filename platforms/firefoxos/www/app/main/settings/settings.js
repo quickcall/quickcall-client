@@ -14,11 +14,7 @@ angular.module('app.main.settings', [
 })
 //Currently there are no real settings, we should add those (^◡^ )
 .controller('SettingsCtrl', function($scope, $ionicModal, DialerFactory, $state, $window){
+  /*setting currentUser on scope to be equal to local storage, we can't set the currentUser in the dialer factory
+  because nothing will be added to local storage until a user actually signs up*/
   $scope.currentUser = DialerFactory.currentUser = JSON.parse($window.localStorage.getItem('com.quickCall.auth'));
-
-  //get currentUser to display in settings page
-  //redirect if there is no user, need user for app to work
-  // if(!$scope.username){
-  //   $state.go('app.main.login');
-  // }
 });
