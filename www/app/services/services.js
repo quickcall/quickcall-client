@@ -43,7 +43,8 @@
     };
 
     //This popup show's up in the screen when a call is initiated
-    var alertPopup = $ionicPopup.alert({
+    //var alertPopup =
+    $ionicPopup.alert({
       title: 'Calling...',
       template: destinationNumber
     });
