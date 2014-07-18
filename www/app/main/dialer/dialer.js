@@ -53,6 +53,10 @@ angular.module('app.main.dialer', [
         e.preventDefault();
         $state.go('app.main.settings');
       }, elem);
+      $ionicGesture.on('dragright', function(e) {
+        e.preventDefault();
+        $state.go('app.main.contacts');
+      }, elem);
     }
   };
 });
