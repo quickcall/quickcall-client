@@ -5,6 +5,8 @@ angular.module('app', [
   'app.services',
   'app.login'
 ])
+//This run function determines if a user object is stored on login
+//otherwise it will redirect to login, won't let you leave login until logged in
 .run(function($ionicPlatform, $rootScope, $window, $urlRouter, $state) {
   $rootScope.$on('$locationChangeSuccess', function(event) {
     event.preventDefault();
@@ -36,7 +38,9 @@ angular.module('app', [
     });
     //redirect to login in page
     $urlRouterProvider.otherwise('app/main/dialer');
-});/* Front-end by:
+});
+
+/* Front-end by:
 
 @@@@@@@@@@    @@@@@@    @@@@@@    @@@@@@   @@@  @@@
 @@@@@@@@@@@  @@@@@@@@  @@@@@@@   @@@@@@@@  @@@@ @@@
