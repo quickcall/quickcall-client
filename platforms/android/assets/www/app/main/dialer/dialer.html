@@ -1,9 +1,9 @@
-<ion-view title="QuickCall">
-  <ion-content scroll='false'>
+<ion-view title="QuickCall" hide-nav-bar="true">
+  <ion-content scroll='false' on-drag-left="swipeLeft()">
     <div class="dialer-card">
       <dialer></dialer>
       <div class="call">
-      <i class="icon ion-ios7-telephone phoneIcon"></i>
+      <i class="icon ion-ios7-telephone phoneIcon" ng-click="makeCall()"></i>
       </div>
     </div>
   </ion-content>

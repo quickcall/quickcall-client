@@ -19,8 +19,4 @@ angular.module('app.main.settings', [
   $scope.currentUser = DialerFactory.currentUser;
   console.log($scope.currentUser);
 
-  //redirect if there is no user, need user for app to work
-  // if(!$scope.username){
-  //   $state.go('app.main.login');
-  // }
 });

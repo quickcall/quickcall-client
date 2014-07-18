@@ -14,7 +14,7 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory, $state){
+.controller('DialerCtrl', function($scope, DialerFactory, $state, $ionicGesture){
   //Stores the three most recently called numbers to display on Dialer View
   $scope.recentNumbers = DialerFactory.recentNumbers;
 
@@ -24,15 +24,21 @@ angular.module('app.main.dialer', [
   // if(!$scope.username){
   //   $state.go('app.main.login');
   // }
+  $scope.swipeLeft = function() {
+    $state.go('app.main.settings');
+  };
+
   //Number that is displayed on dialer input
   $scope.phoneNumber = '';
+
   //Adds number to the phoneNumber string
   $scope.addInput = function(num) {
     $scope.phoneNumber += num;
   };
+
   //Removes the last number in the string
-  $scope.removeInput = function(){
-    console.log('yep')
+  $scope.removeInput = function(e){
+    console.log(e);
     $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
   //Sends Http request to server with phoneNumber then resets the number back to ''
