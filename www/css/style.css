@@ -153,15 +153,15 @@ input[type="tel"] {
 
 .infoAvatarPhoto {
   font-size: 80px !important;
-  padding-left: 3.9%;
+  padding-left: 3.5%;
   color: #9e9e9e;
   position: fixed;
 }
 
 .infoContactName {
   padding-left: 34%;
-  padding-top: 47%;
-  font-size: 21px;
+  padding-top: 41%;
+  font-size: 26px;
   color: initial;
 }
 
@@ -179,15 +179,15 @@ input[type="tel"] {
 
 .ion-ios7-telephone-outline {
   font-size: 55px;
-  color: #bdbdbd;
+  color: #7C7C7C;
   padding-left: 38px;
 }
 
 .contactInfoNumber {
-padding-left: 25%;
-padding-top: 9%;
+padding-left: 30%;
+padding-top: 7%;
 font-size: 27px;
-color: #757575;
+color: #525252;
 }
 
 /*.has-header {

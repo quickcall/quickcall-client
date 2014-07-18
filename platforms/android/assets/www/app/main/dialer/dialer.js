@@ -35,7 +35,8 @@ angular.module('app.main.dialer', [
   };
 
   //Removes the last number in the string
-  $scope.removeInput = function(e){
+  $scope.removeNum = function(){
+    console.log('yo');
     $scope.phoneNumber = $scope.phoneNumber.slice(0,-1);
   };
   //Sends Http request to server with phoneNumber then resets the number back to ''

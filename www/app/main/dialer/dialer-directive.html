@@ -1,8 +1,10 @@
 <div>
   <form class="list">
     <label class="item-input show-dial-input">
-    <input type="tel"class='numberInput' value="{{phoneNumber}}"/>
-    <i class="icon ion-reply placeholder-icon" ng-click="removeInput()"></i>
+    <input type="tel"class='numberInput' value="{{phoneNumber}}" />
+    <div >
+      <i class="icon ion-reply placeholder-icon" ng-click="removeNum()"></i>
+    </div>
     </label>
   </form>
   <ul>
@@ -22,9 +24,9 @@
       <li class="col" ng-click="addInput(9)">9</li>
     </div>
     <div class="row">
-      <li class="col star" ng-click="addInput(0)">*</li>
+      <li class="col star" ng-click="addInput('*')">*</li>
       <li class="col" ng-click="addInput(0)">0</li>
-      <li class="col pound" ng-click="addInput(0)">#</li>
+      <li class="col pound" ng-click="addInput('#')">#</li>
     </div>
     <!-- <li class="deleter" ng-click="removeInput()"> -->
     <!-- <i class="ion-ios7-close-outline"></i> -->
