@@ -6,16 +6,12 @@ QuickCall lets you make international calls really quick. All you need to do is 
 
 ## Table of Contents
 
-1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
     1. [Installing Dependencies](#installing-dependencies)
 1. [Style Guide](#style-guide)
 1. [Contributing](#contributing)
 
-## Usage
-
-> Some usage instructions
 
 ## Requirements
 
