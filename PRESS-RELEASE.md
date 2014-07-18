@@ -1,9 +1,9 @@
 #QuickCall
 ## Team Members:
-1.DH Lee - Project Lead
-1.Mason Hargrove - Technical Lead
-1.Jakob Harclerode - User Interface Engineer
-1.Kia Fathi - Project Manager
+  - DH Lee - Project Lead
+  - Mason Hargrove - Technical Lead
+  - Jakob Harclerode - User Interface Engineer
+  - Kia Fathi - Project Manager
 
 ##About:
 QuickCall is the first mobile app on the Firefox Marketplace that allows internet based voice-calling (VoIP) for the Firefox Operating System.
