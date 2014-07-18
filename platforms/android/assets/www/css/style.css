@@ -1,16 +1,63 @@
 /* Empty. Add your own CSS if you like */
 
 .dialer-card {
-  /*padding-top: 36%;*/
+  width: 100%;
+  height: 60%;
   position: fixed;
-  margin-top: 12px;
+  bottom: 0;
+  box-shadow: 0 -5px 5px 0 #e0e0e0;
+  background-color: #ffffff;
 }
 
 paper-ripple {
   color: #4285f4;
 }
 
-.has-header {
+.pane, .view {
+  background-color: #f5f5f5;
+}
+
+.col {
+  text-align: center;
+  height: 55px;
+  font-size: xx-large;
+  color: #00e5ff;
+}
+
+.star, .pound {
+  color: #e0e0e0;
+}
+
+.star {
+  padding-top: 15px;
+}
+
+.bar-header {
+  background-color: #80cbc4;
+  box-shadow: 0px 5px 7px #e0e0e0;
+}
+
+.list {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.placeholder-icon:last-child {
+  padding-left: 6px;
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+input {
+  text-align: center;
+}
+
+input[type="tel"] {
+}
+
+.bar .title {
+  color: white;
+}
+/*.has-header {
   top: 39px;
 }
 
@@ -68,12 +115,12 @@ div#inner-editor{
   background-color:#ECF0F1;
 }
 
-input{
+/*input{
   text-align: center;
   background-color:#ECF0F1;
-}
+}*/
 
-.list-inset{
+/*.list-inset{
   background-color:#ECF0F1;
 }
 
@@ -97,4 +144,4 @@ div.popup-body{
 
 .bar-subheader {
   background-color:#ECF0F1;
-}
+}*/

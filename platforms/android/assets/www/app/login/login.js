@@ -10,7 +10,7 @@ angular.module('app.login', [
     });
 })
 
-.controller('LoginCtrl', function($scope, DialerFactory, $state, $window, $http){
+.controller('LoginCtrl', function($scope, DialerFactory, $state, $window, $http, $ionicPopup){
   var user = $scope.currentUser;
   $scope.submit = function(){
     $http({
@@ -22,19 +22,27 @@ angular.module('app.login', [
       }
     })
     .success(function(data, status, headers, config) {
-      var tokens = parseInt(data.cash_credits)
+      var tokens = parseInt(data.cash_credits);
       if(data.auth_id === user.ID && tokens > 1){
         $window.localStorage.setItem('com.quickCall.auth',
-        JSON.stringify({
-          id:user.ID,
-          token:user.token,
-          number:user.number
-        })
+          JSON.stringify({
+            id:data.auth_id,
+            token:user.token,
+            number:user.number,
+            name: data.name,
+            cash_credits: data.cash_credits,
+            city: data.city || "Unknown"
+          })
         );
+        $state.go('app.main.dialer')
       }
     })
     .error(function(data, status, headers, config) {
       console.error(data);
+       $ionicPopup.alert({
+         title: 'Invalid Plivo credentials',
+         content: 'Sorry it seems that either your Plivo credentials are invalid or were entered incorrectly please try again.'
+       })
     });
    
   };  
