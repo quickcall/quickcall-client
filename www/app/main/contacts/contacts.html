@@ -4,8 +4,10 @@
       <ion-item ng-repeat="friend in friends" ng-click='openModal($index)'>
         <div class="avatar">
           <i ng-click='openModal($index)' class="icon ion-ios7-person avatarPhoto"></i>
+          <div class="contactName">
+            <span>{{friend.firstName}}</span> {{friend.lastName}}
+          </div>
         </div>
-          <!-- {{friend.name}} -->
       </ion-item>
     </ion-list>
   </ion-content>

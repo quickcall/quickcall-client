@@ -94,6 +94,20 @@ input[type="tel"] {
   color: #9e9e9e;
   position: fixed;
 }
+
+
+.contactName {
+  float: inherit;
+  padding-left: 150%;
+  padding-top: 30px;
+}
+
+span {
+  font-weight: bold;
+}
+
+
+
 /*.has-header {
   top: 39px;
 }
