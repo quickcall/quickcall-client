@@ -23,4 +23,4 @@ User just need to have the app and the phone number they want to call. Its that 
 Just download QuickCall off the Firefox Marketplace, enter a number you want to call, and QuickCall will take care of the rest.
 
 ##Contribute to QuickCall:
-QuickCall is maintained on GitHub, https://github.com/dhfromkorea/quickcall. We are open-source project and love user feedback. You can contribute via issue notices, pull requests, or comments.
+QuickCall is maintained on GitHub, https://github.com/quickcall/quickcall-client. We are open-source project and love user feedback. You can contribute via issue notices, pull requests, or comments.
