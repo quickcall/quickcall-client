@@ -37,7 +37,7 @@ angular.module('app.login', [
       //parsing tokens for comparison
       var tokens = parseInt(dataObj.cash_credits);
       //checking if form input authID matches returned authId that user has at least $1.00 
-      if(data.data.auth_id === user.ID && tokens > 1){
+      if(dataObj.auth_id === user.ID && tokens > 1){
         //verify Phonenumber is correct format
         if(phoneNumber.length < 11){
           $ionicPopup.alert({
@@ -50,7 +50,7 @@ angular.module('app.login', [
         //set data to local storage
         $window.localStorage.setItem('com.quickCall.auth',
           JSON.stringify({
-            id:data.auth_id,
+            id: dataObj.auth_id,
             token:user.token,
             number:phoneNumber,
             name: dataObj.name,

@@ -29,7 +29,7 @@
     var serverData = {
       dst: destinationNumber,
       src: userData.number,
-      authId:userData.id,
+      authId: userData.id,
       authToken:userData.token
     };
 
