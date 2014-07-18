@@ -10,9 +10,10 @@
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
 
-  //currentUser object, has a username and number property
+  //used for databinding on login.html
   var userInput = {};
-  var currentUser = {}
+  //current users data from local storage
+  var currentUser = {};
   
 
   //call function, sends post request to server
