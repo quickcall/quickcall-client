@@ -1,22 +1,40 @@
 
   <ion-header-bar class="bar-positive nav-title-slide-ios7">
-    <h1 class="title">Login</h1>
+    <h1 class="title">Enter Plivo Credentials</h1>
   </ion-header-bar>
   <ion-content>
-    <div class="list list-inset">
-      <form novalidate class='simple-form'>
-      <label class="item item-input item-floating-label">
-        <span class="input-label">Name</span>
-        <input type="text" placeholder="Name" ng-model='currentUser.username' required/>
-      </label>
-      <label class="item item-input item-floating-label">
-        <span class="input-label">Phone Number</span>
-        <input type="text"  placeholder="Phone Number" ng-model='currentUser.number' required/>
-      </label>
+    <div class="list">
+      <form ng-submit="submit()" novalidate class='simple-form' ng-controller='LoginCtrl'>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Auth ID</span>
+          <input type="text" placeholder="Auth ID" ng-model='userInput.ID' required/>
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Auth Token</span>
+          <input type="text"  placeholder="Auth Token" ng-model='userInput.token' required/>
+        </label>
+        <label class="item item-input item-floating-label">
+          <span class="input-label">Phone Number</span>
+          <input type="text"  placeholder="Phone Number" ng-model='userInput.number' required/>
+        </label>
+        <button ng-disabled='form.$invalid || !userInput.ID || !userInput.number || !userInput.token'
+         class="button button-block button-positive">
+          Create Account
+        </button>
       </form>
-      <button ng-disabled='form.$invalid || !currentUser.username || !currentUser.number'
-      ui-sref='app.main.dialer' class="button button-block button-positive">
-        Login
-      </button>
+      <div class="card">
+       <div class="item item-divider item-positive">
+          Don't have a Plivo Account?
+        </div>
+        <div class="item item-text-wrap">
+          Sign up for an account with <a href="https://manage.plivo.com/accounts/register/" target="_blank">Plivo</a> then go to the<a href="https://manage.plivo.com/dashboard/" target="_blank"> Plivo Dashboard</a> and copy your auth credentials and phone number to the corresponding forms.
+        </div>
+        <div class="item item-divider item-positive">
+          Have a Plivo Account?
+        </div>
+        <div class="item item-text-wrap">
+          Go to the<a href="https://manage.plivo.com/dashboard/" target="_blank"> Plivo Dashboard</a> and copy and paste your auth credentials and phone number to the corresponding forms.
+        </div>       
+      </div>
     </div>
   </ion-content>
