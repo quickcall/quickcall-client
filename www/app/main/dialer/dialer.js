@@ -14,16 +14,16 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory, $state){
+.controller('DialerCtrl', function($scope, DialerFactory, $state, $window){
   //Stores the three most recently called numbers to display on Dialer View
   $scope.recentNumbers = DialerFactory.recentNumbers;
 
   // $scope.username = DialerFactory.currentUser.username;
 
   //If there is no user saved redirect to the login page
-  // if(!$scope.username){
-  //   $state.go('app.main.login');
-  // }
+  if(!$window.localStorage.getItem('com.quickCall.auth')){
+    $state.go('app.main.login');
+  }
   //Number that is displayed on dialer input
   $scope.phoneNumber = '';
   //Adds number to the phoneNumber string
