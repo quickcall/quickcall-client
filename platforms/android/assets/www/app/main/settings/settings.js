@@ -19,20 +19,6 @@ angular.module('app.main.settings', [
 
   $scope.swipeRight = function() {
     $state.go('app.main.dialer');
-    // $window.history.back();
   };
 
 });
-// .directive('swipeRight', function($state, $gestureProvider, $window) {
-//   return {
-//     restrict: 'A',
-//     templateUrl: 'app/main/settings/settings.html',
-//     scope: {},
-//     link: function(scope, elem, attr) {
-//       scope.elem = elem;
-//       elem.on('swipe', function() {
-//         $window.history.back();
-//       });
-//     }
-//   };
-// });

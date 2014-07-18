@@ -12,7 +12,7 @@
 
   //currentUser object, has a username and number property
   var currentUser = JSON.parse($window.localStorage.getItem('com.quickCall.auth'));
-  
+
 
   //call function, sends post request to server
   var call = function(destinationNumber) {
@@ -100,26 +100,30 @@
   so you can use this instead for testing purposes*/
   var dummyContacts = [
     {
-      name: "DH Lee",
+      firstName: "DH",
+      lastName: "Lee",
       photos: [{value: "img/dhLee.jpeg"}],
       description: "HR14 Fullstack Software Engineer, QuickCall Founder",
       phoneNumbers: [{value: "14155345337"}]
     },
     {
       //just an incredibly sexy dude (^_^)
-      name: "Kia Fathi",
+      firstName: "Kia",
+      lastName: "Fathi",
       photos: [{value: "img/kiaFathi.jpg"}],
       description: "HR14 Fullstack Software Engineer",
       phoneNumbers: [{value:"16508888614"}]
     },
     {
-      name: "Jakob Harclerode",
+      firstName: "Jakob",
+      lastName: "Harclerode",
       photos: [{value: "img/yahkob.jpg"}],
       description: "HR14 Fullstack Software Engineer, Heavy Metal",
       phoneNumbers: [{value:"19286996726"}]
     },
     {
-      name: "Mason Hargrove",
+      firstName: "Mason",
+      lastName: "Hargrove",
       photos: [{value: "img/mase87.jpg"}],
       description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
       phoneNumbers: [{value:"12294128411"}]
