@@ -11,9 +11,9 @@
   var recentNumbers = [];
 
   //currentUser object, has a username and number property
-  var currentUser = {};
-  currentUser.username;
-  currentUser.number;
+  var userInput = {};
+  var currentUser = {}
+  
 
   //call function, sends post request to server
   var call = function(destinationNumber) {
@@ -61,7 +61,8 @@
   return {
     call: call,
     recentNumbers : recentNumbers,
-    currentUser: currentUser
+    currentUser: currentUser,
+    userInput: userInput
   };
 })
 
