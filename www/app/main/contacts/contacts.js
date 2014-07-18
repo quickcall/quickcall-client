@@ -21,15 +21,6 @@ angular.module('app.main.contacts', [
   //links the scopes friends with the ContactsFactory for testing dummy data, disable for mobile
   $scope.friends = ContactsFactory.dummyContacts;
 
-  //Sets the scopes currentUser to the username established at login
-  // $scope.currentUser = DialerFactory.currentUser.username;
-
-  /*This is a redirect to app.main.login if there is no one logged in, don't want users to hop
-  between views if they did not log in*/
-  if(!$window.localStorage.getItem('com.quickCall.auth')){
-    $state.go('app.main.login');
-  }
-
   /*The below block of code is used on mobile devices to pull the native contacts instead of the
   dummy data.*/
   // ContactsFactory.contacts().then(function(results) {

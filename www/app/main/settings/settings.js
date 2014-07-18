@@ -17,10 +17,4 @@ angular.module('app.main.settings', [
   /*setting currentUser on scope to be equal to local storage, we can't set the currentUser in the dialer factory
   because nothing will be added to local storage until a user actually signs up*/
   $scope.currentUser = DialerFactory.currentUser = JSON.parse($window.localStorage.getItem('com.quickCall.auth'));
-
-
-  //redirect if there is no user, need user for app to work
-  if(!$window.localStorage.getItem('com.quickCall.auth')){
-    $state.go('app.main.login');
-  }
 });
