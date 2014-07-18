@@ -9,7 +9,6 @@ angular.module('app', [
   $rootScope.$on('$locationChangeSuccess', function(event) {
     event.preventDefault();
     if($window.localStorage.getItem('com.quickCall.auth')) {
-      console.log($window.localStorage.getItem('com.quickCall.auth'));
       $urlRouter.sync();
     } else {
       $state.go('app.login');

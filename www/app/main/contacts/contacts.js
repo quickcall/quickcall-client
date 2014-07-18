@@ -22,7 +22,7 @@ angular.module('app.main.contacts', [
   $scope.friends = ContactsFactory.dummyContacts;
 
   //Sets the scopes currentUser to the username established at login
-  $scope.currentUser = DialerFactory.currentUser.username;
+  // $scope.currentUser = DialerFactory.currentUser.username;
 
   /*This is a redirect to app.main.login if there is no one logged in, don't want users to hop
   between views if they did not log in*/
