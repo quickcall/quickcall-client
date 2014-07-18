@@ -57,6 +57,17 @@ input[type="tel"] {
 .bar .title {
   color: white;
 }
+
+.call {
+background-color: #72d572;
+width: 50px;
+height: 50px;
+border-radius: 25px;
+position: fixed;
+left: 43%;
+bottom: 6.2%;
+box-shadow: -2px 3px 5px 0px #bdbdbd;
+}
 /*.has-header {
   top: 39px;
 }
