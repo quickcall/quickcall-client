@@ -1,7 +1,7 @@
 <ion-view title="All Contacts">
   <ion-content class="has-header contactsView" overflow-scroll='true' on-swipe-left="swipeLeft()">
     <ion-list>
-      <ion-item ng-repeat="friend in friends" ng-click='openModal($index)'>
+      <ion-item ng-repeat="friend in friends" class="fx-fade-left fx-ease-strong fx-speed-400" ng-click='openModal($index)'>
         <div class="avatar">
           <i ng-click='openModal($index)' class="icon ion-ios7-person avatarPhoto"></i>
           <div class="contactName">
@@ -10,10 +10,10 @@
         </div>
       </ion-item>
     </ion-list>
-    <div class="swipeButton">
+    <!-- <div class="swipeButton">
       <div id="swipeText">
         <i class="icon ion-ios7-telephone"></i>
       </div>
-    </div>
+    </div> -->
   </ion-content>
 </ion-view>

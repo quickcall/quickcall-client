@@ -14,15 +14,20 @@ angular.module('app.main.contacts', [
       }
     });
 })
-.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory, $state, $http){
+.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory, $state, $http, $timeout){
   //this index is used as a target for populating the modal with the correct info
   $scope.index = 0;
 
   //links the scopes friends with the ContactsFactory for testing dummy data, disable for mobile
-  $scope.friends = ContactsFactory.dummyContacts;
+  $timeout(function(){
+    $scope.friends = ContactsFactory.dummyContacts;
+  }, 100);
 
   //Sets the scopes currentUser to the username established at login
   // $scope.currentUser = DialerFactory.currentUser.username;
+  $scope.$on('$stateChangeSuccess', function(e) {
+    console.log(e);
+  });
 
   $scope.swipeLeft = function() {
     $state.go('app.main.dialer');

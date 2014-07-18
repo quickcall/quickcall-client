@@ -1,6 +1,7 @@
 //depencies needed for nav views
 angular.module('app', [
   'ionic',
+  'ngFx',
   'app.main',
   'app.services',
   'app.login'
