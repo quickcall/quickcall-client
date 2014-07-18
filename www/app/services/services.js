@@ -10,9 +10,10 @@
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
 
-  //currentUser object, has a username and number property
+  //used for databinding on login.html
   var userInput = {};
-  var currentUser = {}
+  //current users data from local storage
+  var currentUser = {};
   
 
   //call function, sends post request to server
@@ -51,7 +52,7 @@
     //This popup show's up in the screen when a call is initiated
     var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
-      template: formatNumber(destinationNumber);
+      template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
     });
 
     //The actual server post request
