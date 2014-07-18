@@ -167,7 +167,23 @@ input[type="tel"] {
   color: #bdbdbd;
 }
 
+.contactInfoList {
+  margin-top: 75%;
+  border-bottom: 1px solid lightgrey;
+}
 
+.ion-ios7-telephone-outline {
+  font-size: 55px;
+  color: #bdbdbd;
+  padding-left: 38px;
+}
+
+.contactInfoNumber {
+padding-left: 25%;
+padding-top: 9%;
+font-size: 27px;
+color: #757575;
+}
 
 /*.has-header {
   top: 39px;
