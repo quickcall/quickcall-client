@@ -5,10 +5,15 @@
         <div class="avatar">
           <i ng-click='openModal($index)' class="icon ion-ios7-person avatarPhoto"></i>
           <div class="contactName">
-            <span>{{friend.firstName}}</span> {{friend.lastName}}
+            <span class="names">{{friend.firstName}}</span> {{friend.lastName}}
           </div>
         </div>
       </ion-item>
     </ion-list>
+    <div class="swipeButton">
+      <div id="swipeText">
+        <i class="icon ion-ios7-telephone"></i>
+      </div>
+    </div>
   </ion-content>
 </ion-view>
