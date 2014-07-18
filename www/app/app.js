@@ -6,15 +6,15 @@ angular.module('app', [
   'app.login'
 ])
 .run(function($ionicPlatform, $rootScope, $window, $urlRouter, $state) {
-  $rootScope.$on('$locationChangeSuccess', function(event) {
-    event.preventDefault();
-    if($window.localStorage.getItem('com.quickCall.auth')) {
-      console.log($window.localStorage.getItem('com.quickCall.auth'));
-      $urlRouter.sync();
-    } else {
-      $state.go('app.login');
-    }
-  });
+  // $rootScope.$on('$locationChangeSuccess', function(event) {
+  //   event.preventDefault();
+  //   if($window.localStorage.getItem('com.quickCall.auth')) {
+  //     console.log($window.localStorage.getItem('com.quickCall.auth'));
+  //     $urlRouter.sync();
+  //   } else {
+  //     $state.go('app.login');
+  //   }
+  // });
 
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
