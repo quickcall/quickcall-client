@@ -2,7 +2,7 @@
 
 .dialer-card {
   width: 100%;
-  height: 60%;
+  height: 67%;
   position: fixed;
   bottom: 0;
   box-shadow: 0 -5px 5px 0 #e0e0e0;
@@ -33,7 +33,7 @@ paper-ripple {
 }
 
 .bar-header {
-  background-color: #80cbc4;
+  background-color: #00b0ff;
   box-shadow: 0px 5px 7px #e0e0e0;
 }
 
@@ -49,9 +49,12 @@ paper-ripple {
 
 input {
   text-align: center;
+  font-size: 2em !important;
 }
 
 input[type="tel"] {
+  color: grey;
+  font-size: 2em;
 }
 
 .bar .title {
@@ -59,15 +62,25 @@ input[type="tel"] {
 }
 
 .call {
-background-color: #72d572;
-width: 50px;
-height: 50px;
-border-radius: 25px;
+background-color: #18ffff;
+width: 65px;
+height: 65px;
+border-radius: 40px;
 position: fixed;
-left: 43%;
-bottom: 6.2%;
+left: 41%;
+bottom: 3%;
 box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
+
+.phoneIcon {
+  font-size: xx-large;
+  position: fixed;
+  padding-top: 20px;
+  padding-left: 22px;
+  color: white;
+}
+
+
 /*.has-header {
   top: 39px;
 }
