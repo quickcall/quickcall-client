@@ -74,7 +74,9 @@
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo.png \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo_128.png \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/quickcall_logo_short.png \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/ripplewallpaper.jpg \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/spaceCat.jpg \
+/Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/wallpaper.jpg \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/img/yahkob.jpg \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/angular \
 /Users/mason/Desktop/hr/QuickCall/quickcall-client/platforms/android/assets/www/lib/angular-animate \
