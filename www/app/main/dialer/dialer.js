@@ -14,7 +14,7 @@ angular.module('app.main.dialer', [
       }
     });
 })
-.controller('DialerCtrl', function($scope, DialerFactory, $state, $window){
+.controller('DialerCtrl', function($scope, DialerFactory, $state){
   //Stores the three most recently called numbers to display on Dialer View
   $scope.recentNumbers = DialerFactory.recentNumbers;
  

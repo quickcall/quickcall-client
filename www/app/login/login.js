@@ -16,8 +16,9 @@ angular.module('app.login', [
   var user = $scope.userInput
   //on html form submit function
   $scope.submit = function(){
-    //remove dashes from number
-    var phoneNumber = user.number.split("-").join(""); 
+    //remove dashes from number with regex
+    var phoneNumber = user.number.replace(/\D+/g,'');
+    console.log(phoneNumber)
     //verifying users plivo credentials
     $http({
       method: 'GET', 
@@ -35,15 +36,23 @@ angular.module('app.login', [
       var dataObj = data.data;
       //parsing tokens for comparison
       var tokens = parseInt(dataObj.cash_credits);
-      /*checking if form input authID matches returned authId that user has at least $1.00 and that their 
-      phone number is in valid format (11 digit, i.e. 1-555-555-5555) */
-      if(data.data.auth_id === user.ID && tokens > 1 && phoneNumber >= 11){
+      //checking if form input authID matches returned authId that user has at least $1.00 
+      if(data.data.auth_id === user.ID && tokens > 1){
+        //verify Phonenumber is correct format
+        if(phoneNumber.length < 11){
+          $ionicPopup.alert({
+            title: 'Invalid Phone Number',
+            content: "Sorry but '" + user.number + "' is not a valid phone number make sure to include a country code and area code. <br>(ex: 1-555-555-5555)"
+          })
+          //if number is use return statement to prevent from adding to local storage
+          return;
+        }
         //set data to local storage
         $window.localStorage.setItem('com.quickCall.auth',
           JSON.stringify({
             id:data.auth_id,
             token:user.token,
-            number:user.number,
+            number:phoneNumber,
             name: dataObj.name,
             cash_credits: dataObj.cash_credits,
             city: dataObj.city || "Unknown"
@@ -58,7 +67,7 @@ angular.module('app.login', [
       //error handling, will send a pop up message that tells customer how to correctly input their credentials
       $ionicPopup.alert({
         title: 'Invalid Plivo credentials',
-        content: 'Sorry it seems that either your Plivo credentials or phonenumber were entered incorrectly. Your phonenumber must but put in 11 digit format(1-555-555-5555)'
+        content: 'Sorry it seems that either your Plivo Auth Token and ID were entered incorrectly or are invalid, please check your credentials and try again.'
       })
     })
   };  
