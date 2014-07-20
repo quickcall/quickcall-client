@@ -1,30 +1,20 @@
 <!--Show deeper friend info -->
 <div class="modal">
-  <ion-header-bar>
-    <h1 class="title">Contact Info</h1>
-    <div class="bar bar-subheader" ng-click='closeModal()'>
-      <!-- <i class="icon ion-ios7-person contactInfoHeader"></i> -->
-      <h3 class="headerName">{{friends[index].name}}</h3>
+  <div class="infoBanner">
+    <i class="icon ion-ios7-arrow-back" ng-click="closeModal()"></i>
+    <div class="infoAvatar">
+      <i ng-click='openModal($index)' class="icon ion-ios7-person infoAvatarPhoto"></i>
     </div>
-  </ion-header-bar>
-  <ion-content>
-
-    <div class="list card has-header">
-      <div class="item item-divider item-icon-left mobileNumText">
-        Mobile Number
-      </div>
-
-      <a class="item item-icon-left mobileNum" ng-click='makeCall()'>
-        {{ friends[index].phoneNumbers[0].value }}
-      </a>
-
-     <!--  <div class='item item-body'>
-        <div class='item-icon-left'>
-        <i class="icon ion-ios7-paper"></i>
-        <p>{{friends[index].description}}</p>
-        </div>
-      </div> -->
-
+    <div class="infoContactName">
+      <span class="names">{{friends[index].firstName}}</span> {{friends[index].lastName}}
     </div>
-  </ion-content>
+  </div>
+  <div class="contactInfoList">
+    <div class="contactPhoneInfo row">
+      <i class="icon ion-ios7-telephone-outline col" ng-click="makeCall()"></i>
+      <div class="row contactInfoNumber">{{ friends[index].phoneNumbers[0].value }}</div>
+    </div>
+  </div>
 </div>
+
+
