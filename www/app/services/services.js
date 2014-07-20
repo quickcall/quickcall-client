@@ -22,7 +22,7 @@
       recentNumbers.pop();
     }
     //Get user object out of local storage
-    var userData = JSON.parse($window.localStorage['com.quickCall.auth'])
+    var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
     //The server expects an object with a dst, the number user is calling, and src, user's numbe
     var serverData = {
       dst: destinationNumber,
@@ -101,30 +101,26 @@
   so you can use this instead for testing purposes*/
   var dummyContacts = [
     {
-      firstName: "DH",
-      lastName: "Lee",
+      name: "DH Lee",
       photos: [{value: "img/dhLee.jpeg"}],
       description: "HR14 Fullstack Software Engineer, QuickCall Founder",
       phoneNumbers: [{value: "14155345337"}]
     },
     {
       //just an incredibly sexy dude (^_^)
-      firstName: "Kia",
-      lastName: "Fathi",
+      name: "Kia Fathi",
       photos: [{value: "img/kiaFathi.jpg"}],
       description: "HR14 Fullstack Software Engineer",
       phoneNumbers: [{value:"16508888614"}]
     },
     {
-      firstName: "Jakob",
-      lastName: "Harclerode",
+      name: "Jakob Harclerode",
       photos: [{value: "img/yahkob.jpg"}],
       description: "HR14 Fullstack Software Engineer, Heavy Metal",
       phoneNumbers: [{value:"19286996726"}]
     },
     {
-      firstName: "Mason",
-      lastName: "Hargrove",
+      name: "Mason Hargrove",
       photos: [{value: "img/mase87.jpg"}],
       description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
       phoneNumbers: [{value:"12294128411"}]

@@ -5,7 +5,7 @@
         <div class="avatar">
           <i ng-click='openModal($index)' class="icon ion-ios7-person avatarPhoto"></i>
           <div class="contactName">
-            <span class="names">{{friend.firstName}}</span> {{friend.lastName}}
+            <span class="names">{{friend.name.split(' ')[0]}}</span> {{friend.name.split(' ')[1]}}
           </div>
         </div>
       </ion-item>
