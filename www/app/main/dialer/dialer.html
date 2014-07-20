@@ -1,23 +1,10 @@
-<ion-view title="QuickCall">
-  <ion-content scroll='false'>
-    <!-- <div class="recent-contacts list">
-      <div>
-        <a class='item'>
-          <p>1: {{recentNumbers[0]}}</p>
-        </a>
-        <a class='item'>
-          <p>2: {{recentNumbers[1]}}</p>
-        </a>
-        <a class='item'>
-          <p>3: {{recentNumbers[2]}}</p>
-        </a>
-      </div>
-    </div> -->
-
+<ion-view title="QuickCall" hide-nav-bar="true">
+  <ion-content scroll='false' on-drag-left="swipeLeft()">
     <div class="dialer-card">
       <dialer></dialer>
+      <div class="call">
+      <i class="icon ion-ios7-telephone phoneIcon" ng-click="makeCall()"></i>
+      </div>
     </div>
-    
-
   </ion-content>
 </ion-view>
