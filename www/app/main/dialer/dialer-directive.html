@@ -1,25 +1,38 @@
 <div>
-  <form class="list" >
+  <form class="list">
     <label class="item-input show-dial-input">
-    <input type="tel"class='numberInput' value="{{phoneNumber}}"/>
+    <input type="tel"class='numberInput' value="{{phoneNumber}}" />
+    <div >
+      <i class="icon ion-reply placeholder-icon" ng-click="removeNum()"></i>
+    </div>
     </label>
   </form>
-  <ul class="keypad">
-    <li ng-click="addInput(1)">1</li>
-    <li ng-click="addInput(2)">2</li>
-    <li ng-click="addInput(3)">3</li>
-    <li ng-click="addInput(4)">4</li>
-    <li ng-click="addInput(5)">5</li>
-    <li ng-click="addInput(6)">6</li>
-    <li ng-click="addInput(7)">7</li>
-    <li ng-click="addInput(8)">8</li>
-    <li ng-click="addInput(9)">9</li>
-    <li class='deleter' ng-click="removeInput()">
-    <i class="ion-ios7-close-outline"></i>
-    </li>
-    <li ng-click="addInput(0)">0</li>
-    <li ng-click="makeCall()" class="make-call">
-      <strong><i class="ion-android-call"></i></strong>
+  <ul>
+    <div class="row">
+      <li class="col" ng-click="addInput(1)">1</li>
+      <li class="col" ng-click="addInput(2)">2</li>
+      <li class="col" ng-click="addInput(3)">3</li>
+    </div>
+    <div class="row">
+      <li class="col" ng-click="addInput(4)">4</li>
+      <li class="col" ng-click="addInput(5)">5</li>
+      <li class="col" ng-click="addInput(6)">6</li>
+    </div>
+    <div class="row">
+      <li class="col" ng-click="addInput(7)">7</li>
+      <li class="col" ng-click="addInput(8)">8</li>
+      <li class="col" ng-click="addInput(9)">9</li>
+    </div>
+    <div class="row">
+      <li class="col star" ng-click="addInput('*')">*</li>
+      <li class="col" ng-click="addInput(0)">0</li>
+      <li class="col pound" ng-click="addInput('#')">#</li>
+    </div>
+    <!-- <li class="deleter" ng-click="removeInput()"> -->
+    <!-- <i class="ion-ios7-close-outline"></i> -->
+    <!-- </li> -->
+    <!-- <li ng-click="makeCall()" class="make-call"> -->
+      <!-- <strong><i class="ion-android-call"></i></strong> -->
     </li>
   </ul>
 </div>
