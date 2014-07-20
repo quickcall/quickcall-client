@@ -10,8 +10,10 @@
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
 
-  //currentUser object, has a username and number property
-  var currentUser = JSON.parse($window.localStorage.getItem('com.quickCall.auth'));
+  //used for databinding on login.html
+  var userInput = {};
+  //current users data from local storage
+  var currentUser = {};
 
 
   //call function, sends post request to server
@@ -27,32 +29,36 @@
     var serverData = {
       dst: destinationNumber,
       src: userData.number,
-      authId:userData.id,
+      authId: userData.id,
       authToken:userData.token
     };
 
     /*This is a sloppy way to make the number in the alert pop-up look nice,
     courtesy of Kia   ┐('～`;)┌  Not currently in use*/
     var formatNumber = function(number){
-      var arr = number.split('');
-      arr.splice(0,1);
-      return '(' +
-        arr.splice(0,3).join('') + ") " +
-        arr.splice(0,3).join('') + "-" +
-        arr.splice(0,4).join('');
+      if(number.length === 11){
+        var arr = number.split('');
+        arr.splice(0,1);
+        return '(' +
+          arr.splice(0,3).join('') + ") " +
+          arr.splice(0,3).join('') + "-" +
+          arr.splice(0,4).join('');
+      }
+      else {
+        return number;
+      }
     };
 
     //This popup show's up in the screen when a call is initiated
-    //var alertPopup =
-    $ionicPopup.alert({
+    var alertPopup = $ionicPopup.alert({
       title: 'Calling...',
-      template: destinationNumber
+      template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
     });
 
     //The actual server post request
     return $http({
       method: 'POST',
-      url: 'http://simple-dialer.herokuapp.com/call',
+      url: 'http://quickcall-server.herokuapp.com/call',
       data: JSON.stringify(serverData)
     });
   };
@@ -61,7 +67,8 @@
   return {
     call: call,
     recentNumbers : recentNumbers,
-    currentUser: currentUser
+    currentUser: currentUser,
+    userInput: userInput
   };
 })
 
