@@ -6,7 +6,7 @@
       <i ng-click='openModal($index)' class="icon ion-ios7-person infoAvatarPhoto"></i>
     </div>
     <div class="infoContactName">
-      <span class="names">{{friends[index].firstName}}</span> {{friends[index].lastName}}
+      <span class="names">{{friends[index].name.split(' ')[0]}}</span> {{friends[index].name.split(' ')[1]}}
     </div>
   </div>
   <div class="contactInfoList">
