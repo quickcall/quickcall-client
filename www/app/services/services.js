@@ -10,11 +10,9 @@
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
 
-  //used for databinding on login.html
-  var userInput = {};
-  //current users data from local storage
-  var currentUser = {};
-  
+  //currentUser object, has a username and number property
+  var currentUser = JSON.parse($window.localStorage.getItem('com.quickCall.auth'));
+
 
   //call function, sends post request to server
   var call = function(destinationNumber) {
@@ -24,41 +22,37 @@
       recentNumbers.pop();
     }
     //Get user object out of local storage
-    var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
+    var userData = JSON.parse($window.localStorage['com.quickCall.auth'])
     //The server expects an object with a dst, the number user is calling, and src, user's numbe
     var serverData = {
       dst: destinationNumber,
       src: userData.number,
-      authId: userData.id,
+      authId:userData.id,
       authToken:userData.token
     };
 
     /*This is a sloppy way to make the number in the alert pop-up look nice,
     courtesy of Kia   ┐('～`;)┌  Not currently in use*/
     var formatNumber = function(number){
-      if(number.length === 11){
-        var arr = number.split('');
-        arr.splice(0,1);
-        return '(' +
-          arr.splice(0,3).join('') + ") " +
-          arr.splice(0,3).join('') + "-" +
-          arr.splice(0,4).join('');        
-      }
-      else {
-        return number;
-      }
+      var arr = number.split('');
+      arr.splice(0,1);
+      return '(' +
+        arr.splice(0,3).join('') + ") " +
+        arr.splice(0,3).join('') + "-" +
+        arr.splice(0,4).join('');
     };
 
     //This popup show's up in the screen when a call is initiated
-    var alertPopup = $ionicPopup.alert({
+    //var alertPopup =
+    $ionicPopup.alert({
       title: 'Calling...',
-      template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
+      template: destinationNumber
     });
 
     //The actual server post request
     return $http({
       method: 'POST',
-      url: 'http://quickcall-server.herokuapp.com/call',
+      url: 'http://simple-dialer.herokuapp.com/call',
       data: JSON.stringify(serverData)
     });
   };
@@ -67,8 +61,7 @@
   return {
     call: call,
     recentNumbers : recentNumbers,
-    currentUser: currentUser,
-    userInput: userInput
+    currentUser: currentUser
   };
 })
 
@@ -108,26 +101,30 @@
   so you can use this instead for testing purposes*/
   var dummyContacts = [
     {
-      name: "DH Lee",
+      firstName: "DH",
+      lastName: "Lee",
       photos: [{value: "img/dhLee.jpeg"}],
       description: "HR14 Fullstack Software Engineer, QuickCall Founder",
       phoneNumbers: [{value: "14155345337"}]
     },
     {
       //just an incredibly sexy dude (^_^)
-      name: "Kia Fathi",
+      firstName: "Kia",
+      lastName: "Fathi",
       photos: [{value: "img/kiaFathi.jpg"}],
       description: "HR14 Fullstack Software Engineer",
       phoneNumbers: [{value:"16508888614"}]
     },
     {
-      name: "Jakob Harclerode",
+      firstName: "Jakob",
+      lastName: "Harclerode",
       photos: [{value: "img/yahkob.jpg"}],
       description: "HR14 Fullstack Software Engineer, Heavy Metal",
       phoneNumbers: [{value:"19286996726"}]
     },
     {
-      name: "Mason Hargrove",
+      firstName: "Mason",
+      lastName: "Hargrove",
       photos: [{value: "img/mase87.jpg"}],
       description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
       phoneNumbers: [{value:"12294128411"}]
