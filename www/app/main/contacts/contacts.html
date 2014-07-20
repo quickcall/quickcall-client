@@ -1,18 +1,19 @@
-<!--Show deeper friend info -->
-<div class="modal">
-  <div class="infoBanner">
-    <i class="icon ion-ios7-arrow-back" ng-click="closeModal()"></i>
-    <div class="infoAvatar">
-      <i ng-click='openModal($index)' class="icon ion-ios7-person infoAvatarPhoto"></i>
-    </div>
-    <div class="infoContactName">
-      <span class="names">{{friends[index].firstName}}</span> {{friends[index].lastName}}
-    </div>
-  </div>
-  <div class="contactInfoList">
-    <div class="contactPhoneInfo row">
-      <i class="icon ion-ios7-telephone-outline col" ng-click="makeCall()"></i>
-      <div class="row contactInfoNumber">{{ friends[index].phoneNumbers[0].value }}</div>
-    </div>
-  </div>
-</div>
+<ion-view title="All Contacts">
+  <ion-content class="has-header contactsView" overflow-scroll='true' on-drag-left="swipeLeft()">
+    <ion-list>
+      <ion-item ng-repeat="friend in friends" class="fx-fade-left fx-ease-bounce fx-speed-600" ng-click='openModal($index)'>
+        <div class="avatar">
+          <i ng-click='openModal($index)' class="icon ion-ios7-person avatarPhoto"></i>
+          <div class="contactName">
+            <span class="names">{{friend.firstName}}</span> {{friend.lastName}}
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <!-- <div class="swipeButton">
+      <div id="swipeText">
+        <i class="icon ion-ios7-telephone"></i>
+      </div>
+    </div> -->
+  </ion-content>
+</ion-view>
