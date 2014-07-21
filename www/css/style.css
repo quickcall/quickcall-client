@@ -134,7 +134,7 @@ input[type="tel"] {
   width: 65px;
   height: 65px;
   border-radius: 40px;
-  position: fixed;
+  position: absolute;
   left: 0%;
   bottom: -60%;
   box-shadow: -2px 3px 5px 0px #bdbdbd;
