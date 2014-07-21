@@ -14,7 +14,6 @@ For more about our project goals see our [PRESS-RELEASE.md](PRESS-RELEASE.md).
 
 
 ## Requirements
-
 - Angular
 - Angular-Animate
 - Angular-Sanitize
@@ -34,6 +33,7 @@ npm install -g bower
 npm install
 bower install
 ```
+
 ## Style Guide
 
 See [STYLE-GUIDE.md](STYLE-GUIDE.md) for style guidelines.
