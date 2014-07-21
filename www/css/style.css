@@ -1,100 +1,214 @@
 /* Empty. Add your own CSS if you like */
 
 .dialer-card {
-  /*padding-top: 36%;*/
+  width: 100%;
+  height: 80%;
   position: fixed;
-  margin-top: 12px;
+  bottom: 0;
+  box-shadow: 0 -5px 5px 0 #e0e0e0;
+  background-color: #ffffff;
 }
 
-paper-ripple {
-  color: #4285f4;
+.pane, .view {
+  background-color: #f5f5f5;
 }
 
-.has-header {
-  top: 39px;
+.col {
+  text-align: center;
+  height: 55px;
+  font-size: xx-large;
+  color: #00e5ff;
 }
 
-.show-dial-input {
+.activated {
+  /*box-shadow: 0px 0px 58px 11px rgba(102,102,102,1);*/
+  /*border-radius: 25px;*/
+}
+
+.star, .pound {
+  color: #e0e0e0;
+}
+
+.star {
+  padding-top: 15px;
+}
+
+.bar-header {
+  background-color: #ff5722;
+  box-shadow: 0px 5px 7px #e0e0e0;
+}
+
+.list {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.placeholder-icon:last-child {
+  padding-left: 6px;
+  padding-right: 15px;
+  font-size: 30px;
+}
+
+input {
+  text-align: center;
+  font-size: 2em !important;
+}
+
+input[type="tel"] {
+  color: grey;
   font-size: 2em;
-  height: 1em;
 }
 
-.secretSauce {
-  display: none
+.bar .title {
+  color: white;
 }
 
-.qcHeader {
-  background-color: #2C3E50;
-  color: #E74C3C;
+.call {
+  background-color: #18ffff;
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  position: fixed;
+  left: 41%;
+  bottom: 3%;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
 
-h1.title{
-  background-color: #2C3E50;
-  color: #E74C3C;
-  border-color: #E74C3C;
-  padding:0;
-  margin-left:0px;
-  margin-right:0px;
+.phoneIcon {
+  font-size: xx-large;
+  position: fixed;
+  padding-top: 20px;
+  padding-left: 22px;
+  color: white;
 }
 
-.bar .title{
-  margin-left:0px;
-  margin-right:0px;
+.contactsView {
+  background-color: #f5f5f5;
 }
 
-.bar.bar-positive .title {
-  color:#E74C3C;
+.avatar{
+  width: 50px;
+  height: 50px;
+  background-color: #e0e0e0;
+  border-radius: 30px;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
 
-.button.button-positive {
-  background-color: #2980B9;
-  border-color:#2C3E50;
+.avatarPhoto {
+  font-size: 54px !important;
+  padding-left: 2.5%;
+  color: #9e9e9e;
+  position: absolute;
 }
 
-ion-content{
-  background-color: #ECF0F1;
+
+.contactName {
+  float: inherit;
+  padding-left: 150%;
+  padding-top: 30px;
 }
 
-.deleter{
-  color: #E74C3C;
-  text-decoration: bold;
+.names {
+  font-weight: bold;
 }
 
-div.pane{
-  background-color:#ECF0F1;
+.swipeButton {
+  background-color: #18ffff;
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  position: fixed;
+  left: 75%;
+  bottom: 3%;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
 
-div#inner-editor{
-  background-color:#ECF0F1;
+#swipeText {
+  padding-top: 18px;
+  font-size: xx-large;
+  padding-left: 22px;
+  color: #ffff00;
 }
 
-input{
-  text-align: center;
-  background-color:#ECF0F1;
+.settingsSwipeButton {
+  background-color: #18ffff;
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  position: fixed;
+  left: 0%;
+  bottom: -60%;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
 
-.list-inset{
-  background-color:#ECF0F1;
+#settingsSwipeText {
+  padding-top: 18px;
+  font-size: xx-large;
+  padding-left: 22px;
+  color: #ffff00;
 }
 
-div.popup-body{
-  text-align:center;
+.infoBanner {
+  width: 100%;
+  height: 34%;
+  position: fixed;
+  background-image: url('../img/ripplewallpaper.jpg');
+  box-shadow: 0px 3px 9px 2px #bdbdbd;
+
 }
 
-.headerName {
-  text-align: center;
+
+.infoAvatar{
+  width: 75px;
+  height: 75px;
+  background-color: #f5f5f5;
+  border-radius: 50px;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
+  padding-top: 0px;
+  position: fixed;
+  margin-top: 80px;
+  margin-left: 20px;
 }
 
-.mobileNum {
-  text-align: center;
-  padding-left: 15px;
+.infoAvatarPhoto {
+  font-size: 80px !important;
+  padding-left: 3.9%;
+  color: #9e9e9e;
+  position: fixed;
 }
 
-.mobileNumText {
-  text-align: center;
-  padding-left: 15px;
+.infoContactName {
+  padding-left: 34%;
+  padding-top: 41%;
+  font-size: 26px;
+  color: initial;
 }
 
-.bar-subheader {
-  background-color:#ECF0F1;
+.ion-ios7-arrow-back {
+  position: absolute;
+  font-size: 50px;
+  padding-left: 10px;
+  color: #bdbdbd;
+}
+
+.contactInfoList {
+  margin-top: 75%;
+  border-bottom: 1px solid lightgrey;
+}
+
+.ion-ios7-telephone-outline {
+  font-size: 55px;
+  color: #7C7C7C;
+  padding-left: 38px;
+  position: fixed;
+}
+
+.contactInfoNumber {
+padding-left: 30%;
+padding-top: 7%;
+font-size: 27px;
+color: #525252;
+}
+
+.contactPhoneInfo {
+  margin-bottom: 15px;
 }

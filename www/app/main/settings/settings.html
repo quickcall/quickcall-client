@@ -1,6 +1,6 @@
 <ion-view title="QuickCall">
     <p>Settings</p>
-    <ion-content class='has-header padding'>
+    <ion-content class='has-header padding' on-drag-right="swipeRight()">
       <ul class="list">
       <div class="item item-divider">Account Info:</div>
       <a class="item item-icon-left">
@@ -27,5 +27,10 @@
           {{currentUser.city}}
         </span>
       </a>
+      <div class="settingsSwipeButton">
+        <div id="settingsSwipeText">
+          <i class="icon ion-arrow-left-c" ng-click="swipeRight()"></i>
+        </div>
+      </div>
     </ion-content>
 </ion-view>
