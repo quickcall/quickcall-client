@@ -20,6 +20,8 @@ For more about our project goals see our [PRESS-RELEASE.md](PRESS-RELEASE.md).
 - Angular-Sanitize
 - Ionic
 - ngCordova
+- ngFx
+- lodash
 
 ## Development
 
