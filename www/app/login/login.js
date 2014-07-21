@@ -14,6 +14,7 @@ angular.module('app.login', [
   //forms input on login.html
   $scope.userInput = DialerFactory.userInput;
   var user = $scope.userInput
+  console.log(user);
   //on html form submit function
   $scope.submit = function(){
     //remove dashes from number with regex
@@ -21,7 +22,7 @@ angular.module('app.login', [
     console.log(phoneNumber)
     //verifying users plivo credentials
     $http({
-      method: 'GET', 
+      method: 'GET',
       url: 'http://quickcall-server.herokuapp.com/account',
       /*sending authID and authToken to verify with plivo if successful plivo will send us a user
       JSON object if credentials are invalid we will be sent an error message from plivo*/
@@ -36,7 +37,7 @@ angular.module('app.login', [
       var dataObj = data.data;
       //parsing tokens for comparison
       var tokens = parseInt(dataObj.cash_credits);
-      //checking if form input authID matches returned authId that user has at least $1.00 
+      //checking if form input authID matches returned authId that user has at least $1.00
       if(dataObj.auth_id === user.ID && tokens > 1){
         //verify Phonenumber is correct format
         if(phoneNumber.length < 11){
@@ -70,5 +71,5 @@ angular.module('app.login', [
         content: 'Sorry it seems that either your Plivo Auth Token and ID were entered incorrectly or are invalid, please check your credentials and try again.'
       })
     })
-  };  
+  };
 });

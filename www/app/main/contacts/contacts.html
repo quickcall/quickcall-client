@@ -1,12 +1,18 @@
-<ion-view title="QuickCall">
-  <ion-content class="has-header" overflow-scroll='true'>
-    <div class="list">
-      <div ng-repeat="friend in friends" ng-click='openModal($index)'>
-        <a class="item item-icon-left item-icon-right">
-          <i ng-click='openModal($index)' class="icon ion-ios7-person"></i>
-            {{friend.name}}
-          <i ng-click='makeCall({{friend}})' class="icon ion-ios7-telephone"></i>
-        </a>
+<ion-view title="All Contacts">
+  <ion-content class="has-header contactsView" overflow-scroll='true' on-drag-left="swipeLeft()">
+    <ion-list>
+      <ion-item ng-repeat="friend in friends" class="fx-fade-left fx-ease-bounce fx-speed-600" ng-click='openModal($index)'>
+        <div class="avatar">
+          <i ng-click='openModal($index)' class="icon ion-ios7-person avatarPhoto"></i>
+          <div class="contactName">
+            <span class="names">{{friend.name.split(' ')[0]}}</span> {{friend.name.split(' ')[1]}}
+          </div>
+        </div>
+      </ion-item>
+    </ion-list>
+    <div class="swipeButton">
+      <div id="swipeText">
+        <i class="icon ion-arrow-right-c" ng-click="swipeLeft()"></i>
       </div>
     </div>
   </ion-content>

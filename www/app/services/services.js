@@ -14,7 +14,7 @@
   var userInput = {};
   //current users data from local storage
   var currentUser = {};
-  
+
 
   //call function, sends post request to server
   var call = function(destinationNumber) {
@@ -42,7 +42,7 @@
         return '(' +
           arr.splice(0,3).join('') + ") " +
           arr.splice(0,3).join('') + "-" +
-          arr.splice(0,4).join('');        
+          arr.splice(0,4).join('');
       }
       else {
         return number;

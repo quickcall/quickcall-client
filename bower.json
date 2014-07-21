@@ -6,6 +6,7 @@
   },
   "dependencies": {
     "angular-ui-utils": "bower-mask",
-    "lodash": "~2.4.1"
+    "lodash": "~2.4.1",
+    "ngFx": "~1.0.1"
   }
 }
