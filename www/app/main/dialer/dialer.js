@@ -40,7 +40,6 @@ angular.module('app.main.dialer', [
   };
   //Sends Http request to server with phoneNumber then resets the number back to ''
   $scope.makeCall = function() {
-    console.log('calling this number:', $scope.phoneNumber);
     DialerFactory.call($scope.phoneNumber);
     $scope.phoneNumber = '';
   };

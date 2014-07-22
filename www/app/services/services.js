@@ -58,7 +58,6 @@
       template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
     });
 
-    console.log(serverData);
     //The actual server post request
     return $http({
       method: 'POST',
