@@ -40,6 +40,12 @@
           arr.splice(0,3).join('') + ") " +
           arr.splice(0,3).join('') + "-" +
           arr.splice(0,4).join('');
+      } else if (number.length ===10 ) {
+        var arr = number.split('');
+        return '(' +
+          arr.splice(0,3).join('') + ") " +
+          arr.splice(0,3).join('') + "-" +
+          arr.splice(0,4).join('');
       }
       else {
         return number;
@@ -52,6 +58,7 @@
       template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
     });
 
+    console.log(serverData);
     //The actual server post request
     return $http({
       method: 'POST',
@@ -171,6 +178,20 @@
   /*dummyContacts used for local testing, cordova doesn't work unless on actual phone
   so you can use this instead for testing purposes*/
   var dummyContacts = [
+    { name: "Imtiaz Majeed",
+      phoneNumbers: [{value: "14074370298"}]
+    },
+    { name: "Austen Talbot",
+      phoneNumbers: [{value: "17177990164"}]
+    },    
+    {
+      name: "Forest Toney",
+      phoneNumbers: [{value: "13107229969"}]
+    },
+    {
+      name: "Adam Price",
+      phoneNumbers: [{value: "17327257505"}]
+    },
     {
       name: "DH Lee",
       photos: [{value: "img/dhLee.jpeg"}],
