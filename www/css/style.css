@@ -54,6 +54,10 @@ input[type="tel"] {
   font-size: 2em;
 }
 
+textArea {
+  resize: none;
+}
+
 .bar .title {
   color: white;
 }
@@ -264,4 +268,8 @@ input[type="tel"] {
 
 .contactPhoneInfo {
   margin-bottom: 15px;
+}
+
+.popupButtonText {
+  font-size: 24px;
 }

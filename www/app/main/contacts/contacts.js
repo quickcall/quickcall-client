@@ -55,16 +55,18 @@ angular.module('app.main.contacts', [
       template: '<textArea type="text" ng-model="data.message" rows="6">',
       scope: $scope,
       buttons: [
-        {text: 'Cancel'},
         {
-          text: 'Send',
+          text: '<span class="popupButtonText">Cancel</span>',
+        },
+        {
+          text: '<span class="popupButtonText">Send</span>',
           type: 'button-positive',
-          style: 'font-size: 10px',
           onTap: function(e){
             if(!$scope.data.message){
               e.preventDefault();
             }else{
               console.log($scope.data.message);
+              $scope.data.message = '';
             }
           }
         }
