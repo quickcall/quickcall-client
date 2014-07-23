@@ -7,6 +7,11 @@ angular.module('app.login', [
       url: '/login',
       templateUrl: 'app/login/login.html',
       controller: 'LoginCtrl'
+    })
+    .state('app.signup', {
+      url: '/signup',
+      templateUrl: 'app/login/signup.html',
+      controller: 'LoginCtrl'
     });
 })
 

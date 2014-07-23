@@ -1,1188 +1,0 @@
-THelloCordova
-v6
-r1
-cCheck dependencies
-cProcessInfoPlistFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Info.plist /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist
-cPhaseScriptExecution Copy\ www\ directory /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-cCpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.png
-cCpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png
-cCpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png
-cCpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png
-cCpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png
-cCopyStringsFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings
-cCompileXIB /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib
-cCpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.png
-cCpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png
-cCopyStringsFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings
-cCpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png
-cCpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-cCpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png
-cCpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-cCpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png
-cCpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png
-cCpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.png
-cCpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png
-cCpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png
-cCpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png
-cCpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-cCpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png
-cCpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png
-cCpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png
-cProcessPCH /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova normal i386
-cGenerateDSYMFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-cTouch /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk
-c0000000053119F8A0000000000000198
-t1393663882
-s408
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/SDKSettings.plist
-c000000005383C7B400000000000003B4
-t1401145268
-s948
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/CoreServices/SystemVersion.plist
-c000000005383C7BD000000000000019E
-t1401145277
-s414
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-c000000005383C7C00000000000484210
-t1401145280
-s4735504
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
-c000000005383C7BF0000000000098030
-t1401145279
-s622640
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-c000000005383C7BE000000000019D2D0
-t1401145278
-s1692368
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
-c000000005383C7BF0000000000505040
-t1401145279
-s5263424
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-c000000005383C7BE0000000000059340
-t1401145278
-s365376
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-c000000005383C7C000000000005B82F0
-t1401145280
-s5997296
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000005383C7C00000000000446820
-t1401145280
-s4483104
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c000000005383C7C000000000000F1A80
-t1401145280
-s989824
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-c000000005383C7C0000000000013B8C0
-t1401145280
-s1292480
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000005383C7C3000000000088D8C0
-t1401145283
-s8968384
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c000000005383C7C300000000001BE790
-t1401145283
-s1828752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000005383C7CA0000000001F1DE10
-t1401145290
-s32628240
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-c000000005383C7D600000000002BC360
-t1401145302
-s2868064
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
-c000000005383C7DD0000000000002338
-t1401145309
-s9016
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
-c000000005383C7DE000000000008D370
-t1401145310
-s578416
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
-c000000005383C7DE0000000000392E20
-t1401145310
-s3747360
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
-c00000000537E4F2300000000000141F0
-t1400786723
-s82416
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
-c000000005383C7DE0000000000014A80
-t1401145310
-s84608
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-c000000005383C7DE0000000000033BA0
-t1401145310
-s211872
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-c000000005383C7DE000000000001CFB0
-t1401145310
-s118704
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
-c000000005383C7DE000000000001B2B0
-t1401145310
-s111280
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
-c000000005383C7DE00000000000C9570
-t1401145310
-s824688
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
-c000000005383C7DE0000000000063280
-t1401145310
-s406144
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
-c000000005383C7DE0000000000008880
-t1401145310
-s34944
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
-c000000005383C7DE0000000000015080
-t1401145310
-s86144
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
-c000000005383C7DE00000000000230F0
-t1401145310
-s143600
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
-c000000005383C7DE000000000000E380
-t1401145310
-s58240
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
-c000000005383C7DE0000000000089380
-t1401145310
-s562048
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
-c000000005383C7DE0000000000017320
-t1401145310
-s95008
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
-c000000005383C7DE0000000000039CD0
-t1401145310
-s236752
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-c000000005383C7DE000000000000B0B0
-t1401145310
-s45232
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
-c000000005383C7DF0000000000167E80
-t1401145311
-s1474176
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-c000000005383C7DE00000000000106A0
-t1401145310
-s67232
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-c000000005383C7DE000000000001CE40
-t1401145310
-s118336
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
-c000000005383C7DE00000000000740C0
-t1401145310
-s475328
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
-c000000005383C7DE000000000006CA60
-t1401145310
-s445024
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
-c000000005383C7DE000000000001BAD0
-t1401145310
-s113360
-
-N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
-c000000005383C7DE0000000000084A20
-t1401145310
-s543264
-
-N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-c000000005383C7F5000000000000514C
-t1401145333
-s20812
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.h
-c0000000053C56B9500000000000005BD
-t1405447061
-s1469
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m
-c0000000053C56B950000000000001773
-t1405447061
-s6003
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.h
-c0000000053C56B9500000000000004D2
-t1405447061
-s1234
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m
-c0000000053C56B95000000000000126D
-t1405447061
-s4717
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib
-c0000000053C56B950000000000001759
-t1405447061
-s5977
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist
-c0000000053C575810000000000000A18
-t1405449601
-s2584
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Prefix.pch
-c0000000053C56B9500000000000003C9
-t1405447061
-s969
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/de.lproj/Localizable.strings
-c0000000053C56B9500000000000004C0
-t1405447061
-s1216
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/en.lproj/Localizable.strings
-c0000000053C56B9500000000000004AB
-t1405447061
-s1195
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-40.png
-c0000000053C56B950000000000000FF2
-t1405447061
-s4082
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-40@2x.png
-c0000000053C56B950000000000001CF3
-t1405447061
-s7411
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-50.png
-c0000000053C56B95000000000000130A
-t1405447061
-s4874
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-50@2x.png
-c0000000053C56B95000000000000258B
-t1405447061
-s9611
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-60.png
-c0000000053C56B9500000000000016B3
-t1405447061
-s5811
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-60@2x.png
-c0000000053C56B950000000000002E94
-t1405447061
-s11924
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-72.png
-c0000000053C56B950000000000001350
-t1405447061
-s4944
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-72@2x.png
-c0000000053C56B950000000000002DBA
-t1405447061
-s11706
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-76.png
-c0000000053C56B950000000000001B71
-t1405447061
-s7025
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-76@2x.png
-c0000000053C56B950000000000003B9E
-t1405447061
-s15262
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-small.png
-c0000000053C56B950000000000000CDE
-t1405447061
-s3294
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-small@2x.png
-c0000000053C56B9500000000000015E8
-t1405447061
-s5608
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon.png
-c0000000053C56B950000000000000F3E
-t1405447061
-s3902
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon@2x.png
-c0000000053C56B950000000000001EBD
-t1405447061
-s7869
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-568h@2x~iphone.png
-c0000000053C56B9500000000000085B1
-t1405447061
-s34225
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png
-c0000000053C56B950000000000033D0A
-t1405447061
-s212234
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Landscape~ipad.png
-c0000000053C56B9500000000000166A2
-t1405447061
-s91810
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png
-c0000000053C56B950000000000033F7C
-t1405447061
-s212860
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Portrait~ipad.png
-c0000000053C56B950000000000016641
-t1405447061
-s91713
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default@2x~iphone.png
-c0000000053C56B950000000000007323
-t1405447061
-s29475
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default~iphone.png
-c0000000053C56B95000000000000289A
-t1405447061
-s10394
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m
-c0000000053C56B95000000000000045E
-t1405447061
-s1118
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o
-t1405447313
-s77472
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova.LinkFileList
-c0000000053C56B95000000000000020D
-t1405447061
-s525
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o
-t1405447313
-s51648
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o
-t1405447313
-s3044
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-c0000000053C56B95000000000000002D
-t1405447061
-s45
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app
-t1405449605
-s1020
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM
-t1405449506
-s102
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-t1405447061
-s34225
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-t1405447061
-s212234
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape~ipad.png
-t1405447061
-s91810
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-t1405447061
-s212860
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait~ipad.png
-t1405447061
-s91713
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default@2x~iphone.png
-t1405447061
-s29475
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default~iphone.png
-t1405447061
-s10394
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-t1405447313
-s277948
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Info.plist
-t1405449603
-s1296
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/MainViewController.nib
-t1405447061
-s836
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/PkgInfo
-t2
-s0
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings
-t1405447061
-s280
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings
-t1405447061
-s166
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-40.png
-t1405447061
-s4082
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-40@2x.png
-t1405447061
-s7411
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-50.png
-t1405447061
-s4874
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-50@2x.png
-t1405447061
-s9611
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-60.png
-t1405447061
-s5811
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-60@2x.png
-t1405447061
-s11924
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-72.png
-t1405447061
-s4944
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-72@2x.png
-t1405447061
-s11706
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-76.png
-t1405447061
-s7025
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-76@2x.png
-t1405447061
-s15262
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-small.png
-t1405447061
-s3294
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-small@2x.png
-t1405447061
-s5608
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon.png
-t1405447061
-s3902
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon@2x.png
-t1405447061
-s7869
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-c0000000053C56B950000000000000D19
-t1405447061
-s3353
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-c0000000053C56B9500000000000008BA
-t1405447061
-s2234
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-c0000000053C56B9500000000000004E2
-t1405447061
-s1250
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-c0000000053C56B950000000000000503
-t1405447061
-s1283
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-c0000000053C56B9500000000000007E6
-t1405447061
-s2022
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-c0000000053C56B9500000000000008F3
-t1405447061
-s2291
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-c0000000053C56B950000000000000C13
-t1405447061
-s3091
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-c0000000053C56B950000000000000408
-t1405447061
-s1032
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-c0000000053C56B950000000000000ACC
-t1405447061
-s2764
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-c0000000053C56B9500000000000004B4
-t1405447061
-s1204
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-c0000000053C56B9500000000000003A0
-t1405447061
-s928
-
-N/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/libCordova.a
-c0000000053C56C8C00000000000D4850
-t1405447308
-s870480
-
-N/usr/lib/libSystem.B.dylib
-c00000000537E4EF4000000000000E6D0
-t1400786676
-s59088
-
-N/usr/lib/system/libcache.dylib
-c000000005302F3030000000000012A00
-t1392702211
-s76288
-
-N/usr/lib/system/libcommonCrypto.dylib
-c000000005302F2EB000000000002E320
-t1392702187
-s189216
-
-N/usr/lib/system/libcompiler_rt.dylib
-c000000005302F2F70000000000021860
-t1392702199
-s137312
-
-N/usr/lib/system/libcopyfile.dylib
-c0000000053BC3AE0000000000001B610
-t1404844768
-s112144
-
-N/usr/lib/system/libcorecrypto.dylib
-c000000005302F30300000000000BD920
-t1392702211
-s776480
-
-N/usr/lib/system/libkeymgr.dylib
-c000000005302F303000000000000A120
-t1392702211
-s41248
-
-N/usr/lib/system/liblaunch.dylib
-c0000000053BC3AE0000000000001D550
-t1404844768
-s120144
-
-N/usr/lib/system/libmacho.dylib
-c000000005302F3030000000000014EE0
-t1392702211
-s85728
-
-N/usr/lib/system/libquarantine.dylib
-c000000005302F3050000000000010380
-t1392702213
-s66432
-
-N/usr/lib/system/libremovefile.dylib
-c000000005302F305000000000000C4C0
-t1392702213
-s50368
-
-N/usr/lib/system/libsystem_asl.dylib
-c000000005302F30300000000000357A0
-t1392702211
-s219040
-
-N/usr/lib/system/libsystem_blocks.dylib
-c000000005302F303000000000000C070
-t1392702211
-s49264
-
-N/usr/lib/system/libsystem_c.dylib
-c000000005302F2F70000000000168D00
-t1392702199
-s1477888
-
-N/usr/lib/system/libsystem_configuration.dylib
-c00000000537E4F1A0000000000010630
-t1400786714
-s67120
-
-N/usr/lib/system/libsystem_dnssd.dylib
-c0000000053BC3AE0000000000001DF10
-t1404844768
-s122640
-
-N/usr/lib/system/libsystem_info.dylib
-c000000005302F2F70000000000075B00
-t1392702199
-s482048
-
-N/usr/lib/system/libsystem_kernel.dylib
-c0000000053BC3AE0000000000007CD60
-t1404844768
-s511328
-
-N/usr/lib/system/libsystem_m.dylib
-c000000005302F2F700000000000766C0
-t1392702199
-s485056
-
-N/usr/lib/system/libsystem_malloc.dylib
-c000000005302F3040000000000044DC0
-t1392702212
-s282048
-
-N/usr/lib/system/libsystem_notify.dylib
-c000000005302F2F70000000000021FA0
-t1392702199
-s139168
-
-N/usr/lib/system/libsystem_platform.dylib
-c000000005302F304000000000002D920
-t1392702212
-s186656
-
-N/usr/lib/system/libsystem_pthread.dylib
-c000000005302F304000000000001E570
-t1392702212
-s124272
-
-N/usr/lib/system/libsystem_sandbox.dylib
-c0000000053BC3AE0000000000000CC70
-t1404844768
-s52336
-
-N/usr/lib/system/libunc.dylib
-c000000005302F2FF000000000000C3F0
-t1392702207
-s50160
-
-N/usr/lib/system/libunwind.dylib
-c000000005302F30400000000000199F0
-t1392702212
-s104944
-
-N/var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch
-t1405447313
-s5377264
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies68208603ad75b941^261b8703ad75b941^---0#1#1#--18"Check dependencies36"C5653B02-604D-4F44-B09A-4CAB1DEE9472-
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s427140113.348149
-e427140113.472608
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection117"Compile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m211"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler7e525911a475b941^c6fc7811a475b941^---0#0#1#-19%DVTDocumentLocation2@116"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m0000000000000000^4340"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o HelloCordova/Classes/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/usr/local/lib/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/UninstalledProducts/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -include /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.dia -c /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/AppDelegate.m -o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o36"C26FBCC6-0AFF-4908-B59C-328A21FE54B3-
-bF671B0BC-DF98-4BE0-A727-4A1F3458385B
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s427140113.348404
-e427140113.460449
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVViewController.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVAvailability.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVInvokedUrlCommand.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegate.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandQueue.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVWhitelist.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVScreenOrientationDelegate.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVPlugin.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVPluginResult.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/NSMutableArray+QueueAdditions.h
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include/Cordova/CDVCommandDelegateImpl.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Compile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m225"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler19565911a475b941^c2c27511a475b941^---0#0#1#-19%DVTDocumentLocation2@123"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m0000000000000000^4382"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o HelloCordova/Classes/MainViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/usr/local/lib/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/UninstalledProducts/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -include /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.d --serialize-diagnostics /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.dia -c /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.m -o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o36"945C8E8A-E86A-4259-B20F-039741500FFC-
-bF671B0BC-DF98-4BE0-A727-4A1F3458385B
-
-CCompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s427140113.347305
-e427140113.410685
-r1
-xCompileC
-xbuild/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection102"Compile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m189"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler5d185911a475b941^6c3f6911a475b941^---0#0#1#-19%DVTDocumentLocation2@101"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m0000000000000000^4282"CompileC build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o HelloCordova/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/usr/local/lib/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/UninstalledProducts/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -include /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch -MMD -MT dependencies -MF /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.dia -c /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/main.m -o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o36"965CF4DD-AF22-4C43-BBA0-E9B6DF4B98D8-
-bF671B0BC-DF98-4BE0-A727-4A1F3458385B
-
-CCompileXIB /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib
-s427056827.429069
-e427056830.066382
-r1
-xCompileXIB
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib
-o2014-07-14 11:53:49.430 Interface Builder Cocoa Touch Tool[4247:303] CFPreferences: user home directory at file:///Users/kiafathi/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection128"Compiling /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib54"CompileXIB HelloCordova/Classes/MainViewController.xib81076ebb5e74b941^fcff10be5e74b941^-232"2014-07-14 11:53:49.430 Interface Builder Cocoa Touch Tool[4247:303] CFPreferences: user home directory at file:///Users/kiafathi/Library/Application%20Support/iPhone%20Simulator/User/ is unavailable. User domains will be volatile.-0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib0000000000000000^1042"CompileXIB HelloCordova/Classes/MainViewController.xib    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    export XCODE_DEVELOPER_USR_PATH=/Applications/Xcode.app/Contents/Developer/usr/bin/..    /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/ibtool --errors --warnings --notices --minimum-deployment-target 6.0 --output-format human-readable-text --compile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/MainViewController.nib /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Classes/MainViewController.xib36"CC59858F-E7D4-4819-8467-9403B254840D-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCopyStringsFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings
-s427056827.431487
-e427056827.435099
-r1
-xCopyStringsFile
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/de.lproj/Localizable.strings
-xHelloCordova/Resources/de.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy HelloCordova/Resources/de.lproj/Localizable.strings128"CopyStringsFile build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings5c936ebb5e74b941^5b5c6fbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@133"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/de.lproj/Localizable.strings0000000000000000^823"CopyStringsFile build/emulator/HelloCordova.app/de.lproj/Localizable.strings HelloCordova/Resources/de.lproj/Localizable.strings    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/de.lproj -- HelloCordova/Resources/de.lproj/Localizable.strings36"4FE127E5-653C-4160-BD03-C5B9084B0B07-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCopyStringsFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings
-s427056827.428231
-e427056827.435220
-r1
-xCopyStringsFile
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/en.lproj/Localizable.strings
-xHelloCordova/Resources/en.lproj/Localizable.strings
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection56"Copy HelloCordova/Resources/en.lproj/Localizable.strings128"CopyStringsFile build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings16da6dbb5e74b941^2f6e6fbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@133"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/en.lproj/Localizable.strings0000000000000000^823"CopyStringsFile build/emulator/HelloCordova.app/en.lproj/Localizable.strings HelloCordova/Resources/en.lproj/Localizable.strings    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copyStrings --validate --inputencoding utf-8 --outputencoding binary --outdir /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/en.lproj -- HelloCordova/Resources/en.lproj/Localizable.strings36"9CE980CE-7B47-4D17-951C-F0A2BF37107B-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.png
-s427056827.447420
-e427056827.467219
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-40.png
-xbuild/emulator/HelloCordova.app/icon-40.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-40.png95"CpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.pngc7a172bb5e74b941^17d877bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-40.png00340837ddffdf42^864"CpResource HelloCordova/Resources/icons/icon-40.png build/emulator/HelloCordova.app/icon-40.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-40.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"2DEA032B-D96B-4ED2-80B8-CBB06451BD54-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png
-s427056827.425727
-e427056827.428061
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-40@2x.png
-xbuild/emulator/HelloCordova.app/icon-40@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-40@2x.png101"CpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.pngaa446dbb5e74b941^69ac6dbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-40@2x.png00340837ddffdf42^873"CpResource HelloCordova/Resources/icons/icon-40@2x.png build/emulator/HelloCordova.app/icon-40@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-40@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"44E31EAC-03B4-47D3-85DD-913EF64F2FA3-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.png
-s427056827.429210
-e427056827.431231
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-50.png
-xbuild/emulator/HelloCordova.app/icon-50.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-50.png95"CpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.pngeb026ebb5e74b941^ba6a6ebb5e74b941^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-50.png00340837ddffdf42^864"CpResource HelloCordova/Resources/icons/icon-50.png build/emulator/HelloCordova.app/icon-50.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-50.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"0E70426C-238C-45F7-85CD-1598BEDB0E67-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png
-s427056827.493985
-e427056827.506983
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-50@2x.png
-xbuild/emulator/HelloCordova.app/icon-50@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-50@2x.png101"CpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.pngebac7ebb5e74b941^f1d681bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-50@2x.png00340837ddffdf42^873"CpResource HelloCordova/Resources/icons/icon-50@2x.png build/emulator/HelloCordova.app/icon-50@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-50@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"010A2D8D-2457-4DFB-B138-49A1AD58F4EF-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png
-s427056827.467551
-e427056827.493744
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-60.png
-xbuild/emulator/HelloCordova.app/icon-60.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-60.png95"CpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png1ee277bb5e74b941^2f6b7ebb5e74b941^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-60.png00340837ddffdf42^864"CpResource HelloCordova/Resources/icons/icon-60.png build/emulator/HelloCordova.app/icon-60.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-60.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"49BE01D8-6A24-485F-A0AC-B92B1D49DD9A-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png
-s427056827.430671
-e427056827.432125
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-60@2x.png
-xbuild/emulator/HelloCordova.app/icon-60@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-60@2x.png101"CpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png315f6ebb5e74b941^c2a26ebb5e74b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-60@2x.png00340837ddffdf42^873"CpResource HelloCordova/Resources/icons/icon-60@2x.png build/emulator/HelloCordova.app/icon-60@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-60@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"CD28F33B-1F58-4E5A-8640-595753D4C43F-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png
-s427056827.426071
-e427056827.428406
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-72.png
-xbuild/emulator/HelloCordova.app/icon-72.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-72.png95"CpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png67446dbb5e74b941^a9db6dbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-72.png00340837ddffdf42^864"CpResource HelloCordova/Resources/icons/icon-72.png build/emulator/HelloCordova.app/icon-72.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-72.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"86CBDD4B-CCF0-4333-AC72-DF9E4591F37F-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png
-s427056827.496673
-e427056827.520136
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-72@2x.png
-xbuild/emulator/HelloCordova.app/icon-72@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-72@2x.png101"CpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png7d417fbb5e74b941^c13785bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-72@2x.png00340837ddffdf42^873"CpResource HelloCordova/Resources/icons/icon-72@2x.png build/emulator/HelloCordova.app/icon-72@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-72@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"B8CF6B96-C27B-44BF-A110-942574F03F2E-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.png
-s427056827.425592
-e427056827.427538
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-76.png
-xbuild/emulator/HelloCordova.app/icon-76.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon-76.png95"CpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.pngcf156dbb5e74b941^e6746dbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-76.png00340837ddffdf42^864"CpResource HelloCordova/Resources/icons/icon-76.png build/emulator/HelloCordova.app/icon-76.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-76.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"EA68EDB0-B426-41B5-8EC2-FA4896CB983D-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png
-s427056827.495193
-e427056827.506666
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-76@2x.png
-xbuild/emulator/HelloCordova.app/icon-76@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-76@2x.png101"CpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png3fe37ebb5e74b941^4ad281bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-76@2x.png00340837ddffdf42^873"CpResource HelloCordova/Resources/icons/icon-76@2x.png build/emulator/HelloCordova.app/icon-76@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-76@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"AE43BFC2-327E-4BB1-9728-E2956270DD5E-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png
-s427056827.432825
-e427056827.434444
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-small.png
-xbuild/emulator/HelloCordova.app/icon-small.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection51"Copy build/emulator/HelloCordova.app/icon-small.png101"CpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.pngd00b6fbb5e74b941^e84b6fbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@128"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-small.png00340837ddffdf42^873"CpResource HelloCordova/Resources/icons/icon-small.png build/emulator/HelloCordova.app/icon-small.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-small.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"1D7B14E1-746F-4A98-89EF-0397EC2ACC04-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png
-s427056827.445277
-e427056827.454698
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon-small@2x.png
-xbuild/emulator/HelloCordova.app/icon-small@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection54"Copy build/emulator/HelloCordova.app/icon-small@2x.png107"CpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.pngb13672bb5e74b941^97ae74bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@131"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon-small@2x.png00340837ddffdf42^882"CpResource HelloCordova/Resources/icons/icon-small@2x.png build/emulator/HelloCordova.app/icon-small@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon-small@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"141B7EAB-EDEC-4D9D-91E0-584733606777-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png
-s427056827.426897
-e427056827.428065
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon.png
-xbuild/emulator/HelloCordova.app/icon.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Copy build/emulator/HelloCordova.app/icon.png89"CpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png5e656dbb5e74b941^4dbe6dbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@122"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon.png00340837ddffdf42^855"CpResource HelloCordova/Resources/icons/icon.png build/emulator/HelloCordova.app/icon.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"6C752C7B-7D2D-49F8-8FAA-7ACA2F33C633-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png
-s427056827.427905
-e427056827.429208
-r1
-xCpResource
-xHelloCordova/Resources/icons/icon@2x.png
-xbuild/emulator/HelloCordova.app/icon@2x.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection48"Copy build/emulator/HelloCordova.app/icon@2x.png95"CpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.pngcdac6dbb5e74b941^1eff6dbb5e74b941^---0#0#1#-19%DVTDocumentLocation2@125"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/icon@2x.png00340837ddffdf42^864"CpResource HelloCordova/Resources/icons/icon@2x.png build/emulator/HelloCordova.app/icon@2x.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/icons/icon@2x.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"9299FD57-2B0D-495C-BDDD-113A0BC86758-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-s427056827.481026
-e427056827.493771
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-568h@2x~iphone.png
-xbuild/emulator/HelloCordova.app/Default-568h@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/emulator/HelloCordova.app/Default-568h@2x~iphone.png126"CpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.pngc1397bbb5e74b941^747a7ebb5e74b941^---0#0#1#-19%DVTDocumentLocation2@140"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-568h@2x~iphone.png00340837ddffdf42^911"CpResource HelloCordova/Resources/splash/Default-568h@2x~iphone.png build/emulator/HelloCordova.app/Default-568h@2x~iphone.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-568h@2x~iphone.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"1191E1DF-9485-4E8B-A395-47B5CE1BEEA7-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-s427056827.434808
-e427056827.444825
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Landscape@2x~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Copy build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png132"CpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png4c8e6fbb5e74b941^7bda71bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@143"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png00340837ddffdf42^920"CpResource HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png build/emulator/HelloCordova.app/Default-Landscape@2x~ipad.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Landscape@2x~ipad.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"6AEA2B11-8E7E-46EC-9129-EBED33B0B31A-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png
-s427056827.435710
-e427056827.445684
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Landscape~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Landscape~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection63"Copy build/emulator/HelloCordova.app/Default-Landscape~ipad.png126"CpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png9bae6fbb5e74b941^846772bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@140"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Landscape~ipad.png00340837ddffdf42^911"CpResource HelloCordova/Resources/splash/Default-Landscape~ipad.png build/emulator/HelloCordova.app/Default-Landscape~ipad.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Landscape~ipad.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"9B475487-5FB9-4B96-83F1-CD26DECD0125-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-s427056827.435993
-e427056827.446962
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Portrait@2x~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection65"Copy build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png130"CpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png54c66fbb5e74b941^1a8772bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@142"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png00340837ddffdf42^917"CpResource HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png build/emulator/HelloCordova.app/Default-Portrait@2x~ipad.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Portrait@2x~ipad.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"BD14818D-46EE-4108-8DBC-0E240BCA74C9-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png
-s427056827.445998
-e427056827.467309
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default-Portrait~ipad.png
-xbuild/emulator/HelloCordova.app/Default-Portrait~ipad.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection62"Copy build/emulator/HelloCordova.app/Default-Portrait~ipad.png124"CpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png4a4672bb5e74b941^ecdd77bb5e74b941^---0#0#1#-19%DVTDocumentLocation2@139"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default-Portrait~ipad.png00340837ddffdf42^908"CpResource HelloCordova/Resources/splash/Default-Portrait~ipad.png build/emulator/HelloCordova.app/Default-Portrait~ipad.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default-Portrait~ipad.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"6AF2BCB7-3687-404F-AC87-CC44037BF534-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png
-s427056827.455017
-e427056827.480089
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default@2x~iphone.png
-xbuild/emulator/HelloCordova.app/Default@2x~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Copy build/emulator/HelloCordova.app/Default@2x~iphone.png116"CpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png6ede74bb5e74b941^87fd7abb5e74b941^---0#0#1#-19%DVTDocumentLocation2@135"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default@2x~iphone.png00340837ddffdf42^896"CpResource HelloCordova/Resources/splash/Default@2x~iphone.png build/emulator/HelloCordova.app/Default@2x~iphone.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default@2x~iphone.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"1F576831-630D-4237-8C01-E36D1D6289CC-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CCpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png
-s427056827.467953
-e427056827.494262
-r1
-xCpResource
-xHelloCordova/Resources/splash/Default~iphone.png
-xbuild/emulator/HelloCordova.app/Default~iphone.png
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection55"Copy build/emulator/HelloCordova.app/Default~iphone.png110"CpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.pngebfc77bb5e74b941^4b8f7ebb5e74b941^---0#0#1#-19%DVTDocumentLocation2@132"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Default~iphone.png00340837ddffdf42^887"CpResource HelloCordova/Resources/splash/Default~iphone.png build/emulator/HelloCordova.app/Default~iphone.png    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/Resources/splash/Default~iphone.png /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"C0329D7C-E930-4AB4-BD31-051471176195-
-b1F19340A-91E0-40F9-9260-7F9CF6183B95
-
-CGenerateDSYMFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-s427142405.333991
-e427142405.395392
-r1
-xGenerateDSYMFile
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection120"Generate /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM98"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova6c945505ad75b941^503a6505ad75b941^---0#0#1#-19%DVTDocumentLocation2@119"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM/0000000000000000^867"GenerateDSYMFile build/emulator/HelloCordova.app.dSYM build/emulator/HelloCordova.app/HelloCordova    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/dsymutil /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova -o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app.dSYM36"F88B58C5-4796-4303-BD2A-EBA23841D883-
-b6C8B5DAF-DF72-48E6-B7BB-FDFF6F13B233
-
-CLd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova normal i386
-s427140113.565985
-e427140113.988699
-r1
-xLd
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova
-xnormal
-xi386
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova.LinkFileList
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/libCordova.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/crt1.o
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/main.o
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/AppDelegate.o
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/MainViewController.o
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreFoundation.framework/CoreFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/AVFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreMedia.framework/CoreMedia
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libSystem.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AssetsLibrary.framework/AssetsLibrary
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AddressBook.framework/AddressBook
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AddressBookUI.framework/AddressBookUI
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/libobjc.dylib
-d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.ios.a
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/PrivateFrameworks/UIFoundation.framework/UIFoundation
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/Frameworks/AVFoundation.framework/libAVFAudio.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_override.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcache_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcommonCrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcorecrypto_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcompiler_rt_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libcopyfile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdispatch.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libdyld_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libmacho_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libnotify_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libremovefile_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_blocks.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_c.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_dnssd.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_info.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_m.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_network.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libunwind_sim.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libxpc.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_configuration.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/libsystem_sim_asl.dylib
-d/usr/lib/libSystem.B.dylib
-d/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/usr/lib/system/host/libdyld.dylib
-d/usr/lib/system/libcache.dylib
-d/usr/lib/system/libcommonCrypto.dylib
-d/usr/lib/system/libcompiler_rt.dylib
-d/usr/lib/system/libcopyfile.dylib
-d/usr/lib/system/libcorecrypto.dylib
-d/usr/lib/system/libkeymgr.dylib
-d/usr/lib/system/liblaunch.dylib
-d/usr/lib/system/libmacho.dylib
-d/usr/lib/system/libquarantine.dylib
-d/usr/lib/system/libremovefile.dylib
-d/usr/lib/system/libsystem_asl.dylib
-d/usr/lib/system/libsystem_blocks.dylib
-d/usr/lib/system/libsystem_c.dylib
-d/usr/lib/system/libsystem_configuration.dylib
-d/usr/lib/system/libsystem_dnssd.dylib
-d/usr/lib/system/libsystem_info.dylib
-d/usr/lib/system/libsystem_kernel.dylib
-d/usr/lib/system/libsystem_m.dylib
-d/usr/lib/system/libsystem_malloc.dylib
-d/usr/lib/system/libsystem_notify.dylib
-d/usr/lib/system/libsystem_platform.dylib
-d/usr/lib/system/libsystem_pthread.dylib
-d/usr/lib/system/libsystem_sandbox.dylib
-d/usr/lib/system/libunc.dylib
-d/usr/lib/system/libunwind.dylib
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection124"Link /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova59"Ld build/emulator/HelloCordova.app/HelloCordova normal i38692049111a475b941^3141fd11a475b941^---0#0#1#--2139"Ld build/emulator/HelloCordova.app/HelloCordova normal i386    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export IPHONEOS_DEPLOYMENT_TARGET=6.0    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -L/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -F/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -filelist /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -weak_framework CoreFoundation -weak_framework UIKit -weak_framework AVFoundation -weak_framework CoreMedia -weak-lSystem -force_load /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/libCordova.a -ObjC -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=6.0 -framework AssetsLibrary /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/libCordova.a -framework CoreGraphics -framework MobileCoreServices -framework CoreLocation -weak_framework AddressBook -weak_framework AddressBookUI -Xlinker -dependency_info -Xlinker /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Objects-normal/i386/HelloCordova_dependency_info.dat -o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/HelloCordova36"03EB178D-681A-4235-83A9-8CEE186E33D9-
-bF671B0BC-DF98-4BE0-A727-4A1F3458385B
-
-CPhaseScriptExecution Copy\ www\ directory /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-s427142403.533316
-e427142405.328858
-r1
-xPhaseScriptExecution
-xCopy www directory
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh
-o
-oreal	0m1.762s
-ouser	0m0.484s
-osys	0m0.789s
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection44"Run custom shell script 'Copy www directory'142"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sha52e8903ad75b941^b62f5405ad75b941^-42"real	0m1.762suser	0m0.484ssys	0m0.789s3(21%IDEActivityLogMessage2@14"real	0m1.762s-427142405#1#14#-0#-----2@14"user	0m0.484s-427142405#15#14#-0#-----2@13"sys	0m0.789s-427142405#29#13#-0#-----0#0#1#--416"PhaseScriptExecution Copy\ www\ directory build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    /bin/sh -c /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/Script-304B58A110DAC018002A0835.sh36"FF471D6A-C6D2-44F8-A51D-3B581ECAA6E3-
-b6C8B5DAF-DF72-48E6-B7BB-FDFF6F13B233
-
-CProcessInfoPlistFile /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Info.plist /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist
-s427142403.527555
-e427142403.530306
-r1
-xProcessInfoPlistFile
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Info.plist
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection119"Process /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist100"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist1d388703ad75b941^170e8803ad75b941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist0000000000000000^985"ProcessInfoPlistFile build/emulator/HelloCordova.app/Info.plist HelloCordova/HelloCordova-Info.plist    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    builtin-infoPlistUtility /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Info.plist -genpkginfo /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/PkgInfo -expandbuildsettings -format binary -platform iphonesimulator -o /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app/Info.plist36"66FB2333-7726-4787-A03E-EEDCEE9ED0B1-
-b6C8B5DAF-DF72-48E6-B7BB-FDFF6F13B233
-
-CProcessPCH /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s427140112.961125
-e427140113.338241
-r1
-xProcessPCH
-x/var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch
-xHelloCordova/HelloCordova-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection47"Precompile HelloCordova/HelloCordova-Prefix.pch310"ProcessPCH /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerc426f610a475b941^39975611a475b941^---0#0#1#-19%DVTDocumentLocation2@118"file:///Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Prefix.pch0000000000000000^4304"ProcessPCH /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch HelloCordova/HelloCordova-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export LANG=en_US.US-ASCII    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=c99 -fobjc-arc -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -fvisibility=hidden -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=6.0 -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-generated-files.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-own-target-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-all-target-headers.hmap -iquote /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/HelloCordova-project-headers.hmap -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/usr/local/lib/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/UninstalledProducts/include -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources/i386 -I/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/HelloCordova.build/Debug-iphonesimulator/HelloCordova.build/DerivedSources -F/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator --serialize-diagnostics /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.d -c /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/HelloCordova/HelloCordova-Prefix.pch -o /var/folders/wf/8rxz3xc509d_z1tfr113b62c0000gn/C/com.apple.DeveloperTools/5.1.1-5B1008/Xcode/SharedPrecompiledHeaders/HelloCordova-Prefix-gjizvtdudwdnhcczcyhxvqwwlhgf/HelloCordova-Prefix.pch.pch36"AC9FABE8-400C-4850-8A24-C341FEFF51A5-
-bF671B0BC-DF98-4BE0-A727-4A1F3458385B
-
-CTouch /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app
-s427142405.396300
-e427142405.402676
-r1
-xTouch
-x/Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection112"Touch /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app37"Touch build/emulator/HelloCordova.app938f6505ad75b941^e9286705ad75b941^---0#0#1#--600"Touch build/emulator/HelloCordova.app    cd /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios    export PATH="/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Users/kiafathi/bin:/usr/local/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/git/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin"    /usr/bin/touch -c /Users/kiafathi/Documents/Code/ShortProject/quickcall-client/platforms/ios/build/emulator/HelloCordova.app36"AB250612-135A-4C01-BF6D-E133326A0FBE-
-b6C8B5DAF-DF72-48E6-B7BB-FDFF6F13B233
-
