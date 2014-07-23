@@ -64,7 +64,18 @@ input[type="tel"] {
   height: 65px;
   border-radius: 40px;
   position: fixed;
-  left: 41%;
+  left: 25%;
+  bottom: 3%;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
+}
+
+.sms {
+  background-color: #18ffff;
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  position: fixed;
+  left: 57%;
   bottom: 3%;
   box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
