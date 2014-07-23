@@ -26,6 +26,7 @@
     var serverData = {
       dst: destinationNumber,
       src: userData.number,
+      plivoNumber: userData.plivoNumber,
       authId: userData.id,
       authToken:userData.token
     };
@@ -61,7 +62,7 @@
     //The actual server post request
     return $http({
       method: 'POST',
-      url: 'http://quickcall-server.herokuapp.com/call',
+      url: 'http://quickcall-server-plus.herokuapp.com/call',
       data: JSON.stringify(serverData)
     });
   };
@@ -85,7 +86,7 @@
     //verifying users plivo credentials
     $http({
       method: 'GET',
-      url: 'http://quickcall-server.herokuapp.com/account',
+      url: 'http://quickcall-server-plus.herokuapp.com/account',
       /*sending authID and authToken to verify with plivo if successful plivo will send us a user
       JSON object if credentials are invalid we will be sent an error message from plivo*/
       params:{
@@ -118,7 +119,8 @@
             number:phoneNumber,
             name: dataObj.name,
             cash_credits: dataObj.cash_credits,
-            city: dataObj.city || "Unknown"
+            city: dataObj.city || "Unknown",
+            plivoNumber: dataObj.plivoNumber
           })
         );
       }
