@@ -14,7 +14,7 @@ angular.module('app.main.contacts', [
       }
     });
 })
-.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory, $state, $http, $timeout){
+.controller('ContactsCtrl', function($scope, $ionicModal, $ionicPopup, DialerFactory, ContactsFactory, $state, $http, $timeout){
   //this index is used as a target for populating the modal with the correct info
   $scope.index = 0;
 
@@ -46,6 +46,30 @@ angular.module('app.main.contacts', [
     //$scope.index is the active user, updated when you open a modal.
     target = target || $scope.friends[$scope.index];
     return DialerFactory.call(target.phoneNumbers[0].value);
+  };
+
+  $scope.data = {};
+  $scope.smsPopup = function(){
+    var popup = $ionicPopup.show({
+      title: 'Enter your text message',
+      template: '<textArea type="text" ng-model="data.message" rows="6">',
+      scope: $scope,
+      buttons: [
+        {text: 'Cancel'},
+        {
+          text: 'Send',
+          type: 'button-positive',
+          style: 'font-size: 10px',
+          onTap: function(e){
+            if(!$scope.data.message){
+              e.preventDefault();
+            }else{
+              console.log($scope.data.message);
+            }
+          }
+        }
+      ]
+    });
   };
 
   $scope.sendSms = function(target){
