@@ -68,7 +68,29 @@
   };
 
   var sms = function(destinationNumber){
-    console.log(destinationNumber);
+    //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
+    recentNumbers.unshift(destinationNumber);
+    if(recentNumbers.length > 3){
+      recentNumbers.pop();
+    }
+    //Get user object out of local storage
+    var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
+    //The server expects an object with a dst, the number user is calling, and src, user's numbe
+    var serverData = {
+      dst: destinationNumber,
+      src: userData.number,
+      plivoNumber: userData.plivoNumber,
+      text: 'test SMS message',
+      authId: userData.id,
+      authToken:userData.token
+    };
+
+    //The actual server post request
+    return $http({
+      method: 'POST',
+      url: 'http://quickcall-server-plus.herokuapp.com/sms',
+      data: JSON.stringify(serverData)
+    });
   };
 
   //The DialerFactory returns, usable in other controllers when DialerFactory is injected
