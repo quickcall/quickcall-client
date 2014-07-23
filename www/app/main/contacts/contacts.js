@@ -48,6 +48,11 @@ angular.module('app.main.contacts', [
     return DialerFactory.call(target.phoneNumbers[0].value);
   };
 
+  $scope.sendSms = function(target){
+    target = target || $scope.friends[$scope.index];
+    return DialerFactory.sms(target.phoneNumbers[0].value);
+  }
+
   /*This establishes the modal, contactInfo, and provides some basic modal functions to
   manipulate it. The only functions used are openModal and closeModal, close is invoked fromt the
   modal itself*/

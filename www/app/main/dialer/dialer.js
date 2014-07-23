@@ -44,6 +44,11 @@ angular.module('app.main.dialer', [
     $scope.phoneNumber = '';
   };
 
+  $scope.sendSms = function() {
+    DialerFactory.sms($scope.phoneNumber);
+    $scope.phoneNumber = '';
+  }
+
 
 })
 //Dialer directive, dialer-directive.html is the template

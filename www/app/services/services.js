@@ -67,12 +67,18 @@
     });
   };
 
+  var sms = function(destinationNumber){
+    console.log(destinationNumber);
+  };
+
   //The DialerFactory returns, usable in other controllers when DialerFactory is injected
   return {
     call: call,
+    sms: sms,
     recentNumbers : recentNumbers,
     currentUser: currentUser
   };
+
 })
 
 .factory('LoginFactory', function ($http, $state, $ionicPopup, $window){
