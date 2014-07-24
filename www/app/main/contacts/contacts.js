@@ -48,32 +48,6 @@ angular.module('app.main.contacts', [
     return DialerFactory.call(target.phoneNumbers[0].value);
   };
 
-  $scope.data = {};
-  $scope.smsPopup = function(){
-    var popup = $ionicPopup.show({
-      title: 'Enter your text message',
-      template: '<textArea type="text" ng-model="data.message" rows="6">',
-      scope: $scope,
-      buttons: [
-        {
-          text: '<span class="popupButtonText">Cancel</span>',
-        },
-        {
-          text: '<span class="popupButtonText">Send</span>',
-          type: 'button-positive',
-          onTap: function(e){
-            if(!$scope.data.message){
-              e.preventDefault();
-            }else{
-              console.log($scope.data.message);
-              $scope.data.message = '';
-            }
-          }
-        }
-      ]
-    });
-  };
-
   $scope.sendSms = function(target){
     target = target || $scope.friends[$scope.index];
     return DialerFactory.sms(target.phoneNumbers[0].value);

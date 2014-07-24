@@ -5,7 +5,7 @@
   'ngCordova'
 ])
 //DialerFactory: Used to track the current user, recent numbers, and to make calls
-.factory('DialerFactory', function ($http, $ionicPopup, $window) {
+.factory('DialerFactory', function ($http, $ionicPopup, $window, $rootScope) {
 
   //variable that keeps the 3 most recent numbers
   var recentNumbers = [];
@@ -67,6 +67,7 @@
     });
   };
 
+  $rootScope.data = {};
   var sms = function(destinationNumber){
     //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
     recentNumbers.unshift(destinationNumber);
@@ -75,23 +76,51 @@
     }
     //Get user object out of local storage
     var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
-    //The server expects an object with a dst, the number user is calling, and src, user's numbe
-    var serverData = {
-      dst: destinationNumber,
-      src: userData.number,
-      plivoNumber: userData.plivoNumber,
-      text: 'test SMS message',
-      authId: userData.id,
-      authToken:userData.token
-    };
 
-    //The actual server post request
-    return $http({
-      method: 'POST',
-      url: 'http://quickcall-server-plus.herokuapp.com/sms',
-      data: JSON.stringify(serverData)
+    var popup = $ionicPopup.show({
+      title: 'Enter your text message',
+      template: '<textArea type="text" ng-model="data.message" rows="6">',
+      scope: $rootScope,
+      buttons: [
+        {
+          text: '<span class="popupButtonText">Cancel</span>',
+        },
+        {
+          text: '<span class="popupButtonText">Send</span>',
+          type: 'button-positive',
+          onTap: function(e){
+            if(!$rootScope.data.message){
+              e.preventDefault();
+            }else{
+              return $rootScope.data.message;
+              $rootScope.data.message = '';
+            }
+          }
+        }
+      ]
+    });
+    
+    popup.then(function(message){
+      //Set up a payload of data with source/destination phone numbers, authorization tokens, and a message
+      var serverData = {
+        dst: destinationNumber,
+        src: userData.number,
+        plivoNumber: userData.plivoNumber,
+        text: message,
+        authId: userData.id,
+        authToken:userData.token
+      };
+
+      //The actual server post request
+      return $http({
+        method: 'POST',
+        url: 'http://quickcall-server-plus.herokuapp.com/sms',
+        data: JSON.stringify(serverData)
+      });
     });
   };
+
+
 
   //The DialerFactory returns, usable in other controllers when DialerFactory is injected
   return {
