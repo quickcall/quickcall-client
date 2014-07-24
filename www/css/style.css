@@ -2,9 +2,9 @@
 
 .dialer-card {
   width: 100%;
-  height: 80%;
+  height: 100%;
   position: fixed;
-  bottom: 0;
+  top: 0;
   box-shadow: 0 -5px 5px 0 #e0e0e0;
   background-color: #ffffff;
 }
@@ -69,8 +69,7 @@ textArea {
   border-radius: 40px;
   position: fixed;
   left: 25%;
-  bottom: 3%;
-  box-shadow: -2px 3px 5px 0px #bdbdbd;
+  bottom: 18%;
 }
 
 .sms {
@@ -80,15 +79,22 @@ textArea {
   border-radius: 40px;
   position: fixed;
   left: 57%;
-  bottom: 3%;
-  box-shadow: -2px 3px 5px 0px #bdbdbd;
+  bottom: 18%;
 }
 
 .phoneIcon {
-  font-size: xx-large;
+  font-size: 48px;
   position: fixed;
-  padding-top: 20px;
-  padding-left: 22px;
+  padding-top: 9px;
+  padding-left: 16px;
+  color: white;
+}
+
+.smsIcon {
+  font-size: 46px;
+  position: fixed;
+  padding-top: 10px;
+  padding-left: 16px;
   color: white;
 }
 
