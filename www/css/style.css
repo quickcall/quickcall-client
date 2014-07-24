@@ -54,6 +54,10 @@ input[type="tel"] {
   font-size: 2em;
 }
 
+textArea {
+  resize: none;
+}
+
 .bar .title {
   color: white;
 }
@@ -64,7 +68,18 @@ input[type="tel"] {
   height: 65px;
   border-radius: 40px;
   position: fixed;
-  left: 41%;
+  left: 25%;
+  bottom: 3%;
+  box-shadow: -2px 3px 5px 0px #bdbdbd;
+}
+
+.sms {
+  background-color: #18ffff;
+  width: 65px;
+  height: 65px;
+  border-radius: 40px;
+  position: fixed;
+  left: 57%;
   bottom: 3%;
   box-shadow: -2px 3px 5px 0px #bdbdbd;
 }
@@ -193,7 +208,8 @@ input[type="tel"] {
 }
 
 .contactInfoList {
-  margin-top: 75%;
+  margin-top: 60%;
+  height: 100px;
   border-bottom: 1px solid lightgrey;
 }
 
@@ -203,11 +219,19 @@ input[type="tel"] {
   background-color: white !important;
 }
 
-.ion-ios7-telephone-outline {
+.ion-ios7-telephone-outline, .ion-ios7-chatbubble-outline {
+  padding-top: 6.5%;
   font-size: 55px;
-  color: #7C7C7C;
-  padding-left: 38px;
+  color: #00e5ff;
   position: fixed;
+}
+
+.ion-ios7-telephone-outline{
+  right: 5%;
+}
+
+.ion-ios7-chatbubble-outline {
+  right: 22%;
 }
 
 .login{
@@ -225,13 +249,27 @@ input[type="tel"] {
   background-color: #ff5722 !important;
 }
 
-.contactInfoNumber {
-  padding-left: 30%;
+.contactInfo {
+  padding-left: 6%;
   padding-top: 7%;
-  font-size: 27px;
   color: #525252;
+  position: fixed;
+}
+
+.contactInfoLabel {
+  font-size: 18px;
+  color: #aaa;
+}
+
+.contactInfoNumber {
+  padding-top: 4%;
+  font-size: 27px;
 }
 
 .contactPhoneInfo {
   margin-bottom: 15px;
+}
+
+.popupButtonText {
+  font-size: 24px;
 }

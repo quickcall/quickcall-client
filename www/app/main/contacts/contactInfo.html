@@ -11,8 +11,12 @@
   </div>
   <div class="contactInfoList">
     <div class="contactPhoneInfo">
+      <div class="contactInfo" ng-click="makeCall()">
+        <div class="contactInfoLabel">phone</div>
+        <div class="contactInfoNumber">{{ friends[index].phoneNumbers[0].value }}</div>
+      </div>
       <i class="icon ion-ios7-telephone-outline" ng-click="makeCall()"></i>
-       <div class="contactInfoNumber" ng-click="makeCall()">{{ friends[index].phoneNumbers[0].value }}</div>
+      <i class="icon ion-ios7-chatbubble-outline" ng-click="sendSms()"></i>
     </div>
   </div>
 </div>

@@ -14,7 +14,7 @@ angular.module('app.main.contacts', [
       }
     });
 })
-.controller('ContactsCtrl', function($scope, $ionicModal, DialerFactory, ContactsFactory, $state, $http, $timeout){
+.controller('ContactsCtrl', function($scope, $ionicModal, $ionicPopup, DialerFactory, ContactsFactory, $state, $http, $timeout){
   //this index is used as a target for populating the modal with the correct info
   $scope.index = 0;
 
@@ -47,6 +47,11 @@ angular.module('app.main.contacts', [
     target = target || $scope.friends[$scope.index];
     return DialerFactory.call(target.phoneNumbers[0].value);
   };
+
+  $scope.sendSms = function(target){
+    target = target || $scope.friends[$scope.index];
+    return DialerFactory.sms(target.phoneNumbers[0].value);
+  }
 
   /*This establishes the modal, contactInfo, and provides some basic modal functions to
   manipulate it. The only functions used are openModal and closeModal, close is invoked fromt the
