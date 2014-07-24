@@ -129,7 +129,7 @@
   };
 })
 
-.factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $state) {
+.factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $http, $state) {
     // <<- create firebase objects required for simple login and to store information to database
     var ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com'));
     var authref = new Firebase('https://quickcallhr.firebaseio.com');
@@ -145,10 +145,21 @@
           // <<- save unique id and phone number to database
           ref.$add({
             id: user.id, 
-            phoneNumber: phoneNumber
+            phoneNumber: phoneNumber, 
           })
-            .then(function() {
-              $state.go('app.main.dialer');
+
+          // <<- send POST request to server to generate plivo subaccount
+          $http({
+            method: 'POST',
+            url: 'https://quickcall-server.azurewebsites.net/createUser',
+            params:{
+              id: user.ID
+            }
+          })
+            // <<- navidate to 
+            .then(function(data) {
+              console.log(data);
+              $state.go('app.main.contacts');
             })
             .catch(function(err) {
               console.log(err);
@@ -161,7 +172,7 @@
 
     // <<- authenticate users 
     var login = function(userPayload) {
-      return auth.$login('password', userPayload)
+      auth.$login('password', userPayload)
         .then(function(user) {
           if (user) {
             console.log(user);
@@ -172,33 +183,33 @@
         })
         .catch(function(err) {
           console.log(err);
-        });
+      });
     }; 
 
     // <<- check to see if a user is signed in
     var signin = function() {
-      return auth.$getUser()
-        .then(function(user) {
-          if (user) {
-            return; 
-          } else {
-            $state.go('app.login'); 
-          }
-        })
-        .catch(function(err) {
-          console.log(err);
-        });
+      return auth.$getCurrentUser()
+        // .then(function(user) {
+        //   if (user) {
+        //     return; 
+        //   } else {
+        //     $state.go('app.home'); 
+        //   }
+        // })
+        // .catch(function(err) {
+        //   console.log(err);
+        // });
     }; 
 
     // <<- sign user out
     var logout = function() {
-      return auth.$logout()
+      auth.$logout()
         .then(function() {
           $state.go('app.login');
         })
         .catch(function(err) {
           console.log(err);
-        });
+      });
     };
 
     return {
