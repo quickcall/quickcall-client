@@ -120,8 +120,6 @@
     });
   };
 
-
-
   //The DialerFactory returns, usable in other controllers when DialerFactory is injected
   return {
     call: call,
@@ -129,25 +127,36 @@
     recentNumbers : recentNumbers,
     currentUser: currentUser
   };
-
 })
 
-.factory('LoginFactory', function($firebaseSimpleLogin, $rootScope, $state) {
-    // <<- create firebase objects required to simple log
-    var ref = new Firebase('https://quickcallhr.firebaseio.com');
-    var auth = $firebaseSimpleLogin(ref); 
+.factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $state) {
+    // <<- create firebase objects required for simple login and to store information to database
+    var ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com'));
+    var authref = new Firebase('https://quickcallhr.firebaseio.com');
+    var auth = $firebaseSimpleLogin(authref); 
 
     // <<- register new users
     var register = function(userPayload) {
+      // <<- remove dashes from phone number using regexp
+      var phoneNumber = userPayload.phoneNumber.replace(/\D+/g,'');
+
       auth.$createUser(userPayload.email, userPayload.password)
         .then(function(user) {
-          $state.go('app.main.dialer');
+          // <<- save unique id and phone number to database
+          ref.$add({
+            id: user.id, 
+            phoneNumber: phoneNumber
+          })
+            .then(function() {
+              $state.go('app.main.dialer');
+            })
+            .catch(function(err) {
+              console.log(err);
+            });
         })
         .catch(function(err) {
           console.log(err);
         });
-      // <<- send userInput.phoneNumber to database on register and redirect to home page
-      // $state.go('app.main.dialer'); 
     };
 
     // <<- authenticate users 
@@ -155,6 +164,7 @@
       return auth.$login('password', userPayload)
         .then(function(user) {
           if (user) {
+            console.log(user);
             $state.go('app.main.dialer');
           } else {
             $state.go('app.login');
