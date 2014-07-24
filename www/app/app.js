@@ -8,16 +8,18 @@ angular.module('app', [
 ])
 //This run function determines if a user object is stored on login
 //otherwise it will redirect to login, won't let you leave login until logged in
-.run(function($ionicPlatform, $rootScope, $window, $urlRouter, $state) {
-  console.log('stuffhello');
-  // $rootScope.$on('$locationChangeSuccess', function(event) {
+.run(function($ionicPlatform, $rootScope, $window, $urlRouter, $state, LoginFactory) {
+  $rootScope.$on('$locationChangeSuccess', function(event) {
+    // debugger
     // event.preventDefault();
+    // LoginFactory.signin();
+    // $urlRouter.sync();
     // if($window.localStorage.getItem('com.quickCall.auth')) {
-      // $urlRouter.sync();
+    //   $urlRouter.sync();
     // } else {
     //   $state.go('app.login');
     // }
-  // });
+  });
 
   $ionicPlatform.ready(function() {
     // Hide the accessory bar by default (remove this to show the accessory bar above the keyboard
@@ -39,5 +41,5 @@ angular.module('app', [
       templateUrl: 'app/app.html'
     });
     //redirect to login in page
-    $urlRouterProvider.otherwise('app/main/dialer');
+    $urlRouterProvider.otherwise('app/main/contacts');
 });
