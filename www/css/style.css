@@ -17,7 +17,7 @@
   text-align: center;
   height: 55px;
   font-size: xx-large;
-  color: #00e5ff;
+  color: #05c9f4;
 }
 
 .star, .pound {
@@ -30,7 +30,7 @@
 
 
 .bar-header {
-  background-color: #ff5722;
+  background-color: #05c9f4;
   box-shadow: 0px 5px 7px #e0e0e0;
 }
 
@@ -63,7 +63,7 @@ textArea {
 }
 
 .call {
-  background-color: #18ffff;
+  background-color: #05c9f4;
   width: 65px;
   height: 65px;
   border-radius: 40px;
@@ -73,7 +73,7 @@ textArea {
 }
 
 .sms {
-  background-color: #18ffff;
+  background-color: #05c9f4;
   width: 65px;
   height: 65px;
   border-radius: 40px;
@@ -228,7 +228,7 @@ textArea {
 .ion-ios7-telephone-outline, .ion-ios7-chatbubble-outline {
   padding-top: 6.5%;
   font-size: 55px;
-  color: #00e5ff;
+  color: #05c9f4;
   position: fixed;
 }
 
@@ -251,8 +251,9 @@ textArea {
 }
 
 .loginbar {
-  border-color: #ff5722 !important;
-  background-color: #ff5722 !important;
+  border-color: #05c9f4 !important;
+  background-color: #05c9f4 !important;
+  margin: 0 !important;
 }
 
 .contactInfo {
