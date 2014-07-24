@@ -62,7 +62,7 @@
     //The actual server post request
     return $http({
       method: 'POST',
-      url: 'http://quickcall-server-plus.herokuapp.com/call',
+      url: 'https://quickcall-server.azurewebsites.net/call',
       data: JSON.stringify(serverData)
     });
   };
@@ -114,7 +114,7 @@
       //The actual server post request
       return $http({
         method: 'POST',
-        url: 'http://quickcall-server-plus.herokuapp.com/sms',
+        url: 'https://quickcall-server.azurewebsites.net/sms',
         data: JSON.stringify(serverData)
       });
     });
@@ -220,7 +220,7 @@
 //     //verifying users plivo credentials
 //     $http({
 //       method: 'GET',
-//       url: 'http://quickcall-server-plus.herokuapp.com/account',
+//       url: 'https://quickcall-server.azurewebsites.net/account',
 //       /*sending authID and authToken to verify with plivo if successful plivo will send us a user
 //       JSON object if credentials are invalid we will be sent an error message from plivo*/
 //       params:{
@@ -330,26 +330,22 @@
     {
       name: "DH Lee",
       photos: [{value: "img/dhLee.jpeg"}],
-      description: "HR14 Fullstack Software Engineer, QuickCall Founder",
       phoneNumbers: [{value: "14155345337"}]
     },
     {
       //just an incredibly sexy dude (^_^)
       name: "Kia Fathi",
       photos: [{value: "img/kiaFathi.jpg"}],
-      description: "HR14 Fullstack Software Engineer",
       phoneNumbers: [{value:"16508888614"}]
     },
     {
       name: "Jakob Harclerode",
       photos: [{value: "img/yahkob.jpg"}],
-      description: "HR14 Fullstack Software Engineer, Heavy Metal",
       phoneNumbers: [{value:"19286996726"}]
     },
     {
       name: "Mason Hargrove",
       photos: [{value: "img/mase87.jpg"}],
-      description: "HR14 Fullstack Software Engineer, Straight-Up Badass",
       phoneNumbers: [{value:"12294128411"}]
     }
   ];
