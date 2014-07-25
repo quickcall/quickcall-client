@@ -19,7 +19,7 @@
         recentNumbers.pop();
       }
       
-      // get user information from firebase
+      // <<- get user information from firebase
       var ref;
       var userData;
 
@@ -36,21 +36,24 @@
                 userData.dst = destinationNumber;
               }
             }
+            // <<- $on is not promisified in angularfire
+            //     send userData to server
+            return $http({
+              method: 'POST',
+              url: 'https://quickcall-server.azurewebsites.net/call',
+              data: JSON.stringify(userData)
+            })
+              .then(function(data) {
+                console.log(data);
+              }) 
+              .catch(function(error) {
+                console.log(err);
+              });
           });
         })
         .catch(function(err) {
           console.log(err);
         })
-
-      //The server expects an object with a dst, the number user is calling, and src, user's numbe
-      // var serverData = {
-      //   dst: destinationNumber,
-      //   src: userData.phoneNumber,
-      //   plivoNumber: userData.plivo_phone,
-      //   authId: userData.auth_id,
-      //   authToken:userData.auth_tokens,
-      //   id: userData.id
-      // };
 
       /*This is a sloppy way to make the number in the alert pop-up look nice,
       courtesy of Kia   ┐('～`;)┌  Not currently in use*/
@@ -79,13 +82,6 @@
         title: 'Calling...',
         template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
       });
-
-      //The actual server post request
-      return $http({
-        method: 'POST',
-        url: 'https://quickcall-server.azurewebsites.net/call',
-        data: JSON.stringify(userData)
-      });
     };
 
     $rootScope.data = {};
@@ -96,7 +92,42 @@
         recentNumbers.pop();
       }
       // get user information from firebase
+ 
+      // <<- get user information from firebase
+      var ref;
+      var userData;
 
+      LoginFactory.signin()
+        .then(function(user) {
+          ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com' + '/' + user.id));
+          ref.$on('value', function(userSnapshot) {
+            var firebasePayload = userSnapshot.snapshot.value;
+            // <<- firebase returns userdata in a nested object
+            for (var key in firebasePayload) {
+              if (firebasePayload.hasOwnProperty(key)) {
+                // <<- set userData
+                userData = firebasePayload[key];
+                userData.dst = destinationNumber;
+              }
+            }
+            // <<- $on is not promisified in angularfire
+            //     send userData to server
+            return $http({
+              method: 'POST',
+              url: 'https://quickcall-server.azurewebsites.net/call',
+              data: JSON.stringify(userData)
+            })
+              .then(function(data) {
+                console.log(data);
+              }) 
+              .catch(function(error) {
+                console.log(err);
+              });
+          });
+        })
+        .catch(function(err) {
+          console.log(err);
+        })     
 
       // var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
 
