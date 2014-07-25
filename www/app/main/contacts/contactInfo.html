@@ -1,15 +1,15 @@
 <!--Show deeper friend info -->
 <div class="modal">
   <div class="infoBanner">
-    <i class="icon ion-ios7-arrow-back" ng-click="closeModal()"></i>
+    <i class="icon ion-ios7-arrow-back" ng-click="closeModal()"><span class="arrow-back-text">Contacts<span></i>
+  </div>
+  <div class="contactInfoList">
     <div class="infoAvatar">
       <i class="icon ion-ios7-person infoAvatarPhoto"></i>
     </div>
     <div class="infoContactName">
       <span class="names">{{friends[index].name.split(' ')[0]}}</span> {{friends[index].name.split(' ')[1]}}
     </div>
-  </div>
-  <div class="contactInfoList">
     <div class="contactPhoneInfo">
       <div class="contactInfo" ng-click="makeCall()">
         <div class="contactInfoLabel">phone</div>
