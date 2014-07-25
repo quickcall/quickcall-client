@@ -153,7 +153,7 @@
             method: 'POST',
             url: 'https://quickcall-server.azurewebsites.net/createUser',
             params:{
-              id: user.ID
+              id: user.id
             }
           })
             // <<- navidate to 
@@ -176,29 +176,20 @@
         .then(function(user) {
           if (user) {
             console.log(user);
-            $state.go('app.main.dialer');
+            $state.go('app.main.contacts');
           } else {
             $state.go('app.login');
           }
         })
         .catch(function(err) {
           console.log(err);
-      });
+        });
     }; 
 
     // <<- check to see if a user is signed in
     var signin = function() {
+      // <<- return promise to app.js
       return auth.$getCurrentUser()
-        // .then(function(user) {
-        //   if (user) {
-        //     return; 
-        //   } else {
-        //     $state.go('app.home'); 
-        //   }
-        // })
-        // .catch(function(err) {
-        //   console.log(err);
-        // });
     }; 
 
     // <<- sign user out
