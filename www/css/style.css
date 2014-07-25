@@ -221,8 +221,8 @@ textArea {
 .arrow-back-text {
   position: fixed;
   padding-top: 10px;
-  padding-left: 10px;
-  font-size: 24px;
+  padding-left: 6px;
+  font-size: 20px;
 }
 
 .contactInfoList {
