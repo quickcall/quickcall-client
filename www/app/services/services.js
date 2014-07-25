@@ -12,7 +12,6 @@
   //current users data from local storage
   var currentUser = {};
 
-
   //call function, sends post request to server
   var call = function(destinationNumber) {
     //saves the called number to recentNumbers, keeps recentNumbers to 3 numbers max
@@ -129,9 +128,9 @@
   };
 })
 
-.factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $http, $state) {
+  .factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $http, $state) {
     // <<- create firebase objects required for simple login and to store information to database
-    var ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com'));
+    var ref;
     var authref = new Firebase('https://quickcallhr.firebaseio.com');
     var auth = $firebaseSimpleLogin(authref); 
 
@@ -139,35 +138,47 @@
     var register = function(userPayload) {
       // <<- remove dashes from phone number using regexp
       var phoneNumber = userPayload.phoneNumber.replace(/\D+/g,'');
+      var firebaseUser;
 
+      // <<- create a user profile via firebase
       auth.$createUser(userPayload.email, userPayload.password)
         .then(function(user) {
-          // <<- save unique id and phone number to database
-          ref.$add({
-            id: user.id, 
-            phoneNumber: phoneNumber, 
-          })
-
-          // <<- send POST request to server to generate plivo subaccount
+          // <<- save user to external variable
+          firebaseUser = user;
+          // <<- send user id to server to generate plivo subaccount 
           $http({
             method: 'POST',
             url: 'https://quickcall-server.azurewebsites.net/createUser',
-            params:{
-              id: user.id
+            data:{
+              id: firebaseUser.id
             }
           })
-            // <<- navidate to 
-            .then(function(data) {
-              console.log(data);
-              $state.go('app.main.contacts');
+            .then(function(serverPayload) {
+              // <<- create new firebase ref
+              ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com' + '/' + firebaseUser.id));
+              // <<- add user id and server payload to database
+              ref.$add({
+                id: firebaseUser.id, 
+                phoneNumber: firebaseUser.phoneNumber,
+                api_id: serverPayload.data.api_id,
+                auth_id: serverPayload.data.auth_id, 
+                auth_token: serverPayload.data.auth_token,
+                plivo_phone: serverPayload.data.plivo_phone
+              })
+                .then(function() {
+                  $state.go('app.login');
+                })
+                .catch(function(err) {
+                  console.log(err);
+                })
             })
             .catch(function(err) {
               console.log(err);
-            });
+            })
         })
         .catch(function(err) {
           console.log(err);
-        });
+        })
     };
 
     // <<- authenticate users 
@@ -209,7 +220,7 @@
       signin: signin,
       logout: logout
     }; 
-})
+  })
 
 // .factory('LoginFactory', function ($http, $state, $ionicPopup, $window){
 //   //used for databinding on login.html

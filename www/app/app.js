@@ -12,7 +12,6 @@ angular.module('app', [
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
       LoginFactory.signin()
         .then(function(user) {
-          console.log(toState.authenticate);
           if (toState.authenticate && !user) {
             $state.go('app.home'); 
             event.preventDefault();
