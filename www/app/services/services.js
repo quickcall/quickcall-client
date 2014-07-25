@@ -162,11 +162,12 @@
               // <<- add user id and server payload to database
               ref.$add({
                 id: firebaseUser.id, 
-                phoneNumber: firebaseUser.phoneNumber,
+                phoneNumber: phoneNumber,
                 api_id: serverPayload.data.api_id,
                 auth_id: serverPayload.data.auth_id, 
                 auth_token: serverPayload.data.auth_token,
-                plivo_phone: serverPayload.data.plivo_phone
+                plivo_phone: serverPayload.data.plivo_phone, 
+                tokens: 0
               })
                 .then(function() {
                   $state.go('app.login');

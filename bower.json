@@ -8,6 +8,7 @@
     "lodash": "~2.4.1",
     "ngFx": "~1.0.1",
     "firebase": "~1.0.17",
-    "firebase-simple-login": "~1.6.2"
+    "firebase-simple-login": "~1.6.2",
+    "angularfire": "~0.7.1"
   }
 }
