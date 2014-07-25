@@ -57,7 +57,7 @@
         data: JSON.stringify(callPayload)
       })
         .catch(function(error) {
-          console.log(err);
+          console.log(error);
         });
     };
 

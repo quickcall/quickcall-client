@@ -4,7 +4,6 @@
   height: 100%;
   width: 100%;
   background-color: #42c8f4;
-  display: table;
 }
 
 .startLogo {
@@ -12,13 +11,9 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
-  display: table-row;
 }
 
 .start-buttons {
-  height: auto;
-  display: table-row;
-  vertical-align: middle;
 }
 
 .button-start {
@@ -63,7 +58,6 @@
 
 .bar-header {
   background-color: #42c8f4;
-  box-shadow: 0px 5px 7px #e0e0e0;
 }
 
 .list {
