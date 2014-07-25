@@ -259,43 +259,6 @@ textArea {
   border-bottom: 1px solid lightgrey;
 }
 
-/*Login.html Style*/
-
-.loginform {
-  background-color: white !important;
-}
-
-.ion-ios7-telephone-outline, .ion-ios7-chatbubble-outline {
-  padding-top: 6.5%;
-  font-size: 55px;
-  color: #42c8f4;
-  position: fixed;
-}
-
-.ion-ios7-telephone-outline{
-  right: 5%;
-}
-
-.ion-ios7-chatbubble-outline {
-  right: 22%;
-}
-
-.login{
-  background-color: #f5f5f5;
-}
-
-.logininfo {
-  background-color: #f5f5f5 !important;
-  border-color: #ddd !important;
-  color:black !important;
-}
-
-.loginbar {
-  border-color: #42c8f4 !important;
-  background-color: #42c8f4 !important;
-  margin: 0 !important;
-}
-
 .contactInfo {
   padding-left: 6%;
   padding-top: 7%;
@@ -318,6 +281,23 @@ textArea {
   clear: both;
 }
 
+.ion-ios7-telephone-outline, .ion-ios7-chatbubble-outline {
+  padding-top: 6.5%;
+  font-size: 55px;
+  color: #42c8f4;
+  position: fixed;
+}
+
+.ion-ios7-telephone-outline{
+  right: 5%;
+}
+
+.ion-ios7-chatbubble-outline {
+  right: 22%;
+}
+
+/*SMS Popup Styles*/
+
 .popupButtonText {
   font-size: 24px;
 }
@@ -325,5 +305,27 @@ textArea {
 .button-positive {
   background-color: #42c8f4 !important;
   border-color: #aaa !important;
+}
+
+/*Login.html Style*/
+
+.loginform {
+  background-color: white !important;
+}
+
+.login{
+  background-color: #f5f5f5;
+}
+
+.logininfo {
+  background-color: #f5f5f5 !important;
+  border-color: #ddd !important;
+  color:black !important;
+}
+
+.loginbar {
+  border-color: #42c8f4 !important;
+  background-color: #42c8f4 !important;
+  margin: 0 !important;
 }
 
