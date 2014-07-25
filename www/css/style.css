@@ -291,3 +291,9 @@ textArea {
 .popupButtonText {
   font-size: 24px;
 }
+
+.button-positive {
+  background-color: #05c9f4 !important;
+  border-color: #aaa !important;
+}
+
