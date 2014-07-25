@@ -56,9 +56,6 @@
         url: 'https://quickcall-server.azurewebsites.net/call',
         data: JSON.stringify(callPayload)
       })
-        .then(function(data) {
-          console.log(data);
-        }) 
         .catch(function(error) {
           console.log(err);
         });
@@ -109,7 +106,10 @@
             method: 'POST',
             url: 'https://quickcall-server.azurewebsites.net/sms',
             data: JSON.stringify(textPayload)
-          });
+          })
+            .catch(function(err) {
+              console.log(err);
+            })
         }
       });
     };
