@@ -11,7 +11,8 @@ angular.module('app.main.dialer', [
           templateUrl: 'app/main/dialer/dialer.html',
           controller: 'DialerCtrl'
         }
-      }
+      }, 
+      authenticate: true
     });
 })
 .controller('DialerCtrl', function($scope, DialerFactory, $state, $ionicGesture){

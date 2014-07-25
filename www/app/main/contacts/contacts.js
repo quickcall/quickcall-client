@@ -1,5 +1,6 @@
 angular.module('app.main.contacts', [
 ])
+
 //state provider, sets it as a subview of app.main
 .config(function($stateProvider){
   $stateProvider
@@ -11,9 +12,11 @@ angular.module('app.main.contacts', [
           templateUrl : "app/main/contacts/contacts.html",
           controller : "ContactsCtrl"
         }
-      }
+      }, 
+      authenticate: true
     });
 })
+
 .controller('ContactsCtrl', function($scope, $ionicModal, $ionicPopup, DialerFactory, ContactsFactory, $state, $http, $timeout){
   //this index is used as a target for populating the modal with the correct info
   $scope.index = 0;

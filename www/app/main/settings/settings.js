@@ -9,9 +9,11 @@ angular.module('app.main.settings', [
           templateUrl: 'app/main/settings/settings.html',
           controller: 'SettingsCtrl'
         }
-      }
+      },
+      authenticate: true
     });
 })
+
 //Currently there are no real settings, we should add those (^◡^ )
 .controller('SettingsCtrl', function($scope, $ionicModal, DialerFactory, $state, $window){
   /*setting currentUser on scope to be equal to local storage, we can't set the currentUser in the dialer factory

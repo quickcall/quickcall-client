@@ -5,17 +5,20 @@ angular.module('app.auth', [
       .state('app.home', {
         url: '/home',
         templateUrl: 'app/login/home.html',
-        controller: 'AuthController'
+        controller: 'AuthController', 
+        authenticate: false
       })
       .state('app.register', {
         url: '/register',
         templateUrl: 'app/login/register.html',
         controller: 'AuthController',
+        authenticate: false
       })
       .state('app.login', {
         url: '/login',
         templateUrl: 'app/login/login.html',
-        controller: 'AuthController'
+        controller: 'AuthController',
+        authenticate: false
       });
   })
 
