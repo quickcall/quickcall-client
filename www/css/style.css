@@ -177,11 +177,13 @@ textArea {
 .infoBanner {
   width: 100%;
   height: 9%;
-  position: fixed;
   background: white;
   border-bottom: 1px solid #aaa;
 }
 
+.infoIdCard {
+  display: table;
+}
 
 .infoAvatar{
   float: left;
@@ -190,22 +192,24 @@ textArea {
   background-color: #e0e0e0;
   border-radius: 50px;
   margin-left: 20px;
+  display: table-cell;
 }
 
 .infoAvatarPhoto {
-  font-size: 80px !important;
-  padding-left: 3.9%;
+  font-size: 81px !important;
+  padding-left: 17%;
   color: #9e9e9e;
-  position: fixed;
 }
 
 .infoContactName {
-  float: left;
   font-size: 26px;
   color: #aaa;
-  padding-top: 28px;
+  width: 100%;
   padding-left: 12px;
-  display: inline;
+  padding-right: 18px;
+  line-height: 100%;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .ion-ios7-arrow-back {
@@ -222,10 +226,9 @@ textArea {
 }
 
 .contactInfoList {
-  margin-top: 70px;
+  margin-top: 20px;
   height: 180px;
   border-bottom: 1px solid lightgrey;
-  position: relative;
 }
 
 /*Login.html Style*/
@@ -283,7 +286,6 @@ textArea {
 }
 
 .contactPhoneInfo {
-  margin-top: 80px;
   margin-bottom: 15px;
   clear: both;
 }
