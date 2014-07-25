@@ -94,7 +94,6 @@
       });
       
       popup.then(function(message){
-
         if (message && message !== '') {
           // <<- alias UserFactory.data.userData and append dst and text
           var textPayload = UserFactory.data.userData;
