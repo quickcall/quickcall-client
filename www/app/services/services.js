@@ -92,8 +92,9 @@
             if(!$rootScope.data.message){
               e.preventDefault();
             }else{
-              return $rootScope.data.message;
+              var message = $rootScope.data.message;
               $rootScope.data.message = '';
+              return message;
             }
           }
         }
@@ -101,22 +102,24 @@
     });
     
     popup.then(function(message){
-      //Set up a payload of data with source/destination phone numbers, authorization tokens, and a message
-      var serverData = {
-        dst: destinationNumber,
-        src: userData.number,
-        plivoNumber: userData.plivoNumber,
-        text: message,
-        authId: userData.id,
-        authToken:userData.token
-      };
+      if(message){
+        //Set up a payload of data with source/destination phone numbers, authorization tokens, and a message
+        var serverData = {
+          dst: destinationNumber,
+          src: userData.number,
+          plivoNumber: userData.plivoNumber,
+          text: message,
+          authId: userData.id,
+          authToken:userData.token
+        };
 
-      //The actual server post request
-      return $http({
-        method: 'POST',
-        url: 'https://quickcall-server.azurewebsites.net/sms',
-        data: JSON.stringify(serverData)
-      });
+        //The actual server post request
+        return $http({
+          method: 'POST',
+          url: 'https://quickcall-server.azurewebsites.net/sms',
+          data: JSON.stringify(serverData)
+        });
+      }
     });
   };
 
