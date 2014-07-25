@@ -45,5 +45,5 @@ angular.module('app', [
         authenticate: true
       });
       //redirect to home
-      $urlRouterProvider.otherwise('app/login/home');
+      $urlRouterProvider.otherwise('app/home');
   });
