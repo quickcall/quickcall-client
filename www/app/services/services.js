@@ -112,17 +112,6 @@
             }
             // <<- $on is not promisified in angularfire
             //     send userData to server
-            return $http({
-              method: 'POST',
-              url: 'https://quickcall-server.azurewebsites.net/call',
-              data: JSON.stringify(userData)
-            })
-              .then(function(data) {
-                console.log(data);
-              }) 
-              .catch(function(error) {
-                console.log(err);
-              });
           });
         })
         .catch(function(err) {
@@ -156,7 +145,8 @@
       });
       
       popup.then(function(message){
-        if(message){
+        debugger;
+        if(message && message !== ''){
           //Set up a payload of data with source/destination phone numbers, authorization tokens, and a message
           var serverData = {
             dst: destinationNumber,
