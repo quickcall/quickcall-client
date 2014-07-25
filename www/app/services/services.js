@@ -5,7 +5,7 @@
   'ngCordova'
 ])
   //DialerFactory: Used to track the current user, recent numbers, and to make calls
-  .factory('DialerFactory', function ($http, $ionicPopup, $window, $rootScope, $firebase, LoginFactory) {
+  .factory('DialerFactory', function ($http, $ionicPopup, $window, $rootScope, $firebase, LoginFactory, UserFactory) {
     //variable that keeps the 3 most recent numbers
     var recentNumbers = [];
     //current users data from local storage
@@ -18,42 +18,10 @@
       if(recentNumbers.length > 3){
         recentNumbers.pop();
       }
-      
-      // <<- get user information from firebase
-      var ref;
-      var userData;
 
-      LoginFactory.signin()
-        .then(function(user) {
-          ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com' + '/' + user.id));
-          ref.$on('value', function(userSnapshot) {
-            var firebasePayload = userSnapshot.snapshot.value;
-            // <<- firebase returns userdata in a nested object
-            for (var key in firebasePayload) {
-              if (firebasePayload.hasOwnProperty(key)) {
-                // <<- set userData
-                userData = firebasePayload[key];
-                userData.dst = destinationNumber;
-              }
-            }
-            // <<- $on is not promisified in angularfire
-            //     send userData to server
-            return $http({
-              method: 'POST',
-              url: 'https://quickcall-server.azurewebsites.net/call',
-              data: JSON.stringify(userData)
-            })
-              .then(function(data) {
-                console.log(data);
-              }) 
-              .catch(function(error) {
-                console.log(err);
-              });
-          });
-        })
-        .catch(function(err) {
-          console.log(err);
-        })
+      // <<- alias UserFactory.data.userData and append destinationNumber
+      var callPayload = UserFactory.data.userData; 
+      callPayload.dst = destinationNumber; 
 
       /*This is a sloppy way to make the number in the alert pop-up look nice,
       courtesy of Kia   ┐('～`;)┌  Not currently in use*/
@@ -82,6 +50,18 @@
         title: 'Calling...',
         template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
       });
+    
+      return $http({
+        method: 'POST',
+        url: 'https://quickcall-server.azurewebsites.net/call',
+        data: JSON.stringify(callPayload)
+      })
+        .then(function(data) {
+          console.log(data);
+        }) 
+        .catch(function(error) {
+          console.log(err);
+        });
     };
 
     $rootScope.data = {};
@@ -91,45 +71,6 @@
       if(recentNumbers.length > 3){
         recentNumbers.pop();
       }
-      // get user information from firebase
- 
-      // <<- get user information from firebase
-      var ref;
-      var userData;
-
-      LoginFactory.signin()
-        .then(function(user) {
-          ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com' + '/' + user.id));
-          ref.$on('value', function(userSnapshot) {
-            var firebasePayload = userSnapshot.snapshot.value;
-            // <<- firebase returns userdata in a nested object
-            for (var key in firebasePayload) {
-              if (firebasePayload.hasOwnProperty(key)) {
-                // <<- set userData
-                userData = firebasePayload[key];
-                userData.dst = destinationNumber;
-              }
-            }
-            // <<- $on is not promisified in angularfire
-            //     send userData to server
-            return $http({
-              method: 'POST',
-              url: 'https://quickcall-server.azurewebsites.net/call',
-              data: JSON.stringify(userData)
-            })
-              .then(function(data) {
-                console.log(data);
-              }) 
-              .catch(function(error) {
-                console.log(err);
-              });
-          });
-        })
-        .catch(function(err) {
-          console.log(err);
-        })     
-
-      // var userData = JSON.parse($window.localStorage['com.quickCall.auth']);
 
       var popup = $ionicPopup.show({
         title: 'Enter your text message',
@@ -156,22 +97,17 @@
       });
       
       popup.then(function(message){
-        if(message){
-          //Set up a payload of data with source/destination phone numbers, authorization tokens, and a message
-          var serverData = {
-            dst: destinationNumber,
-            src: userData.number,
-            plivoNumber: userData.plivoNumber,
-            text: message,
-            authId: userData.id,
-            authToken:userData.token
-          };
+        if (message) {
+          // <<- alias UserFactory.data.userData and append dst and text
+          var textPayload = UserFactory.data.userData;
+          textPayload.dst = destinationNumber;
+          textPayload.text = message; 
 
           //The actual server post request
           return $http({
             method: 'POST',
             url: 'https://quickcall-server.azurewebsites.net/sms',
-            data: JSON.stringify(serverData)
+            data: JSON.stringify(textPayload)
           });
         }
       });
@@ -186,7 +122,7 @@
     };
   })
 
-  .factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $http, $state) {
+  .factory('LoginFactory', function($firebase, $firebaseSimpleLogin, $rootScope, $http, $state, UserFactory) {
     // <<- create firebase objects required for simple login and to store information to database
     var ref;
     var authref = new Firebase('https://quickcallhr.firebaseio.com');
@@ -245,7 +181,7 @@
       auth.$login('password', userPayload)
         .then(function(user) {
           if (user) {
-            console.log(user);
+            UserFactory.data.getUserData; 
             $state.go('app.main.contacts');
           } else {
             $state.go('app.login');
@@ -279,6 +215,39 @@
       signin: signin,
       logout: logout
     }; 
+  })
+
+  // <<- stores user data from firebase
+  .factory('UserFactory', function($firebase, $firebaseSimpleLogin) {
+    var authref = new Firebase('https://quickcallhr.firebaseio.com');
+    var auth = $firebaseSimpleLogin(authref);
+
+    var data = {}; 
+
+    data.ref;
+    data.userData; 
+
+    data.getUserData = auth.$getCurrentUser()
+      .then(function(user) {
+        data.ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com' + '/' + user.id));
+        data.ref.$on('value', function(userSnapshot) {
+          var firebasePayload = userSnapshot.snapshot.value;
+          // <<- firebase returns userdata in a nested object
+          for (var key in firebasePayload) {
+            if (firebasePayload.hasOwnProperty(key)) {
+              // <<- set userData
+              data.userData = firebasePayload[key];
+            }
+          }
+        });
+      })
+      .catch(function(err) {
+        console.log(err);
+      });
+
+    return {
+      data: data
+    };
   })
 
   //The ContactsFactory, used to get, store, and share between views
