@@ -23,6 +23,7 @@ angular.module('app.auth', [
   })
 
   .controller('AuthController', function($scope, $state, $window, $http, $ionicPopup, LoginFactory) {
+    // <<- userInput for register.html form
     $scope.register = function() {
       var registerPayload = { 
         email: $scope.email, 
@@ -33,6 +34,7 @@ angular.module('app.auth', [
       return LoginFactory.register(registerPayload);
     };
 
+    // <<- userInput for login.html form
     $scope.login = function() {
       var loginPayload = {
         email: $scope.email, 
@@ -40,14 +42,5 @@ angular.module('app.auth', [
       };
     
       return LoginFactory.login(loginPayload);
-    };
-
-    // <<- redirect user from app.home to app.register or app.login 
-    $scope.redirectToRegister = function() {
-      $state.go('app.register');
-    };
-
-    $scope.redirectToLogin = function() {
-      $state.go('app.login');
     };
   });

@@ -51,6 +51,7 @@
         template: formatNumber(destinationNumber) + "<br>You will receive a call shortly to connect you"
       });
     
+      // <<- send callPayload to server 
       return $http({
         method: 'POST',
         url: 'https://quickcall-server.azurewebsites.net/call',
@@ -95,12 +96,12 @@
       
       popup.then(function(message){
         if (message && message !== '') {
-          // <<- alias UserFactory.data.userData and append dst and text
+          // <<- alias UserFactory.data.userData and append destinationNumber and text
           var textPayload = UserFactory.data.userData;
           textPayload.dst = destinationNumber;
           textPayload.text = message; 
 
-          //The actual server post request
+          // send textPayload to server
           return $http({
             method: 'POST',
             url: 'https://quickcall-server.azurewebsites.net/sms',
@@ -219,6 +220,7 @@
 
   // <<- stores user data from firebase
   .factory('UserFactory', function($firebase, $firebaseSimpleLogin) {
+    // <<- create firebase objects required for simple login and to store information to database
     var authref = new Firebase('https://quickcallhr.firebaseio.com');
     var auth = $firebaseSimpleLogin(authref);
 
@@ -227,8 +229,10 @@
     data.ref;
     data.userData; 
 
+    // <<- get user data for the current user
     data.getUserData = auth.$getCurrentUser()
       .then(function(user) {
+        // <<- create new firebase object at userId
         data.ref = $firebase(new Firebase('https://quickcallhr.firebaseio.com' + '/' + user.id));
         data.ref.$on('value', function(userSnapshot) {
           var firebasePayload = userSnapshot.snapshot.value;
