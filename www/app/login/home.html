@@ -1,7 +1,11 @@
 <ion-content class="start">
   <img class="startLogo" src="../../img/quickcall_logo_512.png"/>
   <div class="startButtons">
-    <button class="button button-block button-start" ng-click="redirectToLogin()">Log In</button>
-    <button class="button button-block button-start" ng-click="redirectToRegister()">Register</button>
+    <button class="button button-block button-start" ui-sref="app.login">
+      Log In
+    </button>
+    <button class="button button-block button-start" ui-sref="app.register">
+      Register
+    </button>
   </div>
 </ion-content>
